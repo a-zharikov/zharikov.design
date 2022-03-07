@@ -13,11 +13,24 @@
     width: 100px;
   }
 
+  @include adaptive(mobile) {
+    width: 320px;
+    margin-left: -320px;
+
+    &.active {
+      margin-left: 0;
+    }
+  }
+
   img {
     max-width: 100%;
 
     @include adaptive(sd) {
       width: 40px;
+    }
+
+    @include adaptive(mobile) {
+      width: 100%;
     }
   }
 
@@ -57,6 +70,10 @@
           display: block;
           @include lh(80,72);
         }
+
+        @include adaptive(mobile) {
+          display: none;
+        }
       }
 
       span {
@@ -64,6 +81,10 @@
 
         @include adaptive(sd) {
           display: none;
+        }
+
+        @include adaptive(mobile) {
+          display: block;
         }
       }
 
@@ -113,6 +134,21 @@
     }
   }
 
+  .burder {
+    color: var(--text);
+    position: absolute !important;
+    text-decoration: none;
+    top: 28px; 
+    left: 16px;
+    font-size: 20px;
+    display: none;
+    @include transform(rotate(180deg));
+
+    @include adaptive(mobile) {
+      display: block;
+    }
+  }
+
   .copyright {
     display: flex;
     color: var(--text);
@@ -123,6 +159,11 @@
     @include adaptive(sd) {
       font-size: 12px;
       @include flex(column,center,center);
+    }
+
+    @include adaptive(mobile) {
+      font-size: 18px;
+      @include flex(row,center,center);
     }
 
     span {

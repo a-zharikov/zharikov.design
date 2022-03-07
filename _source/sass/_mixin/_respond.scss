@@ -35,36 +35,3 @@ $desktop: 1440px;
   }
 
 }
-
-.container {
-  height: 2000px;
-  margin-left: 320px;
-  position: relative;
-  background-color: var(--bg);
-  z-index: 2;
-  @include ttheme;
-
-  @include adaptive(sd) {
-    margin-left: 100px;
-  }
-
-  &::after {
-    content: '';
-    width: 200px;
-    height: calc(100% - 80px);
-    display: block;
-    position: absolute;
-    background-color: var(--body);
-    top: 80px;
-    right: 0;
-    opacity: .5;
-
-    @include adaptive(mobile) {
-      width: 40px;
-    }
-
-    @include adaptive(tablet) {
-      width: 100px;
-    }
-  }
-}

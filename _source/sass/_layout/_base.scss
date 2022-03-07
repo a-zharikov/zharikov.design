@@ -26,10 +26,50 @@ html {
   header {
     width: 100%;
     height: 80px;
-    z-index: 1;
+    z-index: 4;
     position: sticky;
     top: 0;
     @include flex(row,flex-end,center);
+
+    .burder {
+      width: 20px;
+      height: 20px;
+      position: fixed;
+      top: 29px;
+      left: 16px;
+      z-index: 4;
+  
+      span {
+        width: 4px;
+        height: 4px;
+        display: block;
+        border-radius: 10px;
+        position: absolute;
+        background-color: var(--text);
+        @include transform(rotate(0));
+        @include ttheme;
+  
+        &.lt {
+          top: 0;
+          left: 0;
+        }
+  
+        &.rt {
+          top: 0;
+          right: 0;
+        }
+  
+        &.lb {
+          bottom: 0;
+          left: 0;
+        }
+  
+        &.rb {
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
 
     .theme {
 
@@ -37,6 +77,12 @@ html {
         width: 40px;
         height: 40px;
         padding: 20px;
+
+        @include adaptive(mobile) {
+          width: 30px;
+          height: 30px;
+          padding-right: 6px;
+        }
   
         .st0 {
           fill: var(--text);
@@ -60,6 +106,43 @@ html {
         .st1 {
           opacity: .2;
         }
+      }
+    }
+  }
+
+  .container {
+    height: 100%;
+    margin-left: 320px;
+    position: relative;
+    background-color: var(--bg);
+    z-index: 2;
+    @include ttheme;
+  
+    @include adaptive(sd) {
+      margin-left: 100px;
+    }
+  
+    @include adaptive(mobile) {
+      margin-left: 0;
+    }
+  
+    &::after {
+      content: '';
+      width: 200px;
+      height: calc(100% - 80px);
+      display: block;
+      position: absolute;
+      background-color: var(--body);
+      top: 80px;
+      right: 0;
+      opacity: .5;
+  
+      @include adaptive(mobile) {
+        width: 40px;
+      }
+  
+      @include adaptive(tablet) {
+        width: 100px;
       }
     }
   }
