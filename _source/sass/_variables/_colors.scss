@@ -1,17 +1,27 @@
 $white: #ffffff;
 $gray:  #f4f4f4;
 $black: #444444;
-$bark:  #333333;
+$dark:  #333333;
 $blue:  #40b4ea;
 
 html {
+  --body:    rgba(51,51,51,.1);
   --bg:      #f4f4f4;
   --text:    #333;
   --sidebar: #fff;
 
   &.dark {
+    --body:    rgba(255,255,255,.05);
     --bg:      #333;
     --text:    #fff;
     --sidebar: #444;
   }
+}
+
+@mixin ttheme {
+	-webkit-transition: all 750ms ease-in-out;
+  -moz-transition: all 750ms ease-in-out;
+  -ms-transition: all 750ms ease-in-out;
+  -o-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
 }

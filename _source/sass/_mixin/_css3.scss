@@ -6,6 +6,25 @@
 	transition:         $target $time;
 }
 
+@mixin transition-delay($transition, $delay) {
+	-webkit-transition: 			$transition;
+	-webkit-transition-delay: $delay;
+	-o-transition:						$transition;
+	-o-transition-delay: 			$delay;
+	-moz-transition:					$transition;
+	-moz-transition-delay: 		$delay;
+	transition: 							$transition;
+	transition-delay: 				$delay;
+}
+
+@mixin transform($transform) {
+	-moz-transform: $transform;
+	-webkit-transform: $transform;
+	-o-transform: $transform;
+	-ms-transform: $transform;
+	transform: $transform;
+}
+
 @mixin flex($fd: flex-start, $jc:flex-start, $ai:flex-start) {
 	display: flex;
   flex-direction: $fd;

@@ -1,0 +1,70 @@
+$mobile: 768px;
+$tablet: 1024px;
+$laptop: 1280px;
+$desktop: 1440px;
+
+
+@mixin adaptive($media) {
+
+  @if $media == mobile {
+    @media only screen and (max-width: $mobile - 1) { @content; }
+  }
+
+  @else if $media == tablet {
+    @media only screen and (min-width: $mobile) and (max-width: $tablet) { @content; }
+  }
+
+  @else if $media == laptop {
+    @media only screen and (min-width: $laptop) and (max-width: $desktop - 1) { @content; }
+  }
+
+  @else if $media == desktop {
+    @media only screen and (min-width: $desktop) { @content; }
+  }
+
+  @else if $media == sd {
+    @media only screen and (max-width: $laptop - 1) { @content; }
+  }
+
+  @else if $media == hd {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+
+  @else if $media == hover {
+    @media only screen and (min-width: $tablet) { @content; }
+  }
+
+}
+
+.container {
+  height: 2000px;
+  margin-left: 320px;
+  position: relative;
+  background-color: var(--bg);
+  z-index: 2;
+  @include ttheme;
+
+  @include adaptive(sd) {
+    margin-left: 100px;
+  }
+
+  &::after {
+    content: '';
+    width: 200px;
+    height: calc(100% - 80px);
+    display: block;
+    position: absolute;
+    background-color: var(--body);
+    top: 80px;
+    right: 0;
+    opacity: .5;
+
+    @include adaptive(mobile) {
+      width: 40px;
+    }
+
+    @include adaptive(tablet) {
+      width: 100px;
+    }
+  }
+}

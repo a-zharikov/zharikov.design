@@ -4,9 +4,63 @@ html {
   body {
     height: 100%;
     color: var(--text);
-    background-color: var(--bg);
+    background-color: var(--body);
     font-family: $regular;
+    position: relative;
     @include fs(30,16);
-    @include transition;
+    @include ttheme;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 80px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--bg);
+      z-index: 1;
+    }
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    @include flex(row,flex-end,center);
+
+    .theme {
+
+      svg {
+        width: 40px;
+        height: 40px;
+        padding: 20px;
+  
+        .st0 {
+          fill: var(--text);
+          opacity: .2;
+          @include transition;
+        }
+  
+        .st1 {
+          fill: var(--text);
+          opacity: 1;
+          @include transition;
+        }
+      }
+
+      &.active {
+
+        .st0 {
+          opacity: 1;
+        }
+  
+        .st1 {
+          opacity: .2;
+        }
+      }
+    }
   }
 }

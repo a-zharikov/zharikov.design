@@ -4,7 +4,22 @@
   padding: 80px 0px 8px;
   box-sizing: border-box;
   background-color: var(--sidebar);
+  position: fixed;
+  z-index: 3;
+  @include ttheme;
   @include flex(column,space-between,center);
+
+  @include adaptive(sd) {
+    width: 100px;
+  }
+
+  img {
+    max-width: 100%;
+
+    @include adaptive(sd) {
+      width: 40px;
+    }
+  }
 
   nav {
     @include flex(column,flex-start,flex-start);
@@ -12,12 +27,84 @@
     a {
       color: var(--text);
       text-decoration: none;
-      font: 36px/76px $title;
+      font-family: $title;
       opacity: .3;
-      @include transition;
+      position: relative;
+      @include fs(40,32);
+      @include lh(80,72);
+      @include transition-delay(all 500ms ease-in-out,0ms);
+
+      i {
+        position: relative;
+        display: none;
+
+        &::after {
+          content: attr(data-tooltip);
+          font: 40px/36px $title;
+          color: $white;
+          background: $dark;
+          position: absolute;
+          top: 50%;
+          left: 54px;
+          padding: 10px 12px 2px;
+          transform: translate(0, -50%);
+          visibility: hidden;
+          opacity: 0;
+          @include transition-delay(all 250ms ease-in-out,250ms);
+        }
+
+        @include adaptive(sd) {
+          display: block;
+          @include lh(80,72);
+        }
+      }
+
+      span {
+        display: block;
+
+        @include adaptive(sd) {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 34px;
+        left: 60px;
+        background-color: $dark;
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        @include transition;
+        @include transition-delay(all 250ms ease-in-out,0ms);
+        @include transform(rotate(45deg));
+
+        @include adaptive(sd) {
+          display: block;
+        }
+      }
 
       &:hover {
         opacity: 1;
+
+        i {
+
+          &::after {
+            opacity: 1;
+            visibility: visible;
+            @include transition-delay(all 250ms ease-in-out,0ms);
+          }
+        }
+
+        &::after {
+          opacity: 1;
+          visibility: visible;
+          left: 50px;
+          @include transition-delay(all 250ms ease-in-out,250ms);
+        }
       }
 
       &.active {
@@ -30,7 +117,13 @@
     display: flex;
     color: var(--text);
     font-family: $title;
-    @include fs(18,12);
+    font-size: 18px;
+    @include flex(row,flex-start,flex-start);
+
+    @include adaptive(sd) {
+      font-size: 12px;
+      @include flex(column,center,center);
+    }
 
     span {
 
