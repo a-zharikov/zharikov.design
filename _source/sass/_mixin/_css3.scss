@@ -1,7 +1,14 @@
-@mixin transition($target: all, $time: 250ms, $ease: ease-in-out) {
+@mixin transition($target: all, $time: 500ms, $ease: ease-in-out) {
 	-webkit-transition: $target $time;
 	-moz-transition:    $target $time;
 	-o-transition:      $target $time;
 	-ms-transition:     $target $time;
 	transition:         $target $time;
+}
+
+@mixin flex($fd: flex-start, $jc:flex-start, $ai:flex-start) {
+	display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
 }

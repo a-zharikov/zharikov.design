@@ -1,15 +1,17 @@
 $white: #ffffff;
-$gray:  #e5e5e5;
+$gray:  #f4f4f4;
 $black: #444444;
 $bark:  #333333;
 $blue:  #40b4ea;
 
 html {
-  --bg: #e5e5e5;
-  --text: #333;
+  --bg:      #f4f4f4;
+  --text:    #333;
+  --sidebar: #fff;
 
   &.dark {
-    --bg: #333;
-    --text: #fff;
+    --bg:      #333;
+    --text:    #fff;
+    --sidebar: #444;
   }
 }

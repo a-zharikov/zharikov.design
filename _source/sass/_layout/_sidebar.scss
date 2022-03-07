@@ -1,0 +1,42 @@
+.sidebar {
+  width: 320px;
+  height: 100%;
+  padding: 80px 0px 8px;
+  box-sizing: border-box;
+  background-color: var(--sidebar);
+  @include flex(column,space-between,center);
+
+  nav {
+    @include flex(column,flex-start,flex-start);
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      font: 36px/76px $title;
+      opacity: .3;
+      @include transition;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    color: var(--text);
+    font-family: $title;
+    @include fs(18,12);
+
+    span {
+
+      &:first-child {
+        padding-right: 4px;
+      }
+    }
+  }
+}
