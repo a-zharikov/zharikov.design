@@ -1,0 +1,196 @@
+html {
+  --bg: #e5e5e5;
+  --text: #333;
+}
+html.dark {
+  --bg: #333;
+  --text: #fff;
+}
+
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("/fonts/bebas-neue/BebasNeueBold.eot");
+  src: url("/fonts/bebas-neue/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("/fonts/bebas-neue/BebasNeueBold.woff") format("woff"), url("/fonts/bebas-neue/BebasNeueBold.ttf") format("truetype"), url("/fonts/bebas-neue/BebasNeueBold.svg#BebasNeueBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoSlab Light";
+  src: url("/fonts/roboto-slab/RobotoSlab-Light.eot");
+  src: url("/fonts/roboto-slab/RobotoSlab-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-slab/RobotoSlab-Light.woff") format("woff"), url("/fonts/roboto-slab/RobotoSlab-Light.ttf") format("truetype"), url("/fonts/roboto-slab/RobotoSlab-Light.svg#RobotoSlab-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoSlab Light Italic";
+  src: url("/fonts/roboto-slab/RobotoSlab-LightItalic.eot");
+  src: url("/fonts/roboto-slab/RobotoSlab-LightItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-slab/RobotoSlab-LightItalic.woff") format("woff"), url("/fonts/roboto-slab/RobotoSlab-LightItalic.ttf") format("truetype"), url("/fonts/roboto-slab/RobotoSlab-LightItalic.svg#RobotoSlab-LightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("/fonts/roboto-slab/RobotoSlab-Regular.eot");
+  src: url("/fonts/roboto-slab/RobotoSlab-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-slab/RobotoSlab-Regular.woff") format("woff"), url("/fonts/roboto-slab/RobotoSlab-Regular.ttf") format("truetype"), url("/fonts/roboto-slab/RobotoSlab-Regular.svg#RobotoSlab-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoSlab Extar";
+  src: url("/fonts/roboto-slab/RobotoSlab-ExtraBold.eot");
+  src: url("/fonts/roboto-slab/RobotoSlab-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-slab/RobotoSlab-ExtraBold.woff") format("woff"), url("/fonts/roboto-slab/RobotoSlab-ExtraBold.ttf") format("truetype"), url("/fonts/roboto-slab/RobotoSlab-ExtraBold.svg#RobotoSlab-ExtraBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  outline: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+/* ERIC MEYER RESET
+================================================== */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: 0;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
+  font-family: "RobotoSlab Light";
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (30 - 16) + 16px);
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
+}
