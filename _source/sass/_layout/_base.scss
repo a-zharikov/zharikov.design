@@ -27,8 +27,9 @@ html {
     width: 100%;
     height: 80px;
     z-index: 4;
-    position: sticky;
+    position: relative;
     top: 0;
+    @include ttheme;
     @include flex(row,flex-end,center);
 
     .burder {
@@ -110,12 +111,33 @@ html {
     }
   }
 
+  footer {
+    color: var(--title);
+    font-family: $extra;
+    padding-bottom: 8px;
+    @include fs(50,18);
+    @include ttheme;
+
+    @include adaptive(hd) {
+      margin-top: 60px;
+    }
+
+    @include adaptive(sd) {
+      margin-top: 40px;
+    }
+
+    p {
+      margin-left: -4px;
+    }
+  }
+
   .container {
-    height: 100%;
+    min-height: 100%;
     margin-left: 320px;
     position: relative;
     background-color: var(--bg);
     z-index: 2;
+    @include flex(column,flex-start,flex-start);
     @include ttheme;
   
     @include adaptive(sd) {
@@ -124,6 +146,51 @@ html {
   
     @include adaptive(mobile) {
       margin-left: 0;
+    }
+
+    &-wrapper {
+      flex: 1 0 auto;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+
+      @include adaptive(hd) {
+        padding-left: 164px;
+      }
+
+      @include adaptive(sd) {
+        padding-left: 134px;
+      }
+
+      @include adaptive(tablet) {
+        padding-left: 98px;
+      }
+
+      @include adaptive(mobile) {
+        padding-left: 44px;
+      }
+
+      &.loading, &.error {
+
+        &::before {
+          content: 'Загрузка...';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 2;
+          padding: 40px;
+          background-color: var(--bg);
+          @include transform(translate(-50%, -50%));
+          @include flex(row,center,center);
+        }
+      }
+
+      &.error {
+
+        &::before {
+          content: 'Ой!...';
+        }
+      }
     }
   
     &::after {

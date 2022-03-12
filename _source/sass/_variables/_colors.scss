@@ -7,14 +7,16 @@ $blue:  #40b4ea;
 html {
   --body:    rgba(51,51,51,.1);
   --bg:      #f4f4f4;
-  --text:    #333;
   --sidebar: #fff;
+  --text:    #333;
+  --title:  #fff;
 
   &.dark {
     --body:    rgba(255,255,255,.05);
     --bg:      #333;
-    --text:    #fff;
     --sidebar: #444;
+    --text:    #fff;
+    --title:  #444;
   }
 }
 

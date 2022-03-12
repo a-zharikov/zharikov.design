@@ -31,3 +31,10 @@
   justify-content: $jc;
   align-items: $ai;
 }
+
+@mixin grid($columns, $rows, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  grid-gap: $gap;
+}

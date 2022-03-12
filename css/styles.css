@@ -2,14 +2,16 @@
 html {
   --body: rgba(51,51,51,.1);
   --bg: #f4f4f4;
-  --text: #333;
   --sidebar: #fff;
+  --text: #333;
+  --title: #fff;
 }
 html.dark {
   --body: rgba(255,255,255,.05);
   --bg: #333;
-  --text: #fff;
   --sidebar: #444;
+  --text: #fff;
+  --title: #444;
 }
 
 @font-face {
@@ -254,8 +256,13 @@ html header {
   width: 100%;
   height: 80px;
   z-index: 4;
-  position: sticky;
+  position: relative;
   top: 0;
+  -webkit-transition: all 750ms ease-in-out;
+  -moz-transition: all 750ms ease-in-out;
+  -ms-transition: all 750ms ease-in-out;
+  -o-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -339,12 +346,40 @@ html header .theme.active .st0 {
 html header .theme.active .st1 {
   opacity: 0.2;
 }
+html footer {
+  color: var(--title);
+  font-family: "RobotoSlab Extar";
+  padding-bottom: 8px;
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (50 - 18) + 18px);
+  -webkit-transition: all 750ms ease-in-out;
+  -moz-transition: all 750ms ease-in-out;
+  -ms-transition: all 750ms ease-in-out;
+  -o-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
+}
+@media only screen and (min-width: 1280px) {
+  html footer {
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  html footer {
+    margin-top: 40px;
+  }
+}
+html footer p {
+  margin-left: -4px;
+}
 html .container {
-  height: 100%;
+  min-height: 100%;
   margin-left: 320px;
   position: relative;
   background-color: var(--bg);
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   -webkit-transition: all 750ms ease-in-out;
   -moz-transition: all 750ms ease-in-out;
   -ms-transition: all 750ms ease-in-out;
@@ -360,6 +395,53 @@ html .container {
   html .container {
     margin-left: 0;
   }
+}
+html .container-wrapper {
+  flex: 1 0 auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 1280px) {
+  html .container-wrapper {
+    padding-left: 164px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  html .container-wrapper {
+    padding-left: 134px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html .container-wrapper {
+    padding-left: 98px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html .container-wrapper {
+    padding-left: 44px;
+  }
+}
+html .container-wrapper.loading::before, html .container-wrapper.error::before {
+  content: "Загрузка...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  padding: 40px;
+  background-color: var(--bg);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html .container-wrapper.error::before {
+  content: "Ой!...";
 }
 html .container::after {
   content: "";
@@ -615,4 +697,34 @@ html .container::after {
 }
 .sidebar .copyright span:first-child {
   padding-right: 4px;
+}
+
+h1 {
+  color: var(--title);
+  font-size: 120px;
+  font-family: "RobotoSlab Extar" !important;
+  text-align: right;
+  position: absolute;
+  top: -12px;
+  left: -14px;
+  writing-mode: vertical-lr;
+  -webkit-transition: all 750ms ease-in-out;
+  -moz-transition: all 750ms ease-in-out;
+  -ms-transition: all 750ms ease-in-out;
+  -o-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 80px;
+    top: -8px;
+    left: -9px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 50px;
+    top: 80px;
+    left: -6px;
+  }
 }

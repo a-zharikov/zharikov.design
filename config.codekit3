@@ -67,6 +67,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/_source/sass/_layout/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/_source/sass/_mixin/_css3.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -145,6 +158,19 @@
 		"oS": 1,
 		"rAC": 0
 		},
+	"/_source/slim/_layout/_footer.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"hM": 0,
+		"llg": 0,
+		"oA": 1,
+		"oAP": "/_footer.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
 	"/_source/slim/_layout/_head.slim": {
 		"cB": 0,
 		"cmO": 0,
@@ -180,6 +206,71 @@
 		"oA": 0,
 		"oAP": "/index.html",
 		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"/_source/slim/pages/blog.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"hM": 0,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/pages/blog.html",
+		"oF": 2,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"/_source/slim/pages/contacts.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"hM": 0,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/pages/contacts.html",
+		"oF": 2,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"/_source/slim/pages/main.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"hM": 0,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/pages/main.html",
+		"oF": 3,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"/_source/slim/pages/portfolio.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"hM": 0,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/pages/portfolio.html",
+		"oF": 2,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"/_source/slim/pages/resume.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"hM": 0,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/pages/resume.html",
+		"oF": 2,
 		"oFM": 0,
 		"oS": 1,
 		"rAC": 0
@@ -2015,6 +2106,46 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"/pages/blog.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/blog.html",
+		"oF": 0
+		},
+	"/pages/contacts.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/contacts.html",
+		"oF": 0
+		},
+	"/pages/main.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/main.html",
+		"oF": 0
+		},
+	"/pages/portfolio.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/portfolio.html",
+		"oF": 0
+		},
+	"/pages/resume.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/resume.html",
+		"oF": 0
 		}
 	},
 "hooks": [
