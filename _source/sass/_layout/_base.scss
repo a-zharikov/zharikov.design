@@ -3,7 +3,6 @@ html {
 
   body {
     height: 100%;
-    color: var(--text);
     background-color: var(--body);
     font-family: $regular;
     position: relative;
@@ -112,11 +111,7 @@ html {
   }
 
   footer {
-    color: var(--title);
-    font-family: $extra;
     padding-bottom: 8px;
-    @include fs(50,18);
-    @include ttheme;
 
     @include adaptive(hd) {
       margin-top: 60px;
@@ -127,7 +122,11 @@ html {
     }
 
     p {
-      margin-left: -4px;
+      color: var(--title);
+      font-family: $extra;
+      margin: 0 0 0 -4px;
+      @include fs(50,18);
+      @include ttheme;
     }
   }
 
@@ -210,6 +209,80 @@ html {
   
       @include adaptive(tablet) {
         width: 100px;
+      }
+    }
+  }
+
+  .spoiler {
+    
+    &__content {
+      display: none;
+    }
+
+    &__link {
+      text-align: right;
+      margin: 40px 80px 40px 0;
+    
+      a {
+        color: $blue;
+        font-family: $title;
+        text-decoration: none;
+        letter-spacing: .08em;
+        position: relative;
+        z-index: 1;
+        @include flex(row,flex-end,center);
+        display: inline-flex;
+        @include fs(20,16);
+    
+        &::before {
+          content: attr(data-text);
+        }
+    
+        &::after {
+          content: '\e904';
+          font-family: 'Icons';
+          font-size: 14px;
+          margin: -4px 0 0 8px;
+          @include transform(rotate(0deg));
+          @include transition;
+        }
+    
+        &:hover {
+          
+          &::after {
+            @include transform(rotate(90deg));
+          }
+        }
+    
+        &.active {
+    
+          &::before {
+            content: attr(data-less);
+          }
+    
+          &:hover {
+          
+            &::after {
+              margin-top: -6px;
+              @include transform(rotate(-90deg));
+            }
+          }
+        }
+      }
+    
+      @include adaptive(tablet) {
+        margin-right: 40px;
+      }
+    
+      @include adaptive(mobile) {
+        margin: 20px 20px 20px 0;
+      }
+    }
+
+    &.active {
+
+      .spoiler__content {
+        display: block;
       }
     }
   }

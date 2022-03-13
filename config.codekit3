@@ -41,6 +41,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/_source/sass/_layout/_head.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_head.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/_source/sass/_layout/_reset.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -514,6 +527,17 @@
 		"oA": 0,
 		"oAP": "/fonts/roboto-slab/RobotoSlab-Regular.woff",
 		"oF": 0
+		},
+	"/img/avatar.jpg": {
+		"ft": 16384,
+		"iS": 82176,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/avatar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/img/favicon/android-chrome-192x192.png": {
 		"ft": 32768,

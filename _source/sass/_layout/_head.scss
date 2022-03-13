@@ -1,0 +1,49 @@
+.head {
+  margin-bottom: 68px;
+  @include flex(row,flex-start,center);
+
+  @include adaptive(tablet) {
+    margin-bottom: 52px;
+  }
+
+  @include adaptive(mobile) {
+    margin-bottom: 28px;
+  }
+
+  img {
+    max-width: 100%;
+    flex: 0 0 auto;
+    display: block;
+    border-radius: 100%;
+    margin-right: 52px;
+
+    @include adaptive(tablet) {
+      width: 200px;
+      margin-right: 40px;
+    }
+
+    @include adaptive(mobile) {
+      width: 80px;
+      margin-right: 20px;
+    }
+  }
+
+  &-content {
+
+    &__text {
+      color: var(--text);
+      @include fs(40,16);
+      @include lh(96,38);
+      @include ttheme;
+    }
+
+    &__name {
+      color: var(--text);
+      font-family: $title;
+      margin-bottom: -12px;
+      @include fs(80,26);
+      @include lh(86,38);
+      @include ttheme;
+    }
+  }
+}

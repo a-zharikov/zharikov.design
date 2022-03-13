@@ -11,16 +11,23 @@ $(document).ready(function() {
     $('.sidebar').toggleClass('active');
   });
 
+  // Spoiler
+  $(document).on('click', '.more', function(){
+    $(this).toggleClass('active');
+    $(this).closest('.spoiler').toggleClass('active');
+  });
+
   // Menu
 	$(document).on('click', '.link', function() {
-    $('.link').removeClass('active');
+    $('.link, .sidebar').removeClass('active');
     $('#content').addClass('loading');
-    window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
+    var Class = $(this).data('class');
     $(this).addClass('active');
     $.ajax({
       url: $(this).attr('href'),
       cache: false,
       success: function(html){
+        $('body').removeClass().addClass(Class);
         $("#content").removeClass('error');
         $("#content").removeClass('loading').html(html);
       },

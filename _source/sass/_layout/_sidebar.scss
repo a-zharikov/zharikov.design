@@ -106,6 +106,10 @@
         @include adaptive(sd) {
           display: block;
         }
+
+        @include adaptive(mobile) {
+          display: none;
+        }
       }
 
       &:hover {

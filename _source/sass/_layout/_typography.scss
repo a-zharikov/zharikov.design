@@ -21,3 +21,65 @@ h1 {
     left: -6px;
   }
 }
+
+h2 {
+  color: var(--text);
+  font-family: $title;
+  margin-bottom: 16px;
+  @include fs(50,26);
+  @include ttheme;
+
+  @include adaptive(tablet) {
+    margin-bottom: 12px;
+  }
+
+  @include adaptive(mobile) {
+    margin-bottom: 8px;
+  }
+}
+
+p, li {
+  color: var(--text);
+  margin: 0 80px 40px 0;
+  @include fs(30,16);
+  @include lh(46,28);
+  @include ttheme;
+
+  @include adaptive(tablet) {
+    margin: 0 40px 24px 0;
+  }
+
+  @include adaptive(mobile) {
+    margin: 0 20px 20px 0;
+  }
+}
+
+ul {
+
+  li {
+    @include flex(row,flex-start,flex-start);
+
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      flex: 0 0 10px;
+      margin: 14px 40px 0 0;
+      background: $blue;
+
+      @include adaptive(tablet) {
+        width: 8px;
+        height: 8px;
+        flex: 0 0 8px;
+        margin-right: 20px;
+      }
+
+      @include adaptive(mobile) {
+        width: 4px;
+        height: 4px;
+        flex: 0 0 4px;
+        margin: 12px 12px 0 0;
+      }
+    }
+  }
+}
