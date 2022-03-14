@@ -124,7 +124,7 @@ html {
     p {
       color: var(--title);
       font-family: $extra;
-      margin: 0 0 0 -4px;
+      margin: 0 0 0 -2px;
       @include fs(50,18);
       @include ttheme;
     }
@@ -275,7 +275,7 @@ html {
       }
     
       @include adaptive(mobile) {
-        margin: 20px 20px 20px 0;
+        margin: 0 20px 40px 0;
       }
     }
 

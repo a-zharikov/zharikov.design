@@ -361,7 +361,7 @@ html footer {
 html footer p {
   color: var(--title);
   font-family: "RobotoSlab Extar";
-  margin: 0 0 0 -4px;
+  margin: 0 0 0 -2px;
   font-size: calc( (100vw - 320px)/(1920 - 320) * (50 - 18) + 18px);
   -webkit-transition: all 750ms ease-in-out;
   -moz-transition: all 750ms ease-in-out;
@@ -528,7 +528,7 @@ html .spoiler__link a.active:hover::after {
 }
 @media only screen and (max-width: 767px) {
   html .spoiler__link {
-    margin: 20px 20px 20px 0;
+    margin: 0 20px 40px 0;
   }
 }
 html .spoiler.active .spoiler__content {
