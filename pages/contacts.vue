@@ -12,28 +12,55 @@
   </div>
 </template>
 
-<script setup>
-const contactItems = [
-  {
-    id: 1,
-    title: 'GitHub',
-    link: 'https://github.com/a-zharikov',
-    class: 'github',
-    classWrapper: '_github'
-  },
-  {
-    id: 2,
-    title: 'Behance',
-    link: 'https://www.behance.net/zharikov_design',
-    class: 'behance',
-    classWrapper: '_behance'
-  },
-  {
-    id: 3,
-    title: 'Codepen',
-    link: 'https://codepen.io/a-zharikov',
-    class: 'codepen',
-    classWrapper: '_codepen'
+<script>
+  export default {
+    data() {
+      return {
+        title: 'Контакты // Zharikov.design'
+      }
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Связаться со мной'
+          },
+          {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'github, behance, codepen'
+          }
+        ]
+      }
+    }
   }
-];
+</script>
+
+<script setup>
+  const contactItems = [
+    {
+      id: 1,
+      title: 'GitHub',
+      link: 'https://github.com/a-zharikov',
+      class: 'github',
+      classWrapper: '_github'
+    },
+    {
+      id: 2,
+      title: 'Behance',
+      link: 'https://www.behance.net/zharikov_design',
+      class: 'behance',
+      classWrapper: '_behance'
+    },
+    {
+      id: 3,
+      title: 'Codepen',
+      link: 'https://codepen.io/a-zharikov',
+      class: 'codepen',
+      classWrapper: '_codepen'
+    }
+  ];
 </script>

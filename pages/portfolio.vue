@@ -12,8 +12,35 @@
   </div>
 </template>
 
+<script>
+  export default {
+    data() {
+      return {
+        title: 'Портфолио // Zharikov.design'
+      }
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Мои кейсы'
+          },
+          {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'портфолио, работы, кейсы, portfolio, job, case'
+          }
+        ]
+      }
+    }
+  }
+</script>
+
 <script setup>
-import { computed } from 'vue';
+  import { computed } from 'vue';
   const portfolioItems = [
     {
       id: 1,

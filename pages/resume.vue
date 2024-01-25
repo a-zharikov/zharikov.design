@@ -18,17 +18,45 @@
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+      data() {
+        return {
+          title: 'Резюме // Zharikov.design'
+        }
+      },
+      head() {
+        return {
+          title: this.title,
+          meta: [
+            {
+              hid: 'description',
+              name: 'description',
+              content: 'Опыт работы и навыки'
+            },
+            {
+              hid: 'keywords',
+              name: 'keywords',
+              content: 'figma, photoshop, illustrator, Davinci Resolve, html, slim, haml, css, scss, sass, less, JavaScript, jQuery, Vue, nuxt, ror, php, react, mysql'
+            }
+          ]
+        }
+      }
+    }
+</script>
+
 <script setup>
-import { ref, computed } from 'vue';
-import SkillsTab from '@/components/resume/SkillsTab.vue';
-import CareerTab from '@/components/resume/CareerTab.vue';
+  import { ref, computed } from 'vue';
+  import SkillsTab from '@/components/resume/SkillsTab.vue';
+  import CareerTab from '@/components/resume/CareerTab.vue';
 
-const currentTab = ref('skills');
+  const currentTab = ref('skills');
 
-const tabs = {
-  skills: SkillsTab,
-  career: CareerTab,
-};
+  const tabs = {
+    skills: SkillsTab,
+    career: CareerTab,
+  };
 
-const currentTabComponent = computed(() => tabs[currentTab.value]);
+  const currentTabComponent = computed(() => tabs[currentTab.value]);
 </script>
