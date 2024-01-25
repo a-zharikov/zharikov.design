@@ -1,0 +1,33 @@
+header {
+  width: $size-100;
+  height: $size-x19;
+  z-index: 4;
+  top: 0;
+  position: absolute;
+  @include flex($r,$fe,$c);
+
+  .theme {
+    background: $tr;
+
+    svg {
+      width: $size-x9;
+      height: $size-x9;
+      padding: $gap-x5;
+
+      @include mq(mobile) {
+        width: $size-x7;
+        height: $size-x7;
+        padding-right: $gap-x2;
+      }
+
+      path {
+        fill: var(--text);
+        @include transition(250);
+
+        &.dark {
+          opacity: .2;
+        }
+      }
+    }
+  }
+}

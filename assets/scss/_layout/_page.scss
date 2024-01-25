@@ -1,0 +1,63 @@
+.page {
+  position: relative;
+  box-sizing: border-box;
+  @include mt(80,70);
+  @include ml(140,60);
+  @include pr(80,20);
+
+  &-title {
+    position: fixed;
+    writing-mode: vertical-lr;
+    @include top(-16,-8);
+    @include ml(-16,-8);
+
+    @include screen(0,799) {
+      @include top(70,68);
+    }
+  
+    h1 {
+      color: var(--h1);
+      font-family: $extra;
+      @include fs(120,50);
+      @include transition(250);
+    }
+  }
+
+  &-header {
+    z-index: 2;
+    position: relative;
+    @include flex($r,$fs,$c);
+    @include gap(52,20);
+    @include mb(80,28);
+
+    img {
+      display: block;
+      border-radius: $br-full;
+      @include w(250,80);
+      @include h(250,80);
+    }
+
+    &__content {
+      @include fs(40,16);
+      @include flex($cl,$fs,$fs);
+
+      span {
+        font-family: $title;
+        @include fs(80,26);
+        @include mt(26,8);
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: fixed;
+    right: 0;
+    height: 100dvh;
+    background: var(--after);
+    z-index: 1;
+    @include top(70,68);
+    @include w(200,40);
+    @include transition(250);
+  }
+}

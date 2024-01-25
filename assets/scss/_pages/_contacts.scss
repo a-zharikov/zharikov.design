@@ -1,0 +1,50 @@
+.contact {
+  height: 100%;
+  @include flex($r,$c,$c,0);
+
+  @include screen(0,799) {
+    @include flex($r,$fs,$fs,0);
+  }
+
+  &-wrapper {
+    width: $size-100;
+    @include flex($r,$fs,$fs,0);
+
+    &__item {
+      width: calc(33% - $size-x2);
+      color: var(--text);
+      background-color: var(--sidebar);
+      z-index: 2;
+      position: relative;
+      padding: 10% 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      @include flex($r,$c,$c,0);
+      @include transition(250);
+
+      &:not(:last-child) {
+        margin-right: $gap-x2;
+      }
+  
+      i {
+        @include fs(80,32);
+      }
+
+      &._behance {
+        
+        &:hover {
+          color: $white;
+          background: $behance;
+        }
+      }
+
+      &._github, &._codepen {
+        
+        &:hover {
+          color: $white;
+          background: $dark;
+        }
+      }
+    }
+  }
+}

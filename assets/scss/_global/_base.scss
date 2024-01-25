@@ -1,0 +1,17 @@
+html {
+  height: $size-100;
+  overflow-x: hidden;
+
+  body {
+    color: var(--text);
+    font-family: $regular;
+    background-color: var(--background);
+    height: $size-100;
+    overflow-x: hidden;
+    @include transition(250);
+
+    #__nuxt {
+      height: $size-100;
+    }
+  }
+}

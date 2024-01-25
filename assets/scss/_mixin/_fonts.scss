@@ -1,0 +1,77 @@
+@mixin font-face($fontFamily, $path, $fileName, $svgLabel, $fontWeight: normal, $fontStyle: normal) {
+  @font-face {
+    font-family: $fontFamily;
+
+    src: url('#{$path + $fileName}.eot');
+    src: url('#{$path + $fileName}.eot?#iefix') format('embedded-opentype'),
+    url('#{$path + $fileName}.woff') format('woff'),
+    url('#{$path + $fileName}.ttf') format('truetype'),
+    url('#{$path + $fileName}.svg##{$svgLabel}') format('svg');
+
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+  }
+}
+
+// Bebas Neue
+$title: 'Bebas Neue Bold';
+@include font-face($title, '/fonts/bebas-neue/', 'BebasNeueBold', 'BebasNeueBold');
+
+// Roboto Slab
+$regular:  'RobotoSlab Light';
+$italic:   'RobotoSlab Light Italic';
+$bold:     'RobotoSlab';
+$extra:    'RobotoSlab Extar';
+@include font-face($regular, '/fonts/roboto-slab/', 'RobotoSlab-Light', 'RobotoSlab-Light');
+@include font-face($italic, '/fonts/roboto-slab/', 'RobotoSlab-LightItalic', 'RobotoSlab-LightItalic');
+@include font-face($bold, '/fonts/roboto-slab/', 'RobotoSlab-Regular', 'RobotoSlab-Regular');
+@include font-face($extra, '/fonts/roboto-slab/', 'RobotoSlab-ExtraBold', 'RobotoSlab-ExtraBold');
+
+// Icons
+$icons: "Icons";
+@include font-face($icons,  '/fonts/icons/', 'icons', 'icons');
+
+[class^="icon"], [class*=" icon"] {
+  font-family: $icons !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  &.codepen:before {
+    content: "\e900";
+  }
+  &.new-tab:before {
+    content: "\e901";
+  }
+  &.resume:before {
+    content: "\e902";
+  }
+  &.portfolio:before {
+    content: "\e903";
+  }
+  &.blog:before {
+    content: "\e904";
+  }
+  &.contacts:before {
+    content: "\e905";
+  }
+  &.arrow:before {
+    content: "\e906";
+  }
+  &.github:before {
+    content: "\e907";
+  }
+  &.behance:before {
+    content: "\e908";
+  }
+  &.instagram:before {
+    content: "\e909";
+  }
+}

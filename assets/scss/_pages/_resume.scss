@@ -1,0 +1,137 @@
+.resume {
+  flex: 1 0 auto;
+  
+  &-tabs {
+    z-index: 2;
+    position: relative;
+    @include mb(20,16);
+    @include flex($r,$fs,$c);
+    @include gap(70,30);
+
+    &__item {
+      color: var(--text);
+      font-family: $title;
+      opacity: .2;
+      background: $tr;
+      @include fs(50,26);
+      @include transition(250);
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .skills {
+    z-index: 2;
+    position: relative;
+    @include grid(repeat(auto-fit, minmax(300px, 1fr)),auto,$gap-x10 $gap-x20);
+
+    @include mq(tablet) {
+      gap: $gap-x6;
+    }
+
+    @include mq(mobile) {
+      @include grid(100%,auto,$gap-x4);
+    }
+
+    &-item {
+
+      &__name {
+        @include fs(30,20);
+        @include mb(20,12);
+
+        span {
+          opacity: .4;
+          padding-left: $gap-x2;
+          @include fs(20,12);
+        }
+      }
+
+      &__level {
+        @include grid(repeat(5,1fr),auto,$gap-x2);
+      }
+
+      &__block {
+        height: $size-x1;
+        opacity: .2;
+        background: var(--text);
+        @include transition(250);
+
+        &.filled {
+          opacity: 1;
+          background: $blue;
+        }
+      }
+    }
+  }
+
+  .career {
+    color: var(--text);
+    z-index: 2;
+    position: relative;
+    @include mt(40,20);
+    @include transition(250);
+
+    &-timeline {
+      @include flex($cl,$fs,$s);
+      @include gap(40,20);
+
+      &__item {
+        @include flex($r,$fs,$fs,$gap-x4);
+      }
+
+      &__time {
+        color: var(--nav);
+        @include fs(20,14);
+        @include flex($r,$fs,$c,$gap-x2);
+
+        &::before {
+          content: '';
+          width: 6px;
+          height: 6px;
+          display: block;
+          background: $blue;
+          border-radius: $br-100;
+          border: $br-x1 solid var(--background);
+          z-index: 2;
+          position: relative;
+        }
+      }
+
+      &__title {
+        font-family: $title;
+        @include fs(50,26);
+      }
+
+      &__subtitle {
+        color: $white;
+        font-family: $bold;
+        background: $blue;
+        display: inline-flex;
+        padding: $gap-x1 $gap-x2;
+        @include fs(14,14);
+        @include mt(12,8);
+        @include mb(20,16);
+      }
+
+      &__description {
+        @include fs(32,16);
+        @include lh(48,28);
+      }
+    }
+
+    &::before {
+      content: '';
+      width: 2px;
+      height: calc($size-100 - $size-x6);
+      display: block;
+      background: var(--text);
+      opacity: .2;
+      top: $gap-x4;
+      left: 6px;
+      z-index: 1;
+      position: absolute;
+    }
+  }
+}

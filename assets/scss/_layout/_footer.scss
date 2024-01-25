@@ -1,0 +1,9 @@
+footer {
+  font-family: $extra;
+  color: var(--h1);
+  z-index: 2;
+  box-sizing: border-box;
+  @include fs(50,18);
+  @include ml(-6,0);
+  @include transition(250);
+}

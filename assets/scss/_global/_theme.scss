@@ -1,0 +1,35 @@
+// Colors
+:root {
+  --h1: #{$white};
+  --text: #{$black};
+  --sidebar: #{$white};
+  --after: #{$gray};
+  --background: #{$gray-light};
+  --tooltip: #{$black};
+  --tooltip_text: #{$white};
+  --nav: #{$grays};
+  --portfolio: rgba(255, 255, 255, .6);
+}
+
+[data-theme='dark'] {
+  --h1: #{$black-light};
+  --text: #{$white};
+  --sidebar: #{$black-light};
+  --after: #{$gray-dark};
+  --background: #{$black};
+  --tooltip: #{$white};
+  --tooltip_text: #{$black};
+  --nav: #{$grays-dark};
+  --portfolio: rgba(0, 0, 0, .6);
+}
+
+// Elements
+[data-theme='dark'] {
+  .dark {
+    opacity: 1 !important;
+  }
+
+  .light {
+    opacity: .2;
+  }
+}
