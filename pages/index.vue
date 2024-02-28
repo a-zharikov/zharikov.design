@@ -4,7 +4,7 @@
     <div class="page main">
       <div class="page-header">
         <img src="/images/avatar.jpg" alt="I` am">
-        <div class="page-header__content">меня зовут<span>Александр Жариков</span>и я фронденд-дизайнер!!!</div>
+        <div class="page-header__content">меня зовут<span>Александр Жариков</span>и я фронденд-дизайнер</div>
       </div>
       <div class="main-item" v-for="(item, index) in mainItems" :key="index">
         <h2>{{ item.title }}</h2>
