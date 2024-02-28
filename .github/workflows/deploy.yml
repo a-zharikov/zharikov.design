@@ -16,7 +16,7 @@ jobs:
       - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
       - run: chmod 600 "$HOME/.ssh/key"
       # Build
-      - run: npm ci
-      - run: npm run generate
+      # - run: npm ci
+      # - run: npm run generate
       # Deploy
       - run: cd dist && rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . myhosting:/home/h0031708/public_html/_dop/zharikov.design
