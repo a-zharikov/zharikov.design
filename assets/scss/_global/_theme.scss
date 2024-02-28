@@ -9,6 +9,8 @@
   --tooltip_text: #{$white};
   --nav: #{$grays};
   --portfolio: rgba(255, 255, 255, .6);
+  --pre: #f8f8f8;
+  --pre_border: #e6e6e6;
 }
 
 [data-theme='dark'] {
@@ -21,6 +23,8 @@
   --tooltip_text: #{$black};
   --nav: #{$grays-dark};
   --portfolio: rgba(0, 0, 0, .6);
+  --pre: #2e2e2e;
+  --pre_border: #404040;
 }
 
 // Elements

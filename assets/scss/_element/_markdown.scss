@@ -1,0 +1,29 @@
+.token {
+
+  &.operator {
+    color: #999 !important;
+    background: none !important;
+  }
+
+  &.string {
+    background: none !important;
+  }
+
+  &.keyword {
+    color: #06a9ef !important;
+  }
+}
+
+pre {
+  margin-top: 0 !important;
+  border: 1px solid var(--pre_border);
+  border-radius: $br-x1;
+  background: var(--pre) !important;
+  text-shadow: none !important;
+  @include mbi(40,20);
+  @include transition(250);
+
+  code {
+    color: #1b90c2;
+  }
+}

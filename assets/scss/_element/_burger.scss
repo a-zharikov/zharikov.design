@@ -1,0 +1,41 @@
+.burder {
+  width: $size-x5;
+  height: $size-x5;
+  position: fixed;
+  top: $gap-x7;
+  left: $gap-x4;
+  z-index: 4;
+  background: $tr;
+  opacity: .4;
+
+  span {
+    width: $size-x1;
+    height: $size-x1;
+    display: block;
+    border-radius: $br-100;
+    position: absolute;
+    background-color: var(--text);
+    @include transform(rotate(0));
+    @include transition(250);
+
+    &.lt {
+      top: 0;
+      left: 0;
+    }
+
+    &.rt {
+      top: 0;
+      right: 0;
+    }
+
+    &.lb {
+      bottom: 0;
+      left: 0;
+    }
+
+    &.rb {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

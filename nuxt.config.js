@@ -11,12 +11,21 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width: device-width, initial-scale: 1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone: no' },
+      { content: '#333333', name: 'msapplication-TileColor'},
+      { content: 'img/favicon/mstile-144x144.png', name: 'msapplication-TileImage'},
+      { content: '#333333', name: 'theme-color'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { href: 'images/favicon/apple-touch-icon.png', rel: 'apple-touch-icon', sizes: '180x180' },
+      { href: 'images/favicon/favicon-32x32.png', rel: 'icon', sizes: '32x32', type: 'image/png' },
+      { href: 'images/favicon/favicon-16x16.png', rel: 'icon', sizes: '16x16', type: 'image/png' },
+      { href: 'images/favicon/site.webmanifest', rel: 'manifest' },
+      { color: '#5bbad5', href: 'images/favicon/safari-pinned-tab.svg', rel: 'mask-icon' },
+      { href: 'https://zharikov.design/tableau.json', rel: 'yandex-tableau-widget' },
+      { rel: 'icon', type: 'image/x-icon', href: 'images/favicon/favicon.ico' }
     ]
   },
 

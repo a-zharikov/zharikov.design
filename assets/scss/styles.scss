@@ -11,6 +11,7 @@
 @import '_mixin/fonts';
 @import '_mixin/size';
 @import '_mixin/align';
+@import '_mixin/element';
 
 @import '_global/reset';
 @import '_global/theme';
@@ -22,8 +23,15 @@
 @import '_layout/element';
 @import '_layout/page';
 
+@import '_element/typography';
+@import '_element/burger';
+@import '_element/tag';
+@import '_element/overlay';
+@import '_element/markdown';
+
 @import '_pages/main';
 @import '_pages/resume';
 @import '_pages/portfolio';
+@import '_pages/blog';
 @import '_pages/contacts';
 

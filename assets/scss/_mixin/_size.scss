@@ -1,3 +1,7 @@
+@mixin respond($element, $max, $min) {
+  $element: calc( (100vw - 320px)/(1920 - 320) * (#{$max} - #{$min}) + #{$min}px);
+}
+
 @mixin fs($max, $min) {
   font-size: calc( (100vw - 320px)/(1920 - 320) * (#{$max} - #{$min}) + #{$min}px);
 }
@@ -42,6 +46,10 @@
 
 @mixin mb($max, $min) {
   margin-bottom: calc( (100vw - 320px)/(1920 - 320) * (#{$max} - #{$min}) + #{$min}px);
+}
+
+@mixin mbi($max, $min) {
+  margin-bottom: calc( (100vw - 320px)/(1920 - 320) * (#{$max} - #{$min}) + #{$min}px) !important;
 }
 
 @mixin ml($max, $min) {

@@ -1,0 +1,154 @@
+.blog {
+  
+  &-main {
+    @include grid(repeat(2,1fr),auto,$gap-x4);
+
+    
+    @include screen(1800) {
+      width: 1800px;
+      @include grid(repeat(3,1fr),auto,$gap-x5);
+    }
+
+    @include screen(0,660) {
+      @include grid(100%,auto,$gap-x3);
+    }
+
+    .item {
+      z-index: 2;
+      position: relative;
+      flex: 0 0 auto;
+      background: var(--sidebar);
+      text-decoration: none;
+      color: var(--text);
+      @include flex($cl,$fs,$fs,0);
+      @include transition(250);
+  
+      &-image {
+        overflow: hidden;
+        height: auto;
+        
+        img {
+          max-width: $size-100;
+          height: $size-100;
+          display: block;
+          object-fit: cover;
+          @include transition;
+          @include transform(scale(1));
+        }
+      }
+  
+      &-title {
+        padding: $gap-x6;
+        @include title(40,30,44,32);
+      }
+  
+      &:hover {
+  
+        img {
+          @include transform(scale(1.1));
+        }
+      }
+    }
+  }
+
+  &-page {
+    max-width: 1600px;
+    position: relative;
+    z-index: 2;
+
+    &__cover {
+      @include mb(40,16);
+      @include grid(1fr .8fr,auto,$gap-x9);
+      
+      @include mq(mobile) {
+        padding-bottom: $gap-x5;
+        @include border(0,0,1,0,$grays,.4);
+        @include grid($size-100,auto,$gap-x4);
+      }
+
+      .image {
+        position: relative
+        ;
+        img {
+          max-width: $size-100;
+          display: block;
+        }
+      }
+
+      .head {
+        @include flex($cl,$c,$fs,0);
+
+        .tools {
+          margin-top: -$gap-x4;
+          @include fs(16,16);
+          @include flex($r,$fs,$c,$gap-x2);
+
+          span {
+            color: $grays-dark;
+            background: var(--after);
+            text-transform: uppercase;
+            padding: $gap-x1 $gap-x2 0;
+            font-family: $title;
+            @include transition(250);
+          }
+        }
+
+        .date {
+          color: var(--text);
+          opacity: .4;
+          margin-bottom: $gap-x2;
+          @include fs(16,12);
+        }
+      }
+    }
+
+    &__nav {
+      @include flex($r,$c,$c,$gap-x5);
+      @include mt(40,20);
+      
+      @include screen(0,600) {
+        @include flex($cl,$c,$s,$gap-x5);
+      }
+
+      a {
+        color: $grays-dark;
+        background: var(--after);
+        text-decoration: none;
+        padding: $gap-x5;
+        @include fs(24,16);
+        @include lh(28,20);
+        @include flex($r,$fs,$c,$gap-x3);
+        @include transition(250);
+
+        &::before, &::after {
+          @include fs(32,24);
+          line-height: 0;
+          margin-top: -2px;
+          transform: translateX(0);
+          @include transition(250);
+        }
+
+        &.prev {
+
+          &::before {
+            content: '«';
+          }
+        }
+
+        &.next {
+
+          &::after {
+            content: '»';
+          }
+        }
+
+        &:hover {
+          
+          &::before, &::after {
+            color: var(--text);
+          }
+        }
+      }
+    }
+  }
+}

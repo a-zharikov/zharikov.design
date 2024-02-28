@@ -1,0 +1,128 @@
+h2 {
+  font-family: $title;
+  @include fs(52,24);
+  @include mb(20,20);
+}
+
+h3 {
+  font-family: $title;
+  @include fs(44,20);
+  @include mb(20,20);
+}
+
+p {
+  @include fs(32,16);
+  @include lh(48,28);
+  @include mb(40,20);
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+    position: relative;
+
+    span {
+      z-index: 3;
+      position: relative;
+    }
+
+    &::before, &::after {
+      content: '';
+      height: calc($gap-x1/2);
+      display: block;
+      background: $blue;
+      z-index: 1;
+      @include bottom_center;
+    }
+
+    &::before {
+      width: 0;
+      z-index: 2;
+      @include transition;
+    }
+
+    &::after {
+      width: $size-100;
+      opacity: .4;
+      z-index: 1;
+    }
+
+    &:hover {
+
+      &::before {
+        width: $size-100;
+      }
+    }
+  }
+
+  code {
+    color: #dd1145;
+    font-family: 'Courier New', Courier;
+    padding: 0 2px;
+    border-radius: $gap-x1;
+    border: 1px solid var(--pre_border);
+    background: var(--pre) !important;
+  }
+}
+
+ul {
+
+  li {
+    @include fs(32,16);
+    @include lh(48,28);
+    @include mb(40,20);
+    @include flex($r,$fs,$fs);
+    @include gap(24,16);
+
+    &::before {
+      content: '';
+      display: block;
+      flex: 0 0 auto;
+      background: $blue;
+      @include w(8,4);
+      @include h(8,4);
+      @include mt(20,12);
+    }
+  }
+}
+
+button {
+  color: $blue;
+  background: $tr;
+  font-family: $title;
+  margin: -$gap-x5 0 0 auto;
+  @include fs(20,16);
+  @include flex($r,$fs,$c,$gap-x2);
+
+  i {
+    display: block;
+    margin-top: -4px;
+    @include fs(15,12);
+
+    &::before {
+      display: block;
+      @include transition(250);
+    }
+  }
+
+  &:hover {
+
+    i {
+
+      &::before {
+        @include transform(rotate(90deg));
+      }
+    }
+  }
+
+  &.active {
+    &:hover {
+
+      i {
+
+        &::before {
+          @include transform(rotate(-90deg));
+        }
+      }
+    }
+  }
+}

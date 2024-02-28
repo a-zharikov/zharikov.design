@@ -21,7 +21,7 @@
             <span>Портфолио</span>
           </nuxt-link>
           <nuxt-link active-class="active" @click="closeSidebar" to="/blog">
-            <i class="icon blog"></i>
+            <i class="icon blg"></i>
             <span>Блог</span>
           </nuxt-link>
           <nuxt-link active-class="active" @click="closeSidebar" to="/contacts">
