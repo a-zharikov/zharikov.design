@@ -1,27 +1,30 @@
-on: push
-name: 🚀 Deploy website on push
+name: 🚀 Deploy to Hosting
+on:
+  push:
+    branches:
+      - main
 jobs:
- web-deploy:
- name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
- - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+  web-deploy:
+  name: 🎉 Deploy
+  runs-on: ubuntu-latest
+  steps:
+  - name: 🚚 Get latest code
+    uses: actions/checkout@v3
 
- - name: Use Node.js 16
-      uses: actions/setup-node@v2
-      with:
- node-version: '16'
+  - name: Use Node.js 16
+    uses: actions/setup-node@v2
+    with:
+    node-version: '16'
  
- - name: 🔨 Build Project
-      run: |
-              npm install
-              npm run generate
- 
- - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-      server: ${{ secrets.FTP_SERVER }}
-      username: ${{ secrets.FTP_SERVER }}
-      password: ${{ secrets.FTP_PASSWORD }}
-      # server-dir: /public_html/_dop/zharikov.design
+  - name: 🔨 Build Project
+    run: |
+      npm install
+      npm run generate
+  
+  - name: 📂 Sync files
+    uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    with:
+    server: ${{ secrets.FTP_SERVER }}
+    username: ${{ secrets.FTP_SERVER }}
+    password: ${{ secrets.FTP_PASSWORD }}
+    # server-dir: /public_html/_dop/zharikov.design
