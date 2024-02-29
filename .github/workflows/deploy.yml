@@ -21,10 +21,6 @@ jobs:
         npm install
         npm run generate
     
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_SERVER }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        # server-dir: /public_html/_dop/zharikov.design
+    - name: 📂 Sync files via FTP
+      run: |
+        lftp -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }} -e "mirror -R dist /remote/path; quit"
