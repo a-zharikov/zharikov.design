@@ -24,7 +24,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.skreets.ru
+        server: ftp.skreets.ru:21
         username: git_deploy_zd@zharikov.design
         password: M,6O.~JN5xC)
         # server-dir: /public_html/_dop/zharikov.design
