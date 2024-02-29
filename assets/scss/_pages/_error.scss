@@ -1,0 +1,21 @@
+.error {
+  height: 100dvh;
+  @include flex($cl,$c,$c,0);
+
+  &-page {
+    @include flex($cl,$c,$c,0);
+
+    h1 {
+      font-family: $extra;
+      margin-bottom: $gap-x1;
+      @include fs(120,50);
+      @include transition(250);
+    }
+
+    a {
+      color: $blue;
+      text-decoration: none;
+      @include transition;
+    }
+  }
+}
