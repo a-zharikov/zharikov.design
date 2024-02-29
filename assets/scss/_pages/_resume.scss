@@ -13,7 +13,9 @@
       font-family: $title;
       opacity: .2;
       background: $tr;
+      margin-left: 0;
       @include fs(50,26);
+      @include lh(50,26);
       @include transition(250);
 
       &.active {
@@ -79,6 +81,10 @@
 
       &__item {
         @include flex($r,$fs,$fs,$gap-x4);
+
+        &::before {
+          display: none;
+        } 
       }
 
       &__time {
@@ -111,6 +117,7 @@
         display: inline-flex;
         padding: $gap-x1 $gap-x2;
         @include fs(14,14);
+        @include lh(14,14);
         @include mt(12,8);
         @include mb(20,16);
       }
