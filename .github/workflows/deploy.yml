@@ -24,7 +24,7 @@ jobs:
       run: npm run generate
 
     - name: 📂 Deploy via FTP
-      uses: sebastianpopp/ftp-action@v2
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
