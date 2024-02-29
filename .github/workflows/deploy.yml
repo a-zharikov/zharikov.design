@@ -3,24 +3,31 @@ on:
   push:
     branches:
       - main
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
 
-    - name: Use Node.js 16
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🚚 Checkout code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js 16.x
       uses: actions/setup-node@v2
       with:
-        node-version: '16'
-  
-    - name: 🔨 Build Project
-      run: |
-        npm install
-        npm run generate
-    
-    - name: 📂 Sync files via FTP
-      run: |
-        lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" "${{ secrets.FTP_SERVER }}" -e "mirror -R dist /remote/path; quit"
+        node-version: 16.x
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: 🔨 Build project
+      run: npm run generate
+
+    - name: 📂 Deploy via FTP
+      uses: sebastianpopp/ftp-action@v2
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: dist
+        remote-dir: /path/on/ftp/server
