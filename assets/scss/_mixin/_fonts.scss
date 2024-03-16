@@ -44,6 +44,9 @@ $icons: "Icons";
 }
 
 .icon {
+  &.npm:before {
+    content: "\e90a";
+  }
   &.codepen:before {
     content: "\e900";
   }

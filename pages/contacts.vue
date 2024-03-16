@@ -61,6 +61,13 @@
       link: 'https://codepen.io/a-zharikov',
       class: 'codepen',
       classWrapper: '_codepen'
+    },
+    {
+      id: 4,
+      title: 'npm',
+      link: 'https://www.npmjs.com/~alexander.zharikov',
+      class: 'npm',
+      classWrapper: '_npm'
     }
   ];
 </script>

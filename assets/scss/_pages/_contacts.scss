@@ -8,15 +8,14 @@
 
   &-wrapper {
     width: $size-100;
-    @include flex($r,$fs,$fs,0);
+    @include grid(repeat(2,1fr),auto,$gap-x4);
 
     &__item {
-      width: calc(33% - $size-x2);
       color: var(--text);
       background-color: var(--sidebar);
       z-index: 2;
       position: relative;
-      padding: 10% 0;
+      padding: 20% 0;
       box-sizing: border-box;
       text-decoration: none;
       @include flex($r,$c,$c,0);
@@ -43,6 +42,18 @@
         &:hover {
           color: $white;
           background: $dark;
+        }
+      }
+
+      &._npm {
+
+        i {
+          @include fs(100,64);
+        }
+        
+        &:hover {
+          color: $white;
+          background: $npm;
         }
       }
     }
