@@ -11,6 +11,8 @@
   --portfolio: rgba(255, 255, 255, .6);
   --pre: #f8f8f8;
   --pre_border: #e6e6e6;
+  --code: rgba(244, 244, 244, 0.8);
+  --preview: url('/images/backpack/light.svg');
 }
 
 [data-theme='dark'] {
@@ -25,6 +27,8 @@
   --portfolio: rgba(0, 0, 0, .6);
   --pre: #2e2e2e;
   --pre_border: #404040;
+  --code: rgba(51, 51, 51, 0.8);
+  --preview: url('/images/backpack/dark.svg');
 }
 
 // Elements

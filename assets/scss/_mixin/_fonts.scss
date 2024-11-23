@@ -44,37 +44,40 @@ $icons: "Icons";
 }
 
 .icon {
-  &.npm:before {
-    content: "\e90a";
-  }
-  &.codepen:before {
+  &.backpack:before {
     content: "\e900";
   }
-  &.new-tab:before {
+  &.codepen:before {
     content: "\e901";
   }
-  &.resume:before {
+  &.new-tab:before {
     content: "\e902";
   }
-  &.portfolio:before {
+  &.resume:before {
     content: "\e903";
   }
-  &.blg:before {
+  &.portfolio:before {
     content: "\e904";
   }
-  &.contacts:before {
+  &.blg:before {
     content: "\e905";
   }
-  &.arrow:before {
+  &.contacts:before {
     content: "\e906";
   }
-  &.github:before {
+  &.arrow:before {
     content: "\e907";
   }
-  &.behance:before {
+  &.github:before {
     content: "\e908";
   }
-  &.instagram:before {
+  &.behance:before {
     content: "\e909";
+  }
+  &.instagram:before {
+    content: "\e90a";
+  }
+  &.npm:before {
+    content: "\e90b";
   }
 }

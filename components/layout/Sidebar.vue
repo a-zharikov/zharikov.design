@@ -24,6 +24,10 @@
             <i class="icon blg"></i>
             <span>Блог</span>
           </nuxt-link>
+          <nuxt-link active-class="active" @click="closeSidebar" to="/backpack">
+            <i class="icon backpack"></i>
+            <span>Рюкзак</span>
+          </nuxt-link>
           <nuxt-link active-class="active" @click="closeSidebar" to="/contacts">
             <i class="icon contacts"></i>
             <span>Контакты</span>
