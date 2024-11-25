@@ -143,8 +143,8 @@
 export default {
   data() {
     return {
-      width: 100,
-      height: 100,
+      width: 80,
+      height: 80,
       direction: "top",
       defaultColor: "#40b4ea",
       copyMessage: "",
