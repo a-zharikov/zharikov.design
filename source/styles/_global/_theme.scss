@@ -1,0 +1,21 @@
+[data-theme='dark'] {
+
+  .header__theme {
+
+    &::after {
+      content: attr(data-light);
+    }
+  }
+
+  .header__icon {
+
+    &--dark {
+      fill: $bg-light;
+      left: -$zui-32;
+    }
+
+    &--light {
+      left: $zui-8;
+    }
+  }
+}

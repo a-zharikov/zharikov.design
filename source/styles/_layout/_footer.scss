@@ -1,0 +1,140 @@
+.footer {
+  margin-top: auto;
+  padding: $zui-64 0;
+  background: $text-light;
+  position: relative;
+  overflow: hidden;
+  @include flex($cl,$cr,$cr,$zui-24);
+
+  &__social {
+    @include flex($rw,$cr,$cr,$zui-8);
+
+    &-link {
+      width: $zui-32;
+      height: $zui-32;
+      border-radius: $zui-80;
+      @include flex($rw,$cr,$cr,0);
+      @include transition;
+
+      path {
+        @include transition;
+      }
+
+      &:hover {
+
+        &:has(.github,.codepen) {
+          background: $text-dark;
+
+          path {
+            fill: $text-light;
+          }
+        }
+
+        &:has(.npm) {
+          background: $npm;
+
+          path {
+            fill: $text-dark;
+          }
+        }
+
+        &:has(.behance) {
+          background: $behance;
+
+          path {
+            fill: $text-dark;
+          }
+        }
+
+        &:has(.telegram) {
+          background: $telegram;
+
+          path {
+            fill: $text-dark;
+          }
+        }
+
+        &:has(.vk) {
+          background: $vk;
+
+          path {
+            fill: $text-dark;
+          }
+        }
+      }
+    }
+  }
+
+  &__rang {
+    opacity: .08;
+    @include bottom_left(-3px,0);
+    @include text($headline-x8,$sidebar-light);
+
+    @include mq(desktop) {
+      font: $headline-x6;
+    }
+
+    @include mq(laptop) {
+      font: $headline-x4;
+    }
+
+    @include mq(tablet) {
+      font: $headline-x4;
+    }
+
+    @include mq(mobile) {
+      font: $bold-x4;
+      @include bottom_left(-5px,0);
+    }
+  }
+
+  &__copyright {
+    @include text($mini,$text-dark);
+  }
+
+  &__version {
+    text-decoration: none;
+    opacity: .08;
+    @include text($mini,$text-light);
+    @include block($text-dark,2px $zui-4,$zui-40);
+    @include bottom_center($zui-8);
+    @include transition;
+
+    @include mq(tablet) {
+      @include bottom_center($zui-28);
+    }
+
+    @include mq(mobile) {
+      @include bottom_center($zui-24);
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__zui {
+    text-decoration: none;
+    text-transform: uppercase;
+    @include bottom_right(-10px,-2px);
+    @include text($title-x14,$contrast-dark);
+    @include transition;
+
+    @include mq(desktop) {
+      font: $title-x12;
+    }
+
+    @include mq(tablet) {
+      font: $headline-x10;
+    }
+
+    @include mq(mobile) {
+      font: $headline-x10;
+      @include bottom_right(-12px,-2px);
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

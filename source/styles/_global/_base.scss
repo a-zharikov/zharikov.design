@@ -1,0 +1,23 @@
+html {
+  height: $zui-100p;
+  overflow-x: hidden;
+}
+
+body {
+  height: $zui-100p;
+  overflow-x: hidden;
+  @include text($normal-x5,$text-light,$text-dark);
+  @include theme(background, $bg-light, $bg-dark);
+  @include flex($cl,$fs,$sh,0);
+  @include transition;
+}
+
+.container {
+  max-width: $grid;
+  margin: 0 auto;
+  padding: 0 $zui-20;
+
+  @include mq(mobile) {
+    padding: 0 $zui-12;
+  }
+}
