@@ -77,6 +77,22 @@
       "oAP" : "\/build\/_kit\/_layout\/_header.html",
       "oF" : 0
     },
+    "\/source\/_kit\/_layout\/_lorem_ipsum.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/_kit\/_layout\/_lorem_ipsum.html",
+      "oF" : 0
+    },
+    "\/source\/_kit\/_layout\/_sidebar.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/_kit\/_layout\/_sidebar.html",
+      "oF" : 0
+    },
     "\/source\/fonts\/CircularStd\/CircularStd-Bold.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -124,6 +140,16 @@
       "oA" : 0,
       "oAP" : "\/build\/fonts\/VisueltPro\/VisueltPro-Regular.woff2",
       "oF" : 0
+    },
+    "\/source\/images\/_icons\/backpack.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/backpack.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/source\/images\/_icons\/be.svg" : {
       "ft" : 2097152,
@@ -175,11 +201,51 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/_icons\/note.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/note.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/images\/_icons\/npm.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/build\/images\/_icons\/npm.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_icons\/plugin.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/plugin.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_icons\/protfolio.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/protfolio.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_icons\/resume.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/resume.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -633,6 +699,36 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_layout\/_main.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_layout\/_nav.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_layout\/_nav.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_layout\/_sidebar.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_layout\/_sidebar.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -2537,7 +2633,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "\/storage\/framework\/sessions,_logs,logs,log,.idea,_cache,cache,node_modules",
+    "skippedFoldersString" : "\/storage\/framework\/sessions,node_modules,_logs,logs,log,.idea,_cache,cache,.gitignore",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,

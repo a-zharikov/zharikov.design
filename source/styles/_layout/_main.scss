@@ -1,3 +1,47 @@
 .main {
+  width: $zui-100p;
+  max-width: $grid;
+  margin: 0 auto;
+  @include grid(145px 1fr,auto,0);
   
+  @include mq(desktop) {
+    max-width: calc(#{$zui-100p} - #{$zui-40});
+    @include grid(102px 1fr,auto,0);
+  }
+
+  @include mq(laptop) {
+    max-width: calc(#{$zui-100p} - #{$zui-40});
+    @include grid(102px 1fr,auto,0);
+  }
+
+  @include mq(tablet) {
+    max-width: calc(#{$zui-100p} - #{$zui-40});
+    @include grid(102px 1fr,auto,0);
+  }
+
+  @include mq(mobile) {
+    max-width: calc(#{$zui-100p} - #{$zui-16});
+    @include flex($clr,$fs,$fs,0);
+    position: relative;
+  }
+
+  section {
+    margin-right: 106px;
+
+    @include mq(desktop) {
+      margin-right: 104px;
+    }
+
+    @include mq(laptop) {
+      margin-right: $zui-40;
+    }
+
+    @include mq(tablet) {
+      margin-right: $zui-20;
+    }
+
+    @include mq(mobile) {
+      margin-right: 0;
+    }
+  }
 }

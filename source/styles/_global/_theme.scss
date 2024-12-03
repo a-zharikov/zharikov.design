@@ -18,4 +18,11 @@
       left: $zui-8;
     }
   }
+
+  .menu__text {
+    
+    &::before {
+      border-color: transparent $text-dark transparent transparent;
+    }
+  }
 }

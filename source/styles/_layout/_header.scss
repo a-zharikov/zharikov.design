@@ -25,6 +25,7 @@
   }
 
   &__theme {
+    user-select: none;
     border-radius: $zui-40;
     padding: 6px $zui-8 $zui-4;
     position: relative;

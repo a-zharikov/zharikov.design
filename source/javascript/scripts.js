@@ -25,4 +25,10 @@ $(document).ready(function () {
       $('html').attr('data-theme', newTheme);
     }
   });
+
+  // Получение текущего года
+  var currentYear = new Date().getFullYear();
+            
+  // Выводим текущий год в элемент с id 'current-year'
+  $('#year').text(currentYear);
 });
