@@ -1,0 +1,59 @@
+<script src="../javascript/backpack/triangle.min.js"></script>
+<section class="modal__page">
+  <h2 class="modal__title">Генератор CSS треугольников</h2>
+  <div class="triangle">
+    <div class="triangle__item">
+      <div class="triangle__directions">
+        <label class="triangle__directions-item">
+          <input type="radio" name="direction" value="top-left">
+        </label>
+        <label class="triangle__directions-item">
+          <input type="radio" name="direction" value="top" checked>
+        </label>
+        <label class="triangle__directions-item">
+          <input type="radio" name="direction" value="top-right">
+        </label>
+        <label class="triangle__directions-item">
+          <input type="radio" name="direction" value="left">
+        </label>
+        <div id="selectedDirection" class="triangle__directions-selected">Top</div>
+        <label class="triangle__directions-item">
+          <input type="radio" name="direction" value="right">
+        </label>
+        <label class="triangle__directions-item">
+          <input type="radio" name="direction" value="bottom-left">
+        </label>
+        <label class="triangle__directions-item">
+          <input type="radio" name="direction" value="bottom">
+        </label>
+        <label class="triangle__directions-item">
+          <input type="radio" name="direction" value="bottom-right">
+        </label>
+      </div>
+      <div class="triangle__controls form__row">
+        <div class="input-placeholder">
+          <input class="input" type="number" id="width" value="40" placeholder="Width">
+          <label for="">
+            Width
+          </label>
+        </div>
+        <div class="input-placeholder">
+          <input class="input" type="number" id="height" value="40" placeholder="Height">
+          <label for="">
+            Height
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="triangle__item">
+      <div class="triangle__preview">
+        <div id="triangle"></div>
+      </div>
+      <div class="triangle__code">
+        <textarea class="triangle__textarea" id="cssCode" readonly></textarea>
+        <button class="button small neutral" id="copyCode">Копировать</button>
+        <span id="copyMessage" class="triangle__code-copy"></span>
+      </div>
+    </div>
+  </div>
+</section>

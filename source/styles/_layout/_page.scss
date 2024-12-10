@@ -1,7 +1,7 @@
-.main {
+.page {
   width: $zui-100p;
   max-width: $grid;
-  margin: 0 auto;
+  margin: $zui-40 auto;
   @include grid(145px 1fr,auto,0);
   
   @include mq(desktop) {
@@ -15,17 +15,19 @@
   }
 
   @include mq(tablet) {
+    margin: $zui-20 auto;
     max-width: calc(#{$zui-100p} - #{$zui-40});
     @include grid(102px 1fr,auto,0);
   }
 
   @include mq(mobile) {
     max-width: calc(#{$zui-100p} - #{$zui-16});
-    @include flex($clr,$fs,$fs,0);
     position: relative;
+    margin: $zui-20 auto 0;
+    @include flex($clr,$fs,$fs,0);
   }
 
-  section {
+  &-feed {
     margin-right: 106px;
 
     @include mq(desktop) {
@@ -41,7 +43,9 @@
     }
 
     @include mq(mobile) {
+      width: $zui-100p;
       margin-right: 0;
+      margin-bottom: auto;
     }
   }
 }

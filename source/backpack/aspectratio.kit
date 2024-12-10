@@ -1,0 +1,55 @@
+<script src="../javascript/backpack/aspectratio.min.js"></script>
+<section class="modal__page">
+  <h2 class="modal__title">Калькулятор пропорций</h2>
+  <div class="aspectratio">
+    <div class="aspectratio__item">
+      <div class="aspectratio__directions">
+        <label class="aspectratio__directions-item">
+          <input type="radio" name="direction" value="16-9" checked>
+          16:9
+        </label>
+        <label class="aspectratio__directions-item">
+          <input type="radio" name="direction" value="21-9">
+          21:9
+        </label>
+        <label class="aspectratio__directions-item">
+          <input type="radio" name="direction" value="4-3">
+          4:3
+        </label>
+        <label class="aspectratio__directions-item">
+          <input type="radio" name="direction" value="9-19">
+          9:16
+        </label>
+        <label class="aspectratio__directions-item">
+          <input type="radio" name="direction" value="9-21">
+          9:21
+        </label>
+        <label class="aspectratio__directions-item">
+          <input type="radio" name="direction" value="3-4">
+          3:4
+        </label>
+      </div>
+    </div>
+    <div class="aspectratio__item">
+      <div class="aspectratio__controls form__row">
+        <div class="input-placeholder">
+          <input class="input" type="number" id="width" value="1280" placeholder="Width">
+          <label for="">
+            Width
+          </label>
+        </div>
+        <div class="input-placeholder">
+          <input class="input" type="number" id="height" value="720" placeholder="Height">
+          <label for="">
+            Height
+          </label>
+        </div>
+      </div>
+      <div class="aspectratio__code">
+        <textarea class="aspectratio__textarea" id="aspectratioCode" readonly></textarea>
+        <button class="button small neutral" id="copyCode">Копировать</button>
+        <span id="copyMessage" class="aspectratio__code-copy"></span>
+      </div>
+    </div>
+  </div>
+</section>

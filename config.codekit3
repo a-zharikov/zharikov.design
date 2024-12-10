@@ -61,6 +61,14 @@
       "oAP" : "\/build\/_kit\/_layout\/_footer.html",
       "oF" : 0
     },
+    "\/source\/_kit\/_layout\/_head-page.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/_kit\/_layout\/_head-page.html",
+      "oF" : 0
+    },
     "\/source\/_kit\/_layout\/_head.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -91,6 +99,38 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/build\/_kit\/_layout\/_sidebar.html",
+      "oF" : 0
+    },
+    "\/source\/backpack\/aspectratio.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/backpack\/aspectratio.html",
+      "oF" : 0
+    },
+    "\/source\/backpack\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/backpack\/index.html",
+      "oF" : 0
+    },
+    "\/source\/backpack\/remem.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/backpack\/remem.html",
+      "oF" : 0
+    },
+    "\/source\/backpack\/triangle.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/backpack\/triangle.html",
       "oF" : 0
     },
     "\/source\/fonts\/CircularStd\/CircularStd-Bold.woff" : {
@@ -125,6 +165,22 @@
       "oAP" : "\/build\/fonts\/VisueltPro\/VisueltPro-Bold.woff2",
       "oF" : 0
     },
+    "\/source\/fonts\/VisueltPro\/VisueltPro-Light.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/fonts\/VisueltPro\/VisueltPro-Light.woff",
+      "oF" : 0
+    },
+    "\/source\/fonts\/VisueltPro\/VisueltPro-Light.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/fonts\/VisueltPro\/VisueltPro-Light.woff2",
+      "oF" : 0
+    },
     "\/source\/fonts\/VisueltPro\/VisueltPro-Regular.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -140,6 +196,16 @@
       "oA" : 0,
       "oAP" : "\/build\/fonts\/VisueltPro\/VisueltPro-Regular.woff2",
       "oF" : 0
+    },
+    "\/source\/images\/_icons\/aspect_ratio.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/aspect_ratio.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/source\/images\/_icons\/backpack.svg" : {
       "ft" : 2097152,
@@ -161,11 +227,61 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/_icons\/calculate.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/calculate.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_icons\/change_history.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/change_history.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_icons\/check.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/check.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_icons\/close.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/close.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/images\/_icons\/codepen.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/build\/images\/_icons\/codepen.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_icons\/content_copy.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/content_copy.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -251,6 +367,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/_icons\/swap_horiz.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_icons\/swap_horiz.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/images\/_icons\/telegram.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -266,6 +392,26 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/build\/images\/_icons\/vk.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/backpack\/dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/backpack\/dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/backpack\/light.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/backpack\/light.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -375,7 +521,51 @@
       "oA" : 1,
       "oAP" : "\/build\/javascript\/_libs\/jquery.min.min.js",
       "oF" : 0,
-      "sC" : 3,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/source\/javascript\/backpack\/aspectratio.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/backpack\/aspectratio.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/source\/javascript\/backpack\/remem.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/backpack\/remem.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/source\/javascript\/backpack\/triangle.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/backpack\/triangle.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/source\/javascript\/plugins\/modal.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/plugins\/modal.min.js",
+      "oF" : 0,
+      "sC" : 0,
       "tS" : 0
     },
     "\/source\/javascript\/scripts.js" : {
@@ -399,6 +589,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_animations\/_rotation.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_components\/_modal.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_components\/_modal.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -689,21 +894,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/source\/styles\/_layout\/_main.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/build\/styles\/_layout\/_main.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/source\/styles\/_layout\/_nav.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -714,6 +904,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_layout\/_nav.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_layout\/_page.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_layout\/_page.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -914,6 +1119,66 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/source\/styles\/_pages\/_backpack\/_aspectratio.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_backpack\/_aspectratio.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_backpack\/_main.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_backpack\/_main.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_backpack\/_remem.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_backpack\/_remem.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_backpack\/_triangle.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_backpack\/_triangle.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/source\/styles\/_variables\/_color.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -969,6 +1234,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_variables\/_size.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_variables\/_theme.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_variables\/_theme.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -2411,7 +2691,7 @@
       "bundleFormat" : 0,
       "minifierStyle" : 1,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 3,
+      "syntaxCheckerStyle" : 0,
       "transpilerStyle" : 0
     },
     "languageDefaultsJSON" : {

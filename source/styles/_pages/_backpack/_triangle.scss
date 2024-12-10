@@ -1,0 +1,169 @@
+.triangle {
+  @include grid(repeat(2,1fr),auto,$zui-8);
+    
+  @include screen(0,800) {
+    @include grid(100%,auto,$zui-8);
+  }
+
+  &__item {
+    @include flex($cl,$sb,$sh,$zui-16);
+  }
+
+  &__directions {
+    width: 100%;
+    margin-bottom: $zui-16;
+    justify-content: center;
+    align-items: center;
+    @include grid(repeat(3,64px),repeat(3,64px),$zui-16);
+
+    &-item {
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border: $zui-2 solid $primary;
+      box-sizing: border-box;
+      border-radius: 4px;
+      @include flex($rw,$cr,$cr,0);
+      @include theme(border-color,$sidebar-light,$sidebar-dark);
+      @include transition;
+
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        @include center;
+      }
+
+      &:nth-of-type(1) {
+
+        &::before {
+          border-width: 100px 100px 0 0;
+          border-color: $primary transparent transparent transparent;
+        }
+      }
+
+      &:nth-of-type(2) {
+
+        &::before {
+          border-width: 0 $zui-32 $zui-64 $zui-32;
+          border-color: transparent transparent $primary transparent;
+        }
+      }
+
+      &:nth-of-type(3) {
+
+        &::before {
+          border-width: 100px 0 0 100px;
+          border-color: $primary transparent transparent transparent;
+        }
+      }
+
+      &:nth-of-type(4) {
+
+        &::before {
+          border-width: $zui-32 $zui-64 $zui-32 0;
+          border-color: transparent $primary transparent transparent;
+        }
+      }
+
+      &:nth-of-type(5) {
+
+        &::before {
+          border-width: $zui-32 0 $zui-32 $zui-64;
+          border-color: transparent transparent transparent $primary;
+        }
+      }
+
+      &:nth-of-type(6) {
+
+        &::before {
+          border-width: 100px 0 0 100px;
+          border-color: transparent transparent transparent $primary;
+        }
+      }
+
+      &:nth-of-type(7) {
+
+        &::before {
+          border-width: $zui-64 $zui-32 0 $zui-32;
+          border-color: $primary transparent transparent transparent;
+        }
+      }
+
+      &:nth-of-type(8) {
+
+        &::before {
+          border-width: 0 0 100px 100px;
+          border-color: transparent transparent $primary transparent;
+        }
+      }
+
+      input[type="radio"] {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 2;
+      }
+
+      &:has(input:checked) {
+        @include border(2,2,2,2,$primary,.4);
+      }
+    }
+
+    &-selected {
+      text-align: center;
+      word-spacing: 100vw;
+      @include text($normal-x3);
+      @include flex($rw,$cr,$cr,0);
+    }
+  }
+
+  &__controls {
+    @include grid(repeat(2,1fr),auto,$zui-12);
+    
+    @include mq(mobile) {
+      @include grid(#{$zui-100p},auto,$zui-8);
+    }
+  }
+
+  &__preview {
+    width: $zui-100p;
+    height: $zui-100p;
+    padding: $zui-20;
+    overflow: hidden;
+    border-radius: $zui-12;
+    border: $zui-2 solid var(--border);
+    background: var(--preview);
+    @include flex($rw,$cr,$cr,0);
+  }
+
+  &__code {
+    position: relative;
+
+    &-copy {
+      @include top_right(absolute,$zui-2,$zui-8);
+    }
+
+    .button {
+      @include top_right(absolute,$zui-8,$zui-8);
+    }
+  }
+
+  &__textarea {
+    width: $zui-100p;
+    height: calc(#{$zui-80} + #{$zui-20});
+    border: $zui-2 solid var(--border);
+    border-radius: $zui-12;
+    padding: $zui-8 $zui-16;
+    @include text($normal-x3,$text-light,$text-dark);
+    @include theme(background,$bg-light,$bg-dark);
+    @include transition;
+    resize: none;
+  }
+}

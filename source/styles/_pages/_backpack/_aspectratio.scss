@@ -1,0 +1,81 @@
+.aspectratio {
+  @include grid(repeat(2,1fr),auto,$zui-8);
+    
+  @include screen(0,800) {
+    @include grid(100%,auto,$zui-20);
+  }
+
+  &__directions {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    @include grid(repeat(3,#{$zui-68}),repeat(2,#{$zui-68}),$zui-16);
+
+    &-item {
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border: $zui-2 solid $primary;
+      border-radius: $zui-12;
+      @include flex($rw,$cr,$cr,0);
+      @include theme(border-color,$sidebar-light,$sidebar-dark);
+      @include transition;
+
+      input[type="radio"] {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 2;
+      }
+
+      &:has(input:checked) {
+        @include border(2,2,2,2,$primary,1);
+      }
+    }
+
+    &-selected {
+      text-align: center;
+      word-spacing: 100vw;
+      @include text($normal-x3);
+      @include flex($rw,$cr,$cr,0);
+    }
+  }
+
+  &__controls {
+    margin-bottom: $zui-12;
+    @include grid(repeat(2,1fr),auto,$zui-12);
+    
+    @include mq(mobile) {
+      @include grid(#{$zui-100p},auto,$zui-8);
+    }
+  }
+
+  &__code {
+    position: relative;
+
+    &-copy {
+      @include top_right(absolute,$zui-2,$zui-8);
+    }
+
+    .button {
+      @include top_right(absolute,$zui-8,$zui-8);
+    }
+  }
+
+  &__textarea {
+    width: $zui-100p;
+    height: calc(#{$zui-80} + #{$zui-20});
+    border: $zui-2 solid var(--border);
+    border-radius: $zui-12;
+    padding: $zui-8 $zui-16;
+    @include text($normal-x3,$text-light,$text-dark);
+    @include theme(background,$bg-light,$bg-dark);
+    @include transition;
+    resize: none;
+  }
+}

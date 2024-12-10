@@ -27,6 +27,16 @@ $fb: "Circular Std", sans-serif;
 }
 
 @font-face {
+	font-family: "Visuelt Pro";
+	src:
+		url(#{$font-path}/#{$font-primary}/VisueltPro-Light.woff) format("woff"),
+		url(#{$font-path}/#{$font-primary}/VisueltPro-Light.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
 	font-family: "Circular Std";
 	src:
 		url(#{$font-path}/#{$font-passed}/CircularStd-Bold.woff) format("woff"),

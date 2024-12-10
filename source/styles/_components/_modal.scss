@@ -1,0 +1,51 @@
+.modal {
+  width: 1000px;
+  display: none;
+  z-index: 9999;
+  @include center(fixed);
+  @include block(($bg-light,$bg-dark),$zui-40,$zui-40,none);
+
+  @include screen(0,1023) {
+    width: calc(#{$zui-100p} - #{$zui-20});
+  }
+  
+  @include mq(mobile) {
+    height: calc(#{$zui-100p} - #{$zui-20});
+    padding: $zui-20;
+    border-radius: $zui-20;
+    overflow-y: auto;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: $zui-40;
+    @include text($headline-x8);
+    
+    @include mq(mobile) {
+      margin-bottom: $zui-20;
+      @include text($headline-x6);
+    }
+  }
+
+  &__close {
+    border-radius: $zui-24 !important;
+    @include top_right(absolute !important,$zui-16,$zui-16);
+    
+    @include mq(mobile) {
+      @include top_right(absolute !important,$zui-4,$zui-4);
+    }
+  }
+
+  &-overlay {
+    width: $zui-100p;
+    height: $zui-100p;
+    z-index: 9998;
+    backdrop-filter: blur($zui-2);
+    @include block(($sidebar-dark-opacity,$sidebar-dark-opacity),0,0,none);
+    @include center(fixed);
+  }
+
+  &.__active {
+    display: block;
+  }
+}

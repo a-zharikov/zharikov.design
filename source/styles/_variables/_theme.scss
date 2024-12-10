@@ -1,0 +1,17 @@
+:root {
+  --placeholder: #{$bg-light};
+  --tertiary: #{$text-light};
+  --tertiary-bg: #{$sidebar-light};
+  --neutral-bg: #{$contrast-light};
+  --border: #{$contrast-light};
+  --preview: url('../images/backpack/light.svg');
+}
+
+[data-theme="dark"] {
+  --placeholder: #{$bg-dark};
+  --tertiary: #{$text-dark};
+  --tertiary-bg: #{$sidebar-dark};
+  --neutral-bg: #{$contrast-dark};
+  --border: #{$contrast-dark};
+  --preview: url('../images/backpack/dark.svg');
+}
