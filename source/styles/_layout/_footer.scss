@@ -65,8 +65,17 @@
   }
 
   &__rang {
-    opacity: .08;
     @include bottom_left(absolute,-3px,0);
+
+    @include mq(mobile) {
+      @include bottom_left(-5px,0);
+    }
+  }
+
+  &__link, &__text {
+    text-decoration: none;
+    opacity: .08;
+    @include transition;
     @include text($headline-x8,$sidebar-light);
 
     @include mq(desktop) {
@@ -83,7 +92,13 @@
 
     @include mq(mobile) {
       font: $bold-x4;
-      @include bottom_left(-5px,0);
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: $primary;
+      opacity: 1;
     }
   }
 
