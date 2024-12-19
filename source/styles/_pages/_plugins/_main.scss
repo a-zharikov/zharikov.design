@@ -1,4 +1,4 @@
-.backpack {
+.plugins {
 
   &__list {
     width: $zui-100p;
@@ -21,7 +21,7 @@
     height: $zui-100p;
     text-decoration: none;
     @include flex($cl,$fs,$fs,$zui-12);
-    @include block(($sidebar-light,$sidebar-dark),$zui-20,$zui-24,none);
+    @include block(($sidebar-light,$sidebar-dark),$zui-8,$zui-24,none);
     @include transition;
 
     &:hover, &:focus {
@@ -29,28 +29,17 @@
     }
   }
 
-  &__header {
-    @include flex($rw,$fs,$cr,$zui-8);
-
-    svg {
-      width: $zui-32;
-      height: $zui-32;
-
-      path {
-        fill: $primary;
-      }
-    }
+  &__cover {
+    max-width: $zui-100p;
+    border-radius: $zui-20;
   }
 
   &__title {
-    @include text($headline-x4,$text-light,$text-dark);
-  }
-  
-  &__text {
-    @include text($normal-x4,$text-light,$text-dark);
+    padding: $zui-8 $zui-20 $zui-20;
+    @include text($bold-x5,$text-light,$text-dark);
   }
 
-  .__backpack {
+  .__plugins {
     opacity: 1;
     
     path {

@@ -67,15 +67,13 @@
     }
   }
 
-  &__textarea {
-    width: $zui-100p;
+  pre[class*=language-] {
+    padding-top: 0;
+    padding-bottom: 0;
     height: calc(#{$zui-80} + #{$zui-20});
-    border: $zui-2 solid var(--border);
-    border-radius: $zui-12;
-    padding: $zui-8 $zui-16;
-    @include text($normal-x3,$text-light,$text-dark);
-    @include theme(background,$bg-light,$bg-dark);
-    @include transition;
-    resize: none;
+
+    code {
+      display: block;
+    }
   }
 }

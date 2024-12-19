@@ -2,11 +2,9 @@ function aspectRatioCalculator() {
   const widthInput = document.getElementById("width");
   const heightInput = document.getElementById("height");
   const aspectRatioRadios = document.querySelectorAll('input[name="direction"]');
-  const aspectRatioCode = document.getElementById("aspectratioCode");
-  const copyButton = document.getElementById("copyCode");
-  const copyMessage = document.getElementById("copyMessage");
+  const aspectRatioCodeContainer = document.querySelector(".aspectratio__code"); // Родитель для <pre><code>
 
-  // Helper to parse the selected aspect ratio
+  // Helper для получения текущего соотношения сторон
   function getSelectedAspectRatio() {
     const selectedRadio = document.querySelector('input[name="direction"]:checked');
     if (selectedRadio) {
@@ -16,7 +14,14 @@ function aspectRatioCalculator() {
     return null;
   }
 
-  // Update height or width based on aspect ratio
+  // Установка начального пресета, если ничего не выбрано
+  function setDefaultPreset() {
+    if (!document.querySelector('input[name="direction"]:checked')) {
+      aspectRatioRadios[0].checked = true; // Устанавливаем первый пресет как выбранный
+    }
+  }
+
+  // Обновление высоты или ширины в зависимости от соотношения
   function updateDimensions() {
     const aspectRatio = getSelectedAspectRatio();
     if (!aspectRatio) return;
@@ -35,46 +40,62 @@ function aspectRatioCalculator() {
     updateAspectRatioCode();
   }
 
-  // Force update dimensions when aspect ratio changes
+  // Обновление содержимого кода
+  function updateAspectRatioCode() {
+    const width = widthInput.value || 0;
+    const height = heightInput.value || 0;
+    const cssCode = `width: ${width}px;\nheight: ${height}px;`;
+
+    // Ищем <pre><code> внутри aspectratio__code
+    const codeElement = aspectRatioCodeContainer.querySelector("pre code");
+    if (codeElement) {
+      codeElement.textContent = cssCode; // Обновляем содержимое <code>
+      Prism.highlightElement(codeElement); // Применяем подсветку
+    }
+  }
+
+  // Заполнение значений по умолчанию при открытии
+  function initializeAspectRatioCode() {
+    setDefaultPreset(); // Устанавливаем пресет по умолчанию, если он не выбран
+
+    const aspectRatio = getSelectedAspectRatio();
+    if (!aspectRatio) return;
+
+    const defaultWidth = 1280; // Ширина по умолчанию
+    const defaultHeight = Math.round((defaultWidth / aspectRatio.width) * aspectRatio.height);
+
+    // Устанавливаем значения в инпуты
+    widthInput.value = defaultWidth;
+    heightInput.value = defaultHeight;
+
+    // Генерируем CSS код
+    const cssCode = `width: ${defaultWidth}px;\nheight: ${defaultHeight}px;`;
+
+    // Ищем <pre><code> внутри aspectratio__code
+    const codeElement = aspectRatioCodeContainer.querySelector("pre code");
+    if (codeElement) {
+      codeElement.textContent = cssCode; // Устанавливаем начальное содержимое
+      Prism.highlightElement(codeElement); // Применяем подсветку
+    }
+  }
+
+  // Смена соотношения сторон
   function onAspectRatioChange() {
     const aspectRatio = getSelectedAspectRatio();
     if (!aspectRatio) return;
 
-    const width = parseFloat(widthInput.value) || 1280; // Default width
-    widthInput.value = width; // Ensure width is not empty
+    const width = parseFloat(widthInput.value) || 1280; // Значение по умолчанию
+    widthInput.value = width; // Устанавливаем ширину, если она пустая
     heightInput.value = Math.round((width / aspectRatio.width) * aspectRatio.height);
 
     updateAspectRatioCode();
   }
 
-  // Update the textarea with the CSS code
-  function updateAspectRatioCode() {
-    const width = widthInput.value || 0;
-    const height = heightInput.value || 0;
-    aspectRatioCode.value = `width: ${width}px;\nheight: ${height}px;`;
-  }
-
-  // Copy the CSS code to clipboard
-  copyButton.addEventListener("click", function () {
-    aspectRatioCode.select(); // Select the content of the textarea
-    try {
-      const successful = document.execCommand("copy"); // Copy to clipboard
-      if (successful) {
-        copyMessage.innerHTML = `<span class="badge medium success">Скопировано!</span>`;
-        setTimeout(() => (copyMessage.innerHTML = ""), 2000);
-      } else {
-        throw new Error("Copy command failed");
-      }
-    } catch (err) {
-      console.error("Failed to copy text: ", err);
-    }
-  });
-
-  // Event listeners for inputs and radio buttons
+  // Добавляем обработчики событий
   widthInput.addEventListener("input", updateDimensions);
   heightInput.addEventListener("input", updateDimensions);
   aspectRatioRadios.forEach((radio) => radio.addEventListener("change", onAspectRatioChange));
 
-  // Initialize with default aspect ratio
-  onAspectRatioChange(); 
+  // Инициализация по умолчанию при открытии
+  initializeAspectRatioCode();
 }

@@ -78,7 +78,7 @@ $hover: (
           color: map-get($color-map, color);
 
           path {
-            fill: map-get($color-map, fill);
+            fill: map-get($color-map, color);
           }
         }
       }
@@ -91,7 +91,7 @@ $hover: (
             background: map-get($color-map, background);
 
             path {
-              fill: map-get($color-map, fill);
+              fill: map-get($color-map, color);
             }
           }
         }

@@ -5,6 +5,17 @@
   --neutral-bg: #{$contrast-light};
   --border: #{$contrast-light};
   --preview: url('../images/backpack/light.svg');
+
+  img {
+
+    &.__light {
+      display: block;
+    }
+
+    &.__dark {
+      display: none;
+    }
+  }
 }
 
 [data-theme="dark"] {
@@ -14,4 +25,15 @@
   --neutral-bg: #{$contrast-dark};
   --border: #{$contrast-dark};
   --preview: url('../images/backpack/dark.svg');
+
+  img {
+
+    &.__light {
+      display: none;
+    }
+
+    &.__dark {
+      display: block;
+    }
+  }
 }

@@ -47,5 +47,35 @@
       margin-right: 0;
       margin-bottom: auto;
     }
+
+    &__header {
+      margin-bottom: $zui-40;
+      @include flex($cl,$fs,$sh,$zui-8);
+
+      @include mq(mobile) {
+        margin-bottom: $zui-20;
+        gap: $zui-4;
+      }
+    }
+
+    &__title {
+      @include text($title-x14,$text-light,$text-dark);
+      
+      @include mq(laptop) {
+        @include text($title-x12,$text-light,$text-dark);
+      }
+
+      @include mq(tablet) {
+        @include text($subline-x10,$text-light,$text-dark);
+      }
+
+      @include mq(mobile) {
+        @include text($subline-x8,$text-light,$text-dark);
+      }
+    }
+
+    &__description {
+      @include text($normal-x4,$contrast-light,$contrast-light);
+    }
   }
 }

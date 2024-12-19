@@ -1,0 +1,29 @@
+.textarea-code {
+  position: relative;
+  z-index: 1;
+
+  .button {
+    @include top_right(absolute,$zui-8,$zui-8);
+
+    .code {
+
+      &__chech {
+        display: none;
+      }
+    }
+
+    &.__copy {
+
+      .code {
+
+        &__copy {
+          display: none;
+        }
+
+        &__chech {
+          display:  block;
+        }
+      }
+    }
+  }
+}

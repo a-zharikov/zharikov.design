@@ -53,6 +53,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/source\/_demo.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/_demo.html",
+      "oF" : 0
+    },
     "\/source\/_kit\/_layout\/_footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -505,6 +513,126 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/plugins\/ancore_dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/ancore_dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/ancore.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/ancore.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/length_dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/length_dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/length.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/length.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/scroll_dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/scroll_dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/scroll.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/scroll.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/select_dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/select_dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/select.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/select.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/table_dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/table_dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/table.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/table.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/tabs_dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/tabs_dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/plugins\/tabs.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/plugins\/tabs.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -557,6 +685,17 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/source\/javascript\/plugins\/code-editor.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/plugins\/code-editor.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/source\/javascript\/plugins\/modal.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -564,6 +703,28 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/build\/javascript\/plugins\/modal.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/source\/javascript\/plugins\/prism-autoloader.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/plugins\/prism-autoloader.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/source\/javascript\/plugins\/prismjs.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/plugins\/prismjs.min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -578,6 +739,70 @@
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
+    },
+    "\/source\/notepad\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/index.html",
+      "oF" : 0
+    },
+    "\/source\/plugins\/ancore.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/plugins\/ancore.html",
+      "oF" : 0
+    },
+    "\/source\/plugins\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/plugins\/index.html",
+      "oF" : 0
+    },
+    "\/source\/plugins\/length.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/plugins\/length.html",
+      "oF" : 0
+    },
+    "\/source\/plugins\/scroll.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/plugins\/scroll.html",
+      "oF" : 0
+    },
+    "\/source\/plugins\/select.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/plugins\/select.html",
+      "oF" : 0
+    },
+    "\/source\/plugins\/table.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/plugins\/table.html",
+      "oF" : 0
+    },
+    "\/source\/plugins\/tabs.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/plugins\/tabs.html",
+      "oF" : 0
     },
     "\/source\/styles\/_animations\/_rotation.scss" : {
       "aP" : 0,
@@ -604,6 +829,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_components\/_modal.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_components\/_textarea-code.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_components\/_textarea-code.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1174,6 +1414,36 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_pages\/_backpack\/_triangle.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_plugins\/_main.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_plugins\/_main.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_plugins\/_prism.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_plugins\/_prism.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

@@ -1,5 +1,6 @@
 @mixin theme($property, $color-light, $color-dark) {
   #{$property}: $color-light;
+  @include transition;
 
   html[data-theme="dark"] & {
     #{$property}: $color-dark;

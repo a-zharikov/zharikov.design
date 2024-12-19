@@ -3,8 +3,7 @@ function initializeTriangleGenerator() {
   const heightInput = document.getElementById("height");
   const directionInputs = document.querySelectorAll('input[name="direction"]');
   const triangle = document.getElementById("triangle");
-  const cssCode = document.getElementById("cssCode");
-  const copyButton = document.getElementById("copyCode");
+  const cssCodeContainer = document.querySelector(".triangle__code"); // Родитель для <pre><code>
   const copyMessage = document.getElementById("copyMessage");
   const selectedDirection = document.getElementById("selectedDirection");
 
@@ -48,28 +47,34 @@ function initializeTriangleGenerator() {
     }
 
     triangle.style.cssText = cssText;
-    cssCode.value = cssText;
+    updateCSSCode(cssText);
 
     // Обновляем название выбранного треугольника
-    selectedDirection.textContent = `${direction.replace('-', ' ').toUpperCase()}`;
+    selectedDirection.textContent = `${direction.replace("-", " ").toUpperCase()}`;
   }
 
-  copyButton.addEventListener("click", () => {
-    cssCode.select();
-    document.execCommand("copy");
-  
-    copyMessage.innerHTML = '<span class="badge medium success">Скопировано!</span>';
-    copyButton.disabled = true; // Блокируем кнопку
-    setTimeout(() => {
-      copyMessage.innerHTML = ""; // Убираем сообщение через 2 секунды
-      copyButton.disabled = false; // Разблокируем кнопку
-    }, 2000);
-  });
+  // Функция для обновления содержимого <pre><code>
+  function updateCSSCode(cssText) {
+    const codeElement = cssCodeContainer.querySelector("pre code");
+    if (codeElement) {
+      codeElement.textContent = cssText; // Обновляем содержимое <code>
+      Prism.highlightElement(codeElement); // Применяем подсветку
+    }
+  }
 
-  // Добавляем обработчики на изменение радиокнопок
+  // Установка значений по умолчанию
+  function initializeDefaultValues() {
+    widthInput.value = 100; // Значение ширины по умолчанию
+    heightInput.value = 100; // Значение высоты по умолчанию
+    directionInputs[0].checked = true; // Устанавливаем "top" как направление по умолчанию
+    updateTriangle(); // Обновляем треугольник с начальными значениями
+  }
+
+  // Добавляем обработчики на изменение радиокнопок и инпутов
   [widthInput, heightInput, ...directionInputs].forEach((input) =>
     input.addEventListener("input", updateTriangle)
   );
 
-  updateTriangle();
+  // Инициализация начальных значений
+  initializeDefaultValues();
 }
