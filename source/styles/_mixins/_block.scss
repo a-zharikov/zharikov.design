@@ -8,7 +8,7 @@
     background: $text-dark; // Значение по умолчанию, если не передан аргумент
   }
 
-  padding: if($padding != null, $padding, 0);
-  border-radius: if($border-radius != null, $border-radius, 0);
+  padding: if($padding != null, $padding, $zui-0);
+  border-radius: if($border-radius != null, $border-radius, $zui-0);
   box-shadow: if($shadow != null, $shadow, $shadow_1);
 }

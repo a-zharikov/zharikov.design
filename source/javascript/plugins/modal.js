@@ -1,7 +1,10 @@
 $(document).ready(function () {
   // Функция для открытия модального окна
-  function openModal(modalId, url, scriptFunc) {
+  function openModal(modalId, url, scriptFunc, modalClass) {
       var modal = $('<div class="modal" id="' + modalId + '"></div>');
+      if (modalClass) {
+          modal.addClass(modalClass);
+      }
       var overlay = $('<div class="modal-overlay"></div>');
 
       var closeBtn = $('<button class="button fab tertiary modal__close js-modal-close"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q-11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></button>');
@@ -86,8 +89,9 @@ $(document).ready(function () {
       var modalId = $(this).attr('href').replace('#', '');
       var url = $(this).data('url');
       var scriptFunc = $(this).data('script');
+      var modalClass = $(this).data('modal');
 
-      openModal(modalId, url, scriptFunc);
+      openModal(modalId, url, scriptFunc, modalClass);
 
       history.pushState(null, null, $(this).attr('href'));
   });

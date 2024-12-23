@@ -60,9 +60,9 @@ $hover: (
   overflow: hidden;
   position: relative;
   text-decoration: none;
-  border: 0;
+  border: $zui-0;
   border-radius: $zui-16;
-  @include flex($rw,$cr,$cr,0,$di);
+  @include flex($rw,$cr,$cr,$zui-0,$di);
   @include transition;
 
   @each $size-name, $size-map in $sizes {

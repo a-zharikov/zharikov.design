@@ -12,10 +12,10 @@ $colors: (
   width: auto;
   border-radius: $zui-4;
   background: $border;
-  padding: 0 $zui-4;
+  padding: $zui-0 $zui-4;
   box-sizing: border-box;
   @include text($bold-x3,$body);
-  @include flex($rw,$fs,$cr,0,$di);
+  @include flex($rw,$fs,$cr,$zui-0,$di);
 
   @each $color-name, $color-map in $colors {
     &.#{$color-name} {

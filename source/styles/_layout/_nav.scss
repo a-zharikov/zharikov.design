@@ -2,7 +2,7 @@
   width: $zui-64;
   border-radius: $zui-80;
   z-index: 2;
-  @include left_center(sticky);
+  @include top_left(sticky,$zui-20,$zui-0);
   @include block(($sidebar-light,$sidebar-dark),$zui-16 $zui-24,$zui-80,none);
   @include transition;
   
@@ -35,10 +35,10 @@
 
       &::before {
         content: '';
-        width: 0;
-        height: 0;
+        width: $zui-0;
+        height: $zui-0;
         border-style: solid;
-        border-width: 4px 4px 4px 0;
+        border-width: $zui-4 $zui-4 $zui-4 $zui-0;
         border-color: transparent $text-light transparent transparent;
         @include left_center(absolute,-$zui-4);
         @include transition;

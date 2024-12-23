@@ -17,7 +17,7 @@
 
   &:focus {
     border-color: $primary;
-    box-shadow: 0px 0px 0px 4px rgba(198, 208, 238, 0.50), 0px 2px 4px 0px rgba(34, 34, 34, 0.12), 0px 0px 1px 0px rgba(0, 0, 0, 0.50);
+    box-shadow: $zui-0 $zui-0 $zui-0 $zui-4 rgba(198, 208, 238, 0.50), $zui-0 $zui-2 $zui-4 $zui-0 rgba(34, 34, 34, 0.12), $zui-0 $zui-0 $zui-1 $zui-0 rgba(0, 0, 0, 0.50);
   }
 
   &:not(&:placeholder-shown) {

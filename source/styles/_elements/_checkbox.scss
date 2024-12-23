@@ -41,7 +41,7 @@
     height: $zui-24;
     border-radius: $zui-4;
     margin-right: $zui-12;
-    border: 2px solid $border;
+    border: $zui-2 solid $border;
     box-sizing: border-box;
     @include transition;
     @include flex($rw,$cr,$cr);

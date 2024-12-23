@@ -4,14 +4,15 @@
   --tertiary-bg: #{$sidebar-light};
   --neutral-bg: #{$contrast-light};
   --border: #{$contrast-light};
+  --nav-after: #{$bg-light-opacity};
   --preview: url('../images/backpack/light.svg');
-
+  
   img {
-
+    
     &.__light {
       display: block;
     }
-
+    
     &.__dark {
       display: none;
     }
@@ -24,6 +25,7 @@
   --tertiary-bg: #{$sidebar-dark};
   --neutral-bg: #{$contrast-dark};
   --border: #{$contrast-dark};
+  --nav-after: #{$bg-dark-opacity};
   --preview: url('../images/backpack/dark.svg');
 
   img {

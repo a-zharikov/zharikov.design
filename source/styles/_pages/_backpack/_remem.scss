@@ -20,7 +20,7 @@
       width: $zui-100p;
       padding: $zui-8 $zui-16;
       background: $tr;
-      border: 0;
+      border: $zui-0;
       @include text($normal-x5,$text-light,$text-dark);
 
       &::-webkit-outer-spin-button,
@@ -36,8 +36,8 @@
     select {
       padding: $zui-4 $zui-12;
       background: $tr;
-      border: 0;
-      border-left: 2px solid;
+      border: $zui-0;
+      border-left: $zui-2 solid;
       margin-right: $zui-12;
       @include text($normal-x5,$text-light,$text-dark);
       @include theme(border-color,$contrast-light,$contrast-dark);
@@ -45,7 +45,7 @@
   }
 
   &__icon {
-    @include flex($rw,$cr,$cr,0);
+    @include flex($rw,$cr,$cr,$zui-0);
 
     path {
       opacity: .4;
@@ -75,7 +75,7 @@
         width: $zui-100p;
         padding: $zui-8 $zui-16;
         background: $tr;
-        border: 0;
+        border: $zui-0;
         @include text($normal-x5,$text-light,$text-dark);
   
         &::-webkit-outer-spin-button,
@@ -89,7 +89,7 @@
       }
 
       span {
-        border-left: 2px solid;
+        border-left: $zui-2 solid;
         padding-left: $zui-12;
         margin-right: $zui-12;
         @include text($normal-x5,$text-light,$text-dark);

@@ -16,8 +16,8 @@
     &::before {
       content: "";
       position: absolute;
-      width: 0;
-      height: 0;
+      width: $zui-0;
+      height: $zui-0;
       border-style: solid;
     }
 
@@ -65,7 +65,7 @@
         top: $zui-100p;
         left: calc(#{$zui-100p} / 2);
         transform: translateX(-50%);
-        border-width: $zui-8 $zui-8 0 $zui-8;
+        border-width: $zui-8 $zui-8 $zui-0 $zui-8;
         border-color: $body transparent transparent transparent;
       }
 
@@ -104,18 +104,18 @@
       top: calc(#{$zui-100p} / 2);
       right: $zui-100p;
       transform: translateY(-50%);
-      margin: calc(#{-$zui-4} / 2) $zui-12 0 0;
+      margin: calc(#{-$zui-4} / 2) $zui-12 $zui-0 $zui-0;
 
       &::before {
         top: calc(#{$zui-100p} / 2);
         left: $zui-100p;
         transform: translateY(-50%);
-        border-width: $zui-8 0 $zui-8 $zui-8;
+        border-width: $zui-8 $zui-0 $zui-8 $zui-8;
         border-color: transparent transparent transparent $body;
       }
       
       &::after {
-        top: 0;
+        top: $zui-0;
         width: $zui-24;
         height: $zui-100p;
         left: $zui-100p;
@@ -129,18 +129,18 @@
       top: calc(#{$zui-100p} / 2);
       left: $zui-100p;
       transform: translateY(-50%);
-      margin: calc(#{-$zui-4} / 2) 0 0 $zui-12;
+      margin: calc(#{-$zui-4} / 2) $zui-0 $zui-0 $zui-12;
 
       &::before {
         top: calc(#{$zui-100p} / 2);
         right: $zui-100p;
         transform: translateY(-50%);
-        border-width: $zui-8 $zui-8 $zui-8 0;
+        border-width: $zui-8 $zui-8 $zui-8 $zui-0;
         border-color: transparent $body transparent transparent;
       }
       
       &::after {
-        top: 0;
+        top: $zui-0;
         width: $zui-24;
         height: $zui-100p;
         right: $zui-100p;

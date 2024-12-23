@@ -15,7 +15,7 @@
 @import "_mixins/tt";
 @import "_mixins/typography";
 @import "_mixins/theme";
-/* @import "_mixins/scrollbar"; */
+@import "_mixins/scrollbar";
 /* @import '_mixins/icons'; */
 
 @import "_animations/rotation";
@@ -39,6 +39,8 @@
 @import "_pages/_backpack/remem";
 
 @import "_pages/_plugins/main";
+
+@import "_pages/_notepad/main";
 
 @import "_elements/badge";
 @import "_elements/button";

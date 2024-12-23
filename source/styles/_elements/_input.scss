@@ -1,5 +1,5 @@
 .input {
-  border: 2px solid var(--border);
+  border: $zui-2 solid var(--border);
   border-radius: $zui-12;
   padding: $zui-8 $zui-16;
   @include text($normal-x4,$text-light,$text-dark);

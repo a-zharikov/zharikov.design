@@ -1,14 +1,19 @@
 $sizes: (
-  large: (height: $zui-32, padding: 0 $zui-12, font-size: $zui-16),
-  medium: (height: $zui-24, padding: 0 $zui-8, font-size: $zui-12),
-  small: (height: $zui-16, padding: 0 $zui-8, font-size: $zui-8)
+  large: (height: $zui-32, padding: $zui-0 $zui-12, font-size: $zui-16),
+  medium: (height: $zui-24, padding: $zui-0 $zui-8, font-size: $zui-12),
+  small: (height: $zui-16, padding: $zui-0 $zui-8, font-size: $zui-8)
 );
 
 $colors: (
   primary: (background-color: $primary, color: $text-dark),
   success: (background-color: $success, color: $text-dark),
   secondary: (background-color: $waring, color: $text-dark),
-  danger: (background-color: $danger, color: $text-dark)
+  danger: (background-color: $danger, color: $text-dark),
+  css: (background-color: $css, color: $text-dark),
+  scss: (background-color: $scss, color: $text-dark),
+  html: (background-color: $html, color: $text-dark),
+  javascript: (background-color: $javascript, color: $text-light),
+  jquery: (background-color: $jquery, color: $text-light),
 );
 
 .badge {

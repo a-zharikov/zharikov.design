@@ -1,17 +1,17 @@
 * {
   outline: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  margin: 0;
-  padding: 0;
+  margin-block-start: $zui-0;
+  margin-block-end: $zui-0;
+  margin-inline-start: $zui-0;
+  margin-inline-end: $zui-0;
+  margin: $zui-0;
+  padding: $zui-0;
   box-sizing: border-box;
 }
 
 /* ERIC MEYER RESET
 ================================================== */
-html, body {margin: 0; padding: 0;}
+html, body {margin: $zui-0; padding: $zui-0;}
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: normal; font-style: normal; font-size: 100%; line-height: 1; font-family: inherit; }
 ol, ul {list-style: none;}
 q:before, q:after, blockquote:before, blockquote:after { content: ""; }
@@ -31,12 +31,12 @@ html {
 }
 // Focus states
 a:focus {
-  outline: 0;
+  outline: $zui-0;
 }
 // Hover & Active
 a:hover,
 a:active {
-  outline: 0;
+  outline: $zui-0;
 }
 
 // Display in IE6-9 and FF3
@@ -94,7 +94,7 @@ sub {
 // -------------------------
 // Source: http://github.com/necolas/normalize.css
 img {
-    border: 0;
+    border: $zui-0;
     -ms-interpolation-mode: bicubic;
 }
 
@@ -108,7 +108,7 @@ input,
 select,
 textarea {
   font-size: 100%;
-  margin: 0;
+  margin: $zui-0;
   vertical-align: baseline;
   *vertical-align: middle;
 }
@@ -119,8 +119,8 @@ input {
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner { // Inner padding and border oddities in FF3/4
-  border: 0;
-  padding: 0;
+  border: $zui-0;
+  padding: $zui-0;
 }
 button,
 input[type="button"],

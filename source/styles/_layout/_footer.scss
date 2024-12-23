@@ -1,5 +1,5 @@
 .footer {
-  padding: $zui-64 0;
+  padding: $zui-64 $zui-0;
   background: $text-light;
   position: relative;
   overflow: hidden;
@@ -12,7 +12,7 @@
       width: $zui-32;
       height: $zui-32;
       border-radius: $zui-80;
-      @include flex($rw,$cr,$cr,0);
+      @include flex($rw,$cr,$cr,$zui-0);
       @include transition;
 
       path {
@@ -65,10 +65,10 @@
   }
 
   &__rang {
-    @include bottom_left(absolute,-3px,0);
+    @include bottom_left(absolute,-3px,$zui-0);
 
     @include mq(mobile) {
-      @include bottom_left(-5px,0);
+      @include bottom_left(-5px,$zui-0);
     }
   }
 
@@ -110,7 +110,7 @@
     text-decoration: none;
     opacity: .08;
     @include text($mini,$text-light);
-    @include block($text-dark,2px $zui-4,$zui-40);
+    @include block($text-dark,$zui-2 $zui-4,$zui-40);
     @include bottom_center($zui-8);
     @include transition;
 
@@ -130,7 +130,7 @@
   &__zui {
     text-decoration: none;
     text-transform: uppercase;
-    @include bottom_right(absolute,-10px,-2px);
+    @include bottom_right(absolute,-10px,-$zui-2);
     @include text($title-x14,$contrast-dark);
     @include transition;
 
@@ -144,7 +144,7 @@
 
     @include mq(mobile) {
       font: $headline-x10;
-      @include bottom_right(absolute,-12px,-2px);
+      @include bottom_right(absolute,-$zui-12,-$zui-2);
     }
 
     &:hover {

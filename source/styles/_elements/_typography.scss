@@ -153,7 +153,7 @@ pre {
   }
 
   code {
-    padding: 0;
+    padding: $zui-0;
   }
 }
 
@@ -162,13 +162,13 @@ table {
   border-collapse: collapse;
 
   th {
-    border-bottom: 2px solid $primary;
+    border-bottom: $zui-2 solid $primary;
     padding: $zui-4;
     @include text($normal-x5);
   }
 
   td {
-    border-bottom: 1px solid $border;
+    border-bottom: $zui-1 solid $border;
     padding: $zui-4;
     @include text($normal-x5);
   }
@@ -177,7 +177,7 @@ table {
     &:last-child {
 
       td {
-        border: 0;
+        border: $zui-0;
       }
     }
   }

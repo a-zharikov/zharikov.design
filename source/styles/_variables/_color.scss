@@ -1,6 +1,7 @@
 // Light
 $text-light: #000000;
 $bg-light: #f7f7f7;
+$bg-light-opacity: rgba(247,247,247,1);
 $sidebar-light: #ececec;
 $sidebar-light-opacity: rgba(236,236,236,.8);
 $contrast-light: #c1c1c1;
@@ -8,6 +9,7 @@ $contrast-light: #c1c1c1;
 // Dark
 $text-dark: #ffffff;
 $bg-dark: #373737;
+$bg-dark-opacity: rgba(55,55,55,1);
 $sidebar-dark: #404040;
 $sidebar-dark-opacity: rgba(64,64,64,.8);
 $contrast-dark: #2b2b2b;
@@ -17,23 +19,30 @@ $tr: transparent;
 // primary
 $primary: #40b4ea;
 $success: #52b530;
-$waring: #f9aa34;
-$danger: #e85656;
+$waring:  #f9aa34;
+$danger:  #e85656;
 
 // Hover
 $primary-hover: #8bd0f0;
 $success-hover: #8dda72;
-$waring-hover: #fabf66;
-$danger-hover: #ee8181;
+$waring-hover:  #fabf66;
+$danger-hover:  #ee8181;
 
 // Pressed
 $primary-pressed: #0999dd;
 $success-pressed: #408d25;
-$waring-pressed: #f29408;
-$danger-pressed: #e12828;
+$waring-pressed:  #f29408;
+$danger-pressed:  #e12828;
 
 // Link
-$npm: #cb0001;
-$behance: #0241D1;
+$npm:      #cb0001;
+$behance:  #0241D1;
 $telegram: #179CDD;
-$vk: #0077FF;
+$vk:       #0077FF;
+
+// Tags
+$css:        #3358E4;
+$scss:       #CF709F;
+$html:       #E55B36;
+$javascript: #FDDC4C;
+$jquery:     #78CFF5;

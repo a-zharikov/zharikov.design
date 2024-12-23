@@ -2,7 +2,7 @@
   #{$property}: rgba($border-color, $opacity);
 }
 
-@mixin border($bt: 1px, $br: 1px, $bb: 1px, $bl: 1px, $bc: $border, $opacity: 1 ) {
+@mixin border($bt: $zui-1, $br: $zui-1, $bb: $zui-1, $bl: $zui-1, $bc: $border, $opacity: 1 ) {
   border-top: #{$bt}px solid $bc;
   border-right: #{$br}px solid $bc;
   border-bottom: #{$bb}px solid $bc;

@@ -1,0 +1,105 @@
+.notepad {
+
+  &__list {
+    @include flex($cl,$fs,$sh,$zui-12);
+  }
+
+  &__item {
+    display: block;
+
+    &.__show {
+      display: block;
+    }
+
+    &.__hide {
+      display: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    @include flex($rw,$sb,$fs,$zui-12);
+    @include block(($sidebar-light,$sidebar-dark),$zui-20,$zui-24,none);
+    @include transition;
+
+    &:hover, &:focus {
+      @include theme(background,$text-dark,$contrast-dark);
+    }
+  }
+
+  &__title {
+    @include text($headline-x4,$text-light,$text-dark);
+  }
+
+  &__tag {
+    position: relative;
+
+    @include mq(mobile) {
+      width: $zui-100p;
+      
+      &::after {
+        content: '';
+        width: $zui-20;
+        height: $zui-100p;
+        display: block;
+        pointer-events: none;
+        @include top_right;
+        background: linear-gradient(to right, $tr 0%,var(--nav-after) 100%);
+      }
+    }
+
+    &-list {
+      @include top_right(sticky,$zui-20,$zui-0);
+
+      @include mq(mobile) {
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        @include flex($rw,$fs,$fs,$zui-8);
+        @include nosb;
+      }
+    }
+
+    &-link {
+      text-transform: uppercase;
+      text-decoration: none;
+      opacity: .4;
+      display: block;
+      padding: $zui-8 $zui-16;
+      @include text($normal-x3,$text-light,$text-dark);
+
+      &:hover, &:focus {
+        opacity: 1;
+      }
+    }
+
+    &-item {
+      border-bottom: $zui-1 solid;
+      @include theme(border-color,$sidebar-light,$sidebar-dark);
+      
+      @include mq(mobile) {
+        border: $zui-0;
+        border-radius: $zui-40;
+        @include theme(background,$sidebar-light,$sidebar-dark);
+
+        &:last-child {
+          margin-right: $zui-12;
+        }
+      }
+      
+      &.__active {
+        .notepad__tag-link {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .__notepad {
+    opacity: 1;
+    
+    path {
+      opacity: .7;
+      @include theme(fill,$text-light,$text-dark);
+    }
+  }
+}

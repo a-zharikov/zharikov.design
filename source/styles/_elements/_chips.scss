@@ -1,7 +1,7 @@
 $sizes: (
-  large: (font: $normal-x4, padding: $zui-8 $zui-12, gap: $zui-8, font-size: $zui-24, margin-top: 1px),
-  middle: (font: $normal-x4, padding: $zui-4 $zui-12, gap: $zui-4, font-size: $zui-20, margin-top: 0),
-  small: (font: $normal-x3, padding: $zui-4 $zui-8, gap: $zui-4,font-size: $zui-16, margin-top: 1px)
+  large: (font: $normal-x4, padding: $zui-8 $zui-12, gap: $zui-8, font-size: $zui-24, margin-top: $zui-1),
+  middle: (font: $normal-x4, padding: $zui-4 $zui-12, gap: $zui-4, font-size: $zui-20, margin-top: $zui-0),
+  small: (font: $normal-x3, padding: $zui-4 $zui-8, gap: $zui-4,font-size: $zui-16, margin-top: $zui-1)
 );
 
 .chips {
@@ -31,7 +31,7 @@ $sizes: (
           box-sizing: border-box;
           position: relative;
           @include transition;
-          @include flex($rw,$cr,$cr,0);
+          @include flex($rw,$cr,$cr,$zui-0);
 
           &.close {
             color: $primary;
@@ -62,10 +62,10 @@ $sizes: (
   &__control {
     cursor: pointer;
     border-radius: $zui-16;
-    border: 2px solid $border;
+    border: $zui-2 solid $border;
     background: $white;
     box-sizing: border-box;
-    @include flex($di,$rw,$cr,$cr,0);
+    @include flex($di,$rw,$cr,$cr,$zui-0);
     @include transition;
 
     &::before {
@@ -85,7 +85,7 @@ $sizes: (
   &:focus {
     .chips-control {
       border-color: $primary;
-      box-shadow: 0px 0px 0px 4px rgba(198, 208, 238, 0.50), 0px 2px 4px 0px rgba(34, 34, 34, 0.12), 0px 0px 1px 0px rgba(0, 0, 0, 0.50);
+      box-shadow: $zui-0 $zui-0 $zui-0 $zui-4 rgba(198, 208, 238, 0.50), $zui-0 $zui-2 $zui-4 $zui-0 rgba(34, 34, 34, 0.12), $zui-0 $zui-0 $zui-1 $zui-0 rgba(0, 0, 0, 0.50);
     }
   }
 
@@ -122,19 +122,19 @@ $sizes: (
 
         .close {
           background: $white;
-          border: inset 2px solid $primary;
-          box-shadow: 0px 0px 0px 4px rgba(198, 208, 238, 0.50), 0px 2px 4px 0px rgba(34, 34, 34, 0.12), 0px 0px 1px 0px rgba(0, 0, 0, 0.50);
+          border: inset $zui-2 solid $primary;
+          box-shadow: $zui-0 $zui-0 $zui-0 $zui-4 rgba(198, 208, 238, 0.50), $zui-0 $zui-2 $zui-4 $zui-0 rgba(34, 34, 34, 0.12), $zui-0 $zui-0 $zui-1 $zui-0 rgba(0, 0, 0, 0.50);
 
           &::after {
             content: '';
             width: $zui-100p;
             height: $zui-100p;
             border-radius: $zui-8;
-            border: 1px solid $primary;
+            border: $zui-1 solid $primary;
             position: absolute;
             box-sizing: border-box;
-            top: 0;
-            left: 0;
+            top: $zui-0;
+            left: $zui-0;
             opacity: 1;
             @include transition;
           }

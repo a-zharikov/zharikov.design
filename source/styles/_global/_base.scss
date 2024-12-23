@@ -8,16 +8,16 @@ body {
   overflow-x: hidden;
   @include text($normal-x5,$text-light,$text-dark);
   @include theme(background, $bg-light, $bg-dark);
-  @include grid($zui-100p,auto 1fr auto,0);
+  @include grid($zui-100p,auto 1fr auto,$zui-0);
   @include transition;
 }
 
 .container {
   max-width: $grid;
-  margin: 0 auto;
-  padding: 0 $zui-20;
+  margin: $zui-0 auto;
+  padding: $zui-0 $zui-20;
 
   @include mq(mobile) {
-    padding: 0 $zui-12;
+    padding: $zui-0 $zui-12;
   }
 }

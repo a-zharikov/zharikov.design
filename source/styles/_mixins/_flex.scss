@@ -15,7 +15,7 @@ $bl: baseline;
 $sh: stretch;
 
 
-@mixin flex($fd: $rw, $jc: $fs, $ai: $fs, $gap: 0, $display: null) {
+@mixin flex($fd: $rw, $jc: $fs, $ai: $fs, $gap: $zui-0, $display: null) {
   display: if($display != null, $di, $df);
   flex-direction: $fd;
   justify-content: $jc;

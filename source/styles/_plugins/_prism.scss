@@ -6,9 +6,9 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=css+clike+java
  * @author Rose Pritchard
  */
 
- code[class*="language-"],
+code[class*="language-"],
 pre[class*="language-"] {
-  color: #ccc;
+  @include theme(color,#000,#fff);
   background: none;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: $zui-12;
@@ -32,8 +32,8 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-  padding: $zui-32 $zui-16 0;
-  margin: 0;
+  padding: $zui-16 $zui-16 $zui-0;
+  margin: $zui-0;
   overflow: auto;
   border-radius: $zui-24;
 }
@@ -96,7 +96,7 @@ pre[class*="language-"] {
 .style .token.string {
   color: #9a6e3a;
   /* This background color was intended by the author of this theme. */
-  background: hsla(0, 0%, 100%, .5);
+  // background: hsla(0, 0%, 100%, .5);
 }
 
 .token.atrule,
@@ -207,4 +207,8 @@ pre[class*="language-"] {
   .token.inserted {
     color: green;
   }
+}
+
+.language-js {
+  @include theme(color,#249cdc !important,#9CDCFE !important);
 }

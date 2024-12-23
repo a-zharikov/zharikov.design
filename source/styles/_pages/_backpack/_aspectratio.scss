@@ -18,7 +18,7 @@
       overflow: hidden;
       border: $zui-2 solid $primary;
       border-radius: $zui-12;
-      @include flex($rw,$cr,$cr,0);
+      @include flex($rw,$cr,$cr,$zui-0);
       @include theme(border-color,$sidebar-light,$sidebar-dark);
       @include transition;
 
@@ -27,8 +27,8 @@
         height: 100%;
         cursor: pointer;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: $zui-0;
+        left: $zui-0;
         opacity: 0;
         z-index: 2;
       }
@@ -42,7 +42,7 @@
       text-align: center;
       word-spacing: 100vw;
       @include text($normal-x3);
-      @include flex($rw,$cr,$cr,0);
+      @include flex($rw,$cr,$cr,$zui-0);
     }
   }
 
@@ -68,8 +68,8 @@
   }
 
   pre[class*=language-] {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: $zui-0;
+    padding-bottom: $zui-0;
     height: calc(#{$zui-80} + #{$zui-20});
 
     code {

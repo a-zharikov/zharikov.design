@@ -1,8 +1,8 @@
 .header {
-  padding: $zui-20 $zui-20 0;
+  padding: $zui-20 $zui-20 $zui-0;
 
   @include mq(mobile) {
-    padding: $zui-12 0 0;
+    padding: $zui-12 $zui-0 $zui-0;
   }
 
   &__icon {
