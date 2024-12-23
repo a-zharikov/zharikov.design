@@ -61,6 +61,12 @@
       @include block(($contrast-light,$contrast-dark),$zui-4 $zui-8,$zui-8,none);
     }
 
+    img {
+      display: block;
+      margin: 0 auto $zui-20;
+      height: 200px;
+    }
+
     iframe {
       border-radius: $zui-12;
       margin-bottom: $zui-32;

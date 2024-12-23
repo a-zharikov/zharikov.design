@@ -1,5 +1,54 @@
 const backpackItems = [
   {
+    href: "#table-layout-page",
+    url: "table-layout.html",
+    title: "Table layout",
+    tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#scroll-padding-page",
+    url: "scroll-padding.html",
+    title: "Scroll padding",
+    tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#behavior-page",
+    url: "behavior.html",
+    title: "Предотвращение цепной прокрутки",
+    tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#content-query-page",
+    url: "content-query.html",
+    title: "Content query",
+    tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#textarea-size-page",
+    url: "textarea-size.html",
+    title: "Автоматическое изменение высоты textarea",
+    tag: "html",
+    modal: "small"
+  },
+  {
+    href: "#empty-page",
+    url: "empty.html",
+    title: "Определяем пустой элемент",
+    tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#drop-shadow-page",
+    url: "drop-shadow.html",
+    title: "Тень для картинки",
+    tag: "css",
+    modal: "small"
+  },
+  {
     href: "#smooth-page",
     url: "smooth.html",
     title: "Плавный скролл",

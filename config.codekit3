@@ -513,6 +513,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/notepad\/cookies_dog.png" : {
+      "ft" : 32768,
+      "iS" : 206455,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/notepad\/cookies_dog.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/images\/plugins\/ancore_dark.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -781,6 +794,22 @@
       "oAP" : "\/build\/notepad\/autocomplete.html",
       "oF" : 0
     },
+    "\/source\/notepad\/behavior.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/behavior.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/content-query.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/content-query.html",
+      "oF" : 0
+    },
     "\/source\/notepad\/dots.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -789,12 +818,28 @@
       "oAP" : "\/build\/notepad\/dots.html",
       "oF" : 0
     },
+    "\/source\/notepad\/drop-shadow.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/drop-shadow.html",
+      "oF" : 0
+    },
     "\/source\/notepad\/element.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/notepad\/element.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/empty.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/empty.html",
       "oF" : 0
     },
     "\/source\/notepad\/hover.kit" : {
@@ -813,12 +858,36 @@
       "oAP" : "\/build\/notepad\/index.html",
       "oF" : 0
     },
+    "\/source\/notepad\/scroll-padding.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/scroll-padding.html",
+      "oF" : 0
+    },
     "\/source\/notepad\/smooth.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/notepad\/smooth.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/table-layout.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/table-layout.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/textarea-size.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/textarea-size.html",
       "oF" : 0
     },
     "\/source\/plugins\/ancore.kit" : {
