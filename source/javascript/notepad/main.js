@@ -7,8 +7,8 @@ const backpackItems = [
     modal: "small"
   },
   {
-    href: "#element-page",
-    url: "element.html",
+    href: "#dots-page",
+    url: "dots.html",
     title: "Обрезаем текст в три точки",
     tag: "scss",
     modal: "small"
@@ -28,10 +28,10 @@ const backpackItems = [
     modal: "small"
   },
   {
-    href: "#dots-page",
-    url: "dots.html",
+    href: "#element-page",
+    url: "element.html",
     title: "Абсолютная центровка элемента",
-    tag: "scss",
+    tag: "css",
     modal: "small"
   }
 ];

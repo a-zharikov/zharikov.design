@@ -92,4 +92,24 @@
   &.__active {
     display: block;
   }
+
+  &.small {
+    width: 600px;
+
+    @include screen(0,1023) {
+      width: calc(#{$zui-100p} - #{$zui-28});
+    }
+    
+    @include mq(mobile) {
+      height: auto;
+      padding: $zui-20;
+      border-radius: $zui-20;
+      overflow-y: auto;
+    }
+
+    .modal__title {
+      padding: $zui-0 $zui-20;
+      @include text($headline-x6);
+    }
+  }
 }

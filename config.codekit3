@@ -773,12 +773,52 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/source\/notepad\/autocomplete.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/autocomplete.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/dots.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/dots.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/element.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/element.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/hover.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/hover.html",
+      "oF" : 0
+    },
     "\/source\/notepad\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/notepad\/index.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/smooth.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/smooth.html",
       "oF" : 0
     },
     "\/source\/plugins\/ancore.kit" : {
