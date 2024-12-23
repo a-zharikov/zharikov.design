@@ -103,4 +103,16 @@ $(document).ready(function () {
           $('.modal-overlay').remove();
       }
   });
+
+  // Открытие модального окна при загрузке страницы, если в URL есть хеш
+  if (window.location.hash) {
+      const hash = window.location.hash.replace('#', '');
+      const link = $(`.js-open-modal[href="#${hash}"]`);
+      if (link.length) {
+          const url = link.data('url');
+          const scriptFunc = link.data('script');
+          const modalClass = link.data('modal');
+          openModal(hash, url, scriptFunc, modalClass);
+      }
+  }
 });
