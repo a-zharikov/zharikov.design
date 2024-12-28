@@ -1,0 +1,42 @@
+.notepad {
+
+  &__list {
+    @include flex($cl,$fs,$sh,$zui-12);
+  }
+
+  &__item {
+    display: block;
+
+    &.__show {
+      display: block;
+    }
+
+    &.__hide {
+      display: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    @include flex($rw,$sb,$fs,$zui-12);
+    @include block(($sidebar-light,$sidebar-dark),$zui-20,$zui-24,none);
+    @include transition;
+
+    &:hover, &:focus {
+      @include theme(background,$text-dark,$contrast-dark);
+    }
+  }
+
+  &__title {
+    @include text($headline-x4,$text-light,$text-dark);
+  }
+
+  .__notepad {
+    opacity: 1;
+    
+    path {
+      opacity: .7;
+      @include theme(fill,$text-light,$text-dark);
+    }
+  }
+}

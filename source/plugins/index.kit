@@ -5,7 +5,7 @@
   <!-- $page-keywords = простые и легкие плагины на JavaScript и CSS -->
   <!-- @import ../_kit/_layout/_head-page.kit -->
   <script src="../javascript/plugins/modal.min.js" type="text/javascript"></script>
-  <script src="../javascript/plugin/main.min.js"></script>
+  <script src="../javascript/pages/plugin.min.js"></script>
   <body class="plugins">
     <!-- @import ../_kit/_layout/_header.kit -->
     <main class="page">
@@ -15,7 +15,12 @@
           <h1 class="page-feed__title"><!-- $page-title --></h1>
           <p class="page-feed__description"><!-- $page-description --></p>
         </div>
-        <ul class="plugins__list"></ul>
+        <div class="page-grid">
+          <ul class="plugins__list"></ul>
+          <nav class="page__tag">
+            <ul class="page__tag-list"></ul>
+          </nav>
+        </div>
       </section>
     </main>
     <!-- @import ../_kit/_layout/_footer.kit -->

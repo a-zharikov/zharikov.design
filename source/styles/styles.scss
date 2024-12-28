@@ -31,16 +31,15 @@
 @import "_layout/footer";
 
 @import "_components/modal";
+@import "_components/tag";
 @import "_components/textarea-code";
 
-@import "_pages/_backpack/main";
+@import "_pages/notepad";
+@import "_pages/plugins";
+@import "_pages/backpack";
 @import "_pages/_backpack/aspectratio";
 @import "_pages/_backpack/triangle";
 @import "_pages/_backpack/remem";
-
-@import "_pages/_plugins/main";
-
-@import "_pages/_notepad/main";
 
 @import "_elements/badge";
 @import "_elements/button";

@@ -709,24 +709,24 @@
       "sC" : 0,
       "tS" : 0
     },
-    "\/source\/javascript\/notepad\/main.js" : {
+    "\/source\/javascript\/pages\/notepad.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/build\/javascript\/notepad\/main.min.js",
+      "oAP" : "\/build\/javascript\/pages\/notepad.min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
     },
-    "\/source\/javascript\/plugin\/main.js" : {
+    "\/source\/javascript\/pages\/plugin.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/build\/javascript\/plugin\/main.min.js",
+      "oAP" : "\/build\/javascript\/pages\/plugin.min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -971,6 +971,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_components\/_modal.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_components\/_tag.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_components\/_tag.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1486,6 +1501,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/source\/styles\/_pages\/_backpack.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_backpack.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/source\/styles\/_pages\/_backpack\/_aspectratio.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1496,21 +1526,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_pages\/_backpack\/_aspectratio.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/source\/styles\/_pages\/_backpack\/_main.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/build\/styles\/_pages\/_backpack\/_main.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1546,7 +1561,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/source\/styles\/_pages\/_notepad\/_main.scss" : {
+    "\/source\/styles\/_pages\/_notepad.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1555,13 +1570,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/build\/styles\/_pages\/_notepad\/_main.css",
+      "oAP" : "\/build\/styles\/_pages\/_notepad.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/source\/styles\/_pages\/_plugins\/_main.scss" : {
+    "\/source\/styles\/_pages\/_plugins.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1570,7 +1585,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/build\/styles\/_pages\/_plugins\/_main.css",
+      "oAP" : "\/build\/styles\/_pages\/_plugins.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

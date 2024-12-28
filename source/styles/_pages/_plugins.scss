@@ -20,12 +20,17 @@
   &__link {
     height: $zui-100p;
     text-decoration: none;
+    position: relative;
     @include flex($cl,$fs,$fs,$zui-12);
     @include block(($sidebar-light,$sidebar-dark),$zui-8,$zui-24,none);
     @include transition;
 
     &:hover, &:focus {
       @include theme(background,$text-dark,$contrast-dark);
+    }
+
+    .badge {
+      @include top_center(absolute,$zui-16);
     }
   }
 

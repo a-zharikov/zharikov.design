@@ -104,7 +104,7 @@ function generateBackpackItems() {
 document.addEventListener('DOMContentLoaded', function () {
   generateBackpackItems();
   const list = document.querySelector('.notepad__list');
-  const tagList = document.querySelector('.notepad__tag-list');
+  const tagList = document.querySelector('.page__tag-list');
   const allTags = new Set();
 
   // Собираем все теги из элементов списка
@@ -115,8 +115,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Создаем элементы навигации по тегам
   const createTagItem = (tag) => {
     const tagItem = document.createElement('li');
-    tagItem.className = 'notepad__tag-item';
-    tagItem.innerHTML = `<a href="#" class="notepad__tag-link">${tag}</a>`;
+    tagItem.className = 'page__tag-item';
+    tagItem.innerHTML = `<a href="#" class="page__tag-link">${tag}</a>`;
     return tagItem;
   };
 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Обновляем активный тег
-    tagList.querySelectorAll('.notepad__tag-item').forEach(tagItem => {
+    tagList.querySelectorAll('.page__tag-item').forEach(tagItem => {
       if (tagItem.textContent === tag) {
         tagItem.classList.add('__active');
       } else {
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Обработчик клика по тегу
   tagList.addEventListener('click', (e) => {
-    if (e.target.classList.contains('notepad__tag-link')) {
+    if (e.target.classList.contains('page__tag-link')) {
       e.preventDefault();
       const tag = e.target.textContent;
       filterItemsByTag(tag);
