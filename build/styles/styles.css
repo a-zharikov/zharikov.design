@@ -3011,6 +3011,10 @@ pre[class*=language-] {
   color: green;
 }
 
+code[class*=language-] {
+  padding: 4px 0;
+}
+
 .language-js {
   color: #249cdc !important;
   -webkit-transition: all 150ms ease-in-out;

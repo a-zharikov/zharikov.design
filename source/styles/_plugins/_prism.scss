@@ -210,6 +210,10 @@ pre[class*="language-"] {
   }
 }
 
+code[class*="language-"] {
+  padding: $zui-4 $zui-0;
+}
+
 .language-js {
   @include theme(color,#249cdc !important,#9CDCFE !important);
 }
