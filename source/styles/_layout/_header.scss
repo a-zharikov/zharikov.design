@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 2;
   padding: $zui-20 $zui-20 $zui-0;
 
   @include mq(mobile) {

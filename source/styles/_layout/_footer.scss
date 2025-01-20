@@ -1,7 +1,9 @@
 .footer {
+  height: 200px;
   padding: $zui-64 $zui-0;
   background: $text-light;
   position: relative;
+  z-index: 2;
   overflow: hidden;
   @include flex($cl,$cr,$cr,$zui-24);
 

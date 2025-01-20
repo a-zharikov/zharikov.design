@@ -86,6 +86,28 @@
     }
   }
 
+  &__page {
+    opacity: 0;
+    @include transition;
+  }
+
+  &__preloader {
+    width: $zui-100p;
+    height: $zui-100p;
+    @include center;
+    @include flex($rw,$cr,$cr,$zui-0);
+
+    svg {
+      width: $zui-40;
+      height: $zui-40;
+    }
+
+    &.__hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
   &-overlay {
     width: $zui-100p;
     height: $zui-100p;

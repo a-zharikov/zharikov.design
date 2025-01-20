@@ -25,7 +25,7 @@
     @include text($normal-x3,$text-light,$text-dark);
     @include transition;
     
-    @include screen(650) {
+    @include screen(899) {
       text-align: left;
       pointer-events: none;
       opacity: 0;

@@ -20,11 +20,11 @@
 
 @mixin mq($media) {
   @if $media == mobile {
-    @media only screen and (max-width: 649px) {
+    @media only screen and (max-width: 899px) {
       @content;
     }
   } @else if $media == tablet {
-    @media only screen and (min-width: 650px) and (max-width: 1023px) {
+    @media only screen and (min-width: 900px) and (max-width: 1023px) {
       @content;
     }
   } @else if $media == laptop {

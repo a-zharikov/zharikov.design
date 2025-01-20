@@ -1,5 +1,19 @@
 const backpackItems = [
   {
+    href: "#adaptive-image-page",
+    url: "adaptive-image.html",
+    title: "Адаптивное изображение",
+    tag: "html",
+    modal: "small"
+  },
+  {
+    href: "#text-balance-page",
+    url: "text-balance.html",
+    title: "Text balance",
+    tag: "css",
+    modal: "small"
+  },
+  {
     href: "#table-layout-page",
     url: "table-layout.html",
     title: "Table layout",

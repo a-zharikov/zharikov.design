@@ -208,9 +208,9 @@
     "\/source\/images\/_icons\/aspect_ratio.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/aspect_ratio.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -218,9 +218,9 @@
     "\/source\/images\/_icons\/backpack.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/backpack.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -228,9 +228,9 @@
     "\/source\/images\/_icons\/be.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/be.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -238,9 +238,9 @@
     "\/source\/images\/_icons\/calculate.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/calculate.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -248,9 +248,9 @@
     "\/source\/images\/_icons\/change_history.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/change_history.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -258,9 +258,9 @@
     "\/source\/images\/_icons\/check.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/check.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -268,9 +268,9 @@
     "\/source\/images\/_icons\/close.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/close.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -278,9 +278,9 @@
     "\/source\/images\/_icons\/codepen.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/codepen.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -288,9 +288,9 @@
     "\/source\/images\/_icons\/content_copy.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/content_copy.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -298,9 +298,9 @@
     "\/source\/images\/_icons\/dark.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/dark.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -308,9 +308,9 @@
     "\/source\/images\/_icons\/github.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/github.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -318,9 +318,9 @@
     "\/source\/images\/_icons\/light.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/light.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -328,9 +328,9 @@
     "\/source\/images\/_icons\/note.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/note.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -338,9 +338,9 @@
     "\/source\/images\/_icons\/npm.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/npm.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -348,9 +348,19 @@
     "\/source\/images\/_icons\/plugin.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/plugin.svg",
-      "oF" : 0,
+      "oF" : 1,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_icons\/portfolio-arrow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/images\/_icons\/portfolio-arrow.svg",
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -358,9 +368,9 @@
     "\/source\/images\/_icons\/protfolio.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/protfolio.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -368,9 +378,9 @@
     "\/source\/images\/_icons\/resume.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/resume.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -378,9 +388,9 @@
     "\/source\/images\/_icons\/swap_horiz.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/swap_horiz.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -388,9 +398,9 @@
     "\/source\/images\/_icons\/telegram.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/telegram.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -398,9 +408,29 @@
     "\/source\/images\/_icons\/vk.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/vk.svg",
-      "oF" : 0,
+      "oF" : 1,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_svg\/portfolio-mobile.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/images\/_svg\/portfolio-mobile.svg",
+      "oF" : 1,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_svg\/portfolio.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/images\/_svg\/portfolio.svg",
+      "oF" : 1,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -508,7 +538,7 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/build\/images\/logo.svg",
-      "oF" : 1,
+      "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -646,6 +676,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/portfolio\/preview\/mf.png" : {
+      "ft" : 32768,
+      "iS" : 373300,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/portfolio\/preview\/mf.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -731,6 +774,17 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/source\/javascript\/pages\/portfolio.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/pages\/portfolio.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/source\/javascript\/plugins\/code-editor.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -785,6 +839,14 @@
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
+    },
+    "\/source\/notepad\/adaptive-image.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/adaptive-image.html",
+      "oF" : 0
     },
     "\/source\/notepad\/autocomplete.kit" : {
       "cB" : 0,
@@ -882,6 +944,14 @@
       "oAP" : "\/build\/notepad\/table-layout.html",
       "oF" : 0
     },
+    "\/source\/notepad\/text-balance.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/text-balance.html",
+      "oF" : 0
+    },
     "\/source\/notepad\/textarea-size.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -945,6 +1015,45 @@
       "oA" : 0,
       "oAP" : "\/build\/plugins\/tabs.html",
       "oF" : 0
+    },
+    "\/source\/portfolio\/_image.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/portfolio\/_image.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/index.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/yunost75.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/yunost75.html",
+      "oF" : 0
+    },
+    "\/source\/styles\/_animations\/_preloader.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_animations\/_preloader.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/source\/styles\/_animations\/_rotation.scss" : {
       "aP" : 0,
@@ -1586,6 +1695,36 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_pages\/_plugins.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_portfolio.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_portfolio.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_portfolio\/_list.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_portfolio\/_list.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

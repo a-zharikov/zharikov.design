@@ -91,7 +91,7 @@ $hover: (
             background: map-get($color-map, background);
 
             path {
-              fill: map-get($color-map, color);
+              fill: map-get($color-map, fill);
             }
           }
         }

@@ -1,5 +1,6 @@
 .sidebar {
   position: relative;
+  z-index: 3;
 
   @include mq(mobile) {
     width: $zui-100p;
