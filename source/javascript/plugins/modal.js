@@ -75,7 +75,7 @@ $(document).ready(function () {
                   preloader.addClass('__hide');  // Добавляем класс __hide для скрытия прелоадера
               }, 200); // Задержка 200 мс для лучшего визуального эффекта
           }).catch(function () {
-              console.error("Ошибка загрузки ресурсов.");
+                modal.find('.modal__page').before("<div class='modal__error'>Ошибка загрузки ресурсов.</div>");
               setTimeout(function() {
                   preloader.addClass('__hide');  // Добавляем класс __hide в случае ошибки
               }, 200);  // Задержка 200 мс

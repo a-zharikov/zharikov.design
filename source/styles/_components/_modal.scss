@@ -43,7 +43,7 @@
 
     p {
       margin-bottom: $zui-12;
-      @include text($normal-x5,$bg-light,$text-dark);
+      @include text($normal-x5,$text-light,$text-dark);
 
       &:has(code) {
         line-height: $zui-28;
@@ -61,12 +61,6 @@
       @include block(($contrast-light,$contrast-dark),$zui-4 $zui-8,$zui-8,none);
     }
 
-    img {
-      display: block;
-      margin: 0 auto $zui-20;
-      height: 200px;
-    }
-
     iframe {
       border-radius: $zui-12;
       margin-bottom: $zui-32;
@@ -75,10 +69,17 @@
         margin-bottom: $zui-0;
       }
     }
+
+    &-image {
+      display: block;
+      margin: 0 auto $zui-20;
+      height: 200px;
+    }
   }
 
   &__close {
     border-radius: $zui-24 !important;
+    z-index: 3;
     @include top_right(absolute !important,$zui-16,$zui-16);
     
     @include mq(mobile) {
@@ -108,6 +109,12 @@
     }
   }
 
+  &__error {
+    text-align: center;
+    @include center;
+    @include text($light-x5,$danger);
+  }
+
   &-overlay {
     width: $zui-100p;
     height: $zui-100p;
@@ -119,6 +126,11 @@
 
   &.__active {
     display: block;
+  }
+
+  &.large {
+    max-width: 800px;
+    padding: 0;
   }
 
   &.small {

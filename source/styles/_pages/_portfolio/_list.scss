@@ -81,6 +81,16 @@
     }
   }
 
+  &__sub {
+    margin-left: $zui-8;
+    @include theme(opacity,.6,.4);
+    @include text($normal-x5,$contrast-light);
+    
+    @include screen(0,899) {
+      font: $normal-x4;
+    }
+  }
+
   &__job {
     @include text($normal-x5,$contrast-light);
 
@@ -171,7 +181,7 @@
       transform: translateX($zui-0);
     }
 
-    @include screen(0,650) {
+    @include screen(0,899) {
       max-height: 140px;
     }
   }

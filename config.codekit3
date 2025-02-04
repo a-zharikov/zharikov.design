@@ -157,6 +157,32 @@
       "oAP" : "\/build\/fonts\/CircularStd\/CircularStd-Bold.woff2",
       "oF" : 0
     },
+    "\/source\/fonts\/LightGallery\/lg.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/fonts\/LightGallery\/lg.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/fonts\/LightGallery\/lg.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/fonts\/LightGallery\/lg.ttf",
+      "oF" : 0
+    },
+    "\/source\/fonts\/LightGallery\/lg.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/fonts\/LightGallery\/lg.woff",
+      "oF" : 0
+    },
     "\/source\/fonts\/VisueltPro\/VisueltPro-Bold.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -676,19 +702,6 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/source\/images\/portfolio\/preview\/mf.png" : {
-      "ft" : 32768,
-      "iS" : 373300,
-      "oA" : 0,
-      "oAP" : "\/build\/images\/portfolio\/preview\/mf.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/source\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -785,6 +798,17 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/source\/javascript\/pages\/project.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/pages\/project.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/source\/javascript\/plugins\/code-editor.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -792,6 +816,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/build\/javascript\/plugins\/code-editor.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/source\/javascript\/plugins\/lightgallery.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/plugins\/lightgallery.min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -1024,12 +1059,252 @@
       "oAP" : "\/build\/portfolio\/_image.html",
       "oF" : 0
     },
+    "\/source\/portfolio\/alexprice.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/alexprice.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/amarok.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/amarok.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/ar30.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/ar30.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/arcap2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/arcap2.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/arcap3.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/arcap3.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/arclub.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/arclub.html",
+      "oF" : 1
+    },
+    "\/source\/portfolio\/arstore.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/arstore.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/autoreview2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/autoreview2.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/autoreview3.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/autoreview3.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/bulli.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/bulli.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/cordiant2019.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/cordiant2019.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/cordiant2022.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/cordiant2022.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/elle.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/elle.html",
+      "oF" : 0
+    },
     "\/source\/portfolio\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/portfolio\/index.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/kia.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/kia.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/marieclaire.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/marieclaire.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/newgorizont.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/newgorizont.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/nitto.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/nitto.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/parents.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/parents.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/psychologies.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/psychologies.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/resource1.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/resource1.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/resource2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/resource2.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/rt20.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/rt20.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/rt21.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/rt21.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/rt22.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/rt22.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/rt23.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/rt23.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/rt24.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/rt24.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/skycenter2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/skycenter2.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/skyderby.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/skyderby.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/starhit.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/starhit.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/tour.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/tour.html",
       "oF" : 0
     },
     "\/source\/portfolio\/yunost75.kit" : {
@@ -1725,6 +2000,36 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_pages\/_portfolio\/_list.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_portfolio\/_modal.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_portfolio\/_modal.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_plugins\/_lightgallery.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_plugins\/_lightgallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
