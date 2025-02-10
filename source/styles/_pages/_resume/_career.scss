@@ -1,0 +1,64 @@
+.resume-career {
+  @include flex($cl,$fs,$sh,$zui-0);
+  
+  @include mq(mobile) {
+    margin-bottom: $zui-20;
+  }
+
+  &__year {
+    border-right: $zui-1 solid;
+    position: relative;
+    @include theme(border-color,$sidebar-light,$sidebar-dark);
+    @include text($normal-x4,$contrast-light);
+
+    &::after {
+      content: '';
+      width: calc(#{$zui-4} + #{$zui-1});
+      height: calc(#{$zui-4} + #{$zui-1});
+      display: block;
+      background: $primary;
+      border-radius: $zui-80;
+      border: $zui-8 solid;
+      @include theme(border-color,$bg-light, $bg-dark);
+      @include top_right(absolute,$zui-0,-11px);
+    }
+  }
+
+  &__title {
+    @include text($headline-x8,$text-light,$text-dark);
+
+    @include mq(tablet) {
+      @include text($headline-x6,$text-light,$text-dark);
+    }
+
+    @include mq(mobile) {
+      @include text($headline-x4,$text-light,$text-dark);
+    }
+  }
+
+  &__text {
+    text-wrap: balance;
+    padding: $zui-16 $zui-0 $zui-28;
+    @include text($normal-x5,$text-light,$text-dark);
+
+    @include mq(tablet) {
+      @include text($normal-x4,$text-light,$text-dark);
+    }
+
+    @include mq(mobile) {
+      padding: $zui-12 $zui-0 $zui-28;
+      @include text($normal-x4,$text-light,$text-dark);
+    }
+  }
+
+  &__item {
+    @include grid($zui-60 1fr,auto,$zui-16);
+
+    &:last-child {
+
+      .resume-career__text {
+        padding-bottom: $zui-0;
+      }
+    }
+  }
+}

@@ -1,7 +1,6 @@
 .portfolio-list {
   position: relative;
   z-index: 2;
-  margin-bottom: $zui-8;
   counter-reset: ol-counter;
   @include flex($clr,$fs,$sh,$zui-0);
 

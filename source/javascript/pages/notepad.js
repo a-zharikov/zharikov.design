@@ -106,7 +106,7 @@ function generateBackpackItems() {
     listItem.className = 'notepad__item';
     listItem.dataset.tags = item.tag.toLowerCase();
     listItem.innerHTML = `
-      <a class="notepad__link js-open-modal" href="${item.href}" data-url="${item.url}" data-tag="${item.tag}" data-modal="${item.modal}">
+      <a class="notepad__link js-open-modal" aria-haspopup="true" href="${item.href}" data-url="${item.url}" data-tag="${item.tag}" data-modal="${item.modal}">
         <h2 class="notepad__title">${item.title}</h2>
         <span class="badge medium ${item.tag}">${item.tag}</span>
       </a>
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const createTagItem = (tag) => {
     const tagItem = document.createElement('li');
     tagItem.className = 'page__tag-item';
-    tagItem.innerHTML = `<a href="#" class="page__tag-link">${tag}</a>`;
+    tagItem.innerHTML = `<a href="#" class="page__tag-link" aria-haspopup="true">${tag}</a>`;
     return tagItem;
   };
 

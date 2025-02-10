@@ -1,5 +1,23 @@
 const portfolioItems = [
   {
+    href: "#goldengid-page",
+    url: "goldengid.html",
+    image: "/images/portfolio/goldengid/preview.jpg",
+    alt: "Журнал Золотой Гид",
+    name: "Золотой Гид",
+    stack: "fornt-end",
+    modal: "large"
+  },
+  {
+    href: "#atvbtr-page",
+    url: "atvbtr.html",
+    image: "/images/portfolio/atvbtr/preview.jpg",
+    alt: "Ассоциация вездеходной техники",
+    name: "Ассоциация вездеходной техники",
+    stack: "fornt-end",
+    modal: "large"
+  },
+  {
     href: "#elle-page",
     url: "elle.html",
     image: "/images/portfolio/elle/preview.png",
@@ -42,6 +60,15 @@ const portfolioItems = [
     alt: "Проект Parents",
     name: "Parents",
     stack: "fornt-end",
+    modal: "large"
+  },
+  {
+    href: "#monofamily-page",
+    url: "monofamily.html",
+    image: "/images/portfolio/monofamily/preview.jpg",
+    alt: "Mono Family",
+    name: "Mono Family <span class='portfolio-list__sub'>v1</span>",
+    stack: "fornt-design",
     modal: "large"
   },
   {
@@ -112,7 +139,7 @@ const portfolioItems = [
     url: "amarok.html",
     image: "/images/portfolio/amarok/preview.jpg",
     alt: "Транс-Азиатская экспедиция Амарок",
-    name: "Транс-Азиатская экспедиция Амарок",
+    name: "Транс-Азиатская экспедиция",
     stack: "fornt-design",
     modal: "large"
   },
@@ -135,12 +162,30 @@ const portfolioItems = [
     modal: "large"
   },
   {
+    href: "#airhighway-page",
+    url: "airhighway.html",
+    image: "/images/portfolio/airhighway/preview.jpg",
+    alt: "Проект Air Highway",
+    name: "Air Highway",
+    stack: "fornt-design",
+    modal: "large"
+  },
+  {
     href: "#arclub-page",
     url: "arclub.html",
     image: "/images/portfolio/arclub/preview.png",
     alt: "Клуб Авторевю",
     name: "ARCLUB <span class='portfolio-list__sub'>v1</span>",
     stack: "fornt-design",
+    modal: "large"
+  },
+  {
+    href: "#doggydog-page",
+    url: "doggydog.html",
+    image: "/images/portfolio/doggydog/preview.jpg",
+    alt: "DoggyDog",
+    name: "DoggyDog",
+    stack: "fornt-end",
     modal: "large"
   },
   {
@@ -216,6 +261,24 @@ const portfolioItems = [
     modal: "large"
   },
   {
+    href: "#skycenter3-page",
+    url: "skycenter3.html",
+    image: "/images/portfolio/skycenter3/preview.jpg",
+    alt: "Проект Skycenter",
+    name: "Skycenter <span class='portfolio-list__sub'>v3</span>",
+    stack: "fornt-design",
+    modal: "large"
+  },
+  {
+    href: "#certificate-page",
+    url: "certificate.html",
+    image: "/images/portfolio/certificate/preview.jpg",
+    alt: "Проект Сертификаты Skycenter",
+    name: "Сертификаты Skycenter <span class='portfolio-list__sub'>v3</span>",
+    stack: "fornt-design",
+    modal: "large"
+  },
+  {
     href: "#rt21-page",
     url: "rt21.html",
     image: "/images/portfolio/rt21/preview.jpg",
@@ -270,12 +333,48 @@ const portfolioItems = [
     modal: "large"
   },
   {
+    href: "#telega2-page",
+    url: "telega2.html",
+    image: "/images/portfolio/telega2/preview.jpg",
+    alt: "Mono Family",
+    name: "Telega <span class='portfolio-list__sub'>v2</span>",
+    stack: "fornt-end",
+    modal: "large"
+  },
+  {
+    href: "#monofamily2-page",
+    url: "monofamily2.html",
+    image: "/images/portfolio/monofamily2/preview.jpg",
+    alt: "Mono Family",
+    name: "Mono Family <span class='portfolio-list__sub'>v2</span>",
+    stack: "fornt-design",
+    modal: "large"
+  },
+  {
+    href: "#krov-page",
+    url: "krov.html",
+    image: "/images/portfolio/krov/preview.jpg",
+    alt: "Krov-m2",
+    name: "Krov-m2",
+    stack: "fornt-design",
+    modal: "large"
+  },
+  {
     href: "#rt24-page",
     url: "rt24.html",
     image: "/images/portfolio/rt24/preview.jpg",
     alt: "Рейтинг-тест Авторевю 2024",
     name: "Рейтинг-тест Авторевю 2024",
     stack: "fornt-design",
+    modal: "large"
+  },
+  {
+    href: "#blogger-telega-page",
+    url: "blogger-telega.html",
+    image: "/images/portfolio/blogger-telega/preview.jpg",
+    alt: "Кабинет админа",
+    name: "Blogger.telega",
+    stack: "fornt-end",
     modal: "large"
   },
 ];
@@ -286,7 +385,7 @@ function generatePortfolioItems() {
     const listItem = document.createElement('li');
     listItem.className = 'portfolio-list__item';
     listItem.innerHTML = `
-      <a class="portfolio-list__link js-open-modal" href="${item.href}" data-url="${item.url}" data-modal="${item.modal}">
+      <a class="portfolio-list__link js-open-modal" aria-haspopup="true" href="${item.href}" data-url="${item.url}" data-modal="${item.modal}">
         <div class="portfolio-list__project">
           <h2 class="portfolio-list__title">${item.name}</h2>
           <p class="portfolio-list__job">${item.stack}</p>

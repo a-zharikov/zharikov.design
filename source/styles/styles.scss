@@ -35,15 +35,26 @@
 @import "_components/tag";
 @import "_components/textarea-code";
 
-@import "_pages/notepad";
+@import "_pages/resume";
+@import "_pages/_resume/hellow";
+@import "_pages/_resume/tabs";
+@import "_pages/_resume/career";
+@import "_pages/_resume/skills";
+@import "_pages/_resume/stack";
+@import "_pages/_resume/tools";
+
+@import "_pages/portfolio";
+@import "_pages/_portfolio/list";
+@import "_pages/_portfolio/modal";
+
 @import "_pages/plugins";
+
+@import "_pages/notepad";
+
 @import "_pages/backpack";
 @import "_pages/_backpack/aspectratio";
 @import "_pages/_backpack/triangle";
 @import "_pages/_backpack/remem";
-@import "_pages/portfolio";
-@import "_pages/_portfolio/list";
-@import "_pages/_portfolio/modal";
 
 @import "_elements/badge";
 @import "_elements/button";

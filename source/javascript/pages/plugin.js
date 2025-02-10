@@ -61,7 +61,7 @@ function generatePluginItems() {
     const listItem = document.createElement('li');
     listItem.className = 'plugins__item';
     listItem.innerHTML = `
-      <a class="plugins__link js-open-modal" href="${item.href}" data-url="${item.url}" data-modal="${item.modal}">
+      <a class="plugins__link js-open-modal" aria-haspopup="true" href="${item.href}" data-url="${item.url}" data-modal="${item.modal}">
         <span class="badge medium ${item.tag}">${item.tag}</span>
         <img class="plugins__cover __light" src="${item.lightImg}" alt="${item.title}">
         <img class="plugins__cover __dark" src="${item.darkImg}" alt="${item.title}">
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const createTagItem = (tag) => {
     const tagItem = document.createElement('li');
     tagItem.className = 'page__tag-item';
-    tagItem.innerHTML = `<a href="#" class="page__tag-link">${tag}</a>`;
+    tagItem.innerHTML = `<a href="#" class="page__tag-link" aria-haspopup="true">${tag}</a>`;
     return tagItem;
   };
 

@@ -19,7 +19,6 @@ $colors: (
 .badge {
   height: $zui-24;
   font-size: $zui-16;
-  line-height: $zui-100p;
   font-weight: $bold;
   border-radius: $zui-20;
   @include flex($rw,$cr,$cr,$zui-4,$di);
@@ -27,6 +26,7 @@ $colors: (
   @each $size-name, $size-map in $sizes {
     &.#{$size-name} {
       font-size: map-get($size-map, font-size);
+      line-height: map-get($size-map, font-size);
       height: map-get($size-map, height);
       padding: map-get($size-map, padding);
     }
@@ -37,5 +37,10 @@ $colors: (
         color: map-get($color-map, color);
       }
     }
+  }
+
+  &.tools {
+    @include theme(color,$contrast-light, $sidebar-dark);
+    @include theme(background,$bg-light, $bg-dark);
   }
 }

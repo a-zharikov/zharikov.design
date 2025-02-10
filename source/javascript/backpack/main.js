@@ -34,7 +34,7 @@ function generateBackpackItems() {
     const listItem = document.createElement('li');
     listItem.className = 'backpack__item';
     listItem.innerHTML = `
-      <a class="backpack__link js-open-modal" href="${item.href}" data-url="${item.url}" data-script="${item.script}" data-modal="${item.modal}">
+      <a class="backpack__link js-open-modal" aria-haspopup="true" href="${item.href}" data-url="${item.url}" data-script="${item.script}" data-modal="${item.modal}">
         <div class="backpack__header">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
             <path d="${item.svgPath}"/>

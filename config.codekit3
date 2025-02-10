@@ -809,6 +809,17 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/source\/javascript\/pages\/resume.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/pages\/resume.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/source\/javascript\/plugins\/code-editor.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1059,6 +1070,14 @@
       "oAP" : "\/build\/portfolio\/_image.html",
       "oF" : 0
     },
+    "\/source\/portfolio\/airhighway.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/airhighway.html",
+      "oF" : 0
+    },
     "\/source\/portfolio\/alexprice.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1115,6 +1134,14 @@
       "oAP" : "\/build\/portfolio\/arstore.html",
       "oF" : 0
     },
+    "\/source\/portfolio\/atvbtr.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/atvbtr.html",
+      "oF" : 0
+    },
     "\/source\/portfolio\/autoreview2.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1131,12 +1158,28 @@
       "oAP" : "\/build\/portfolio\/autoreview3.html",
       "oF" : 0
     },
+    "\/source\/portfolio\/blogger-telega.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/blogger-telega.html",
+      "oF" : 0
+    },
     "\/source\/portfolio\/bulli.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/portfolio\/bulli.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/certificate.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/certificate.html",
       "oF" : 0
     },
     "\/source\/portfolio\/cordiant2019.kit" : {
@@ -1155,12 +1198,28 @@
       "oAP" : "\/build\/portfolio\/cordiant2022.html",
       "oF" : 0
     },
+    "\/source\/portfolio\/doggydog.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/doggydog.html",
+      "oF" : 0
+    },
     "\/source\/portfolio\/elle.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/portfolio\/elle.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/goldengid.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/goldengid.html",
       "oF" : 0
     },
     "\/source\/portfolio\/index.kit" : {
@@ -1179,12 +1238,36 @@
       "oAP" : "\/build\/portfolio\/kia.html",
       "oF" : 0
     },
+    "\/source\/portfolio\/krov.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/krov.html",
+      "oF" : 0
+    },
     "\/source\/portfolio\/marieclaire.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/portfolio\/marieclaire.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/monofamily.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/monofamily.html",
+      "oF" : 0
+    },
+    "\/source\/portfolio\/monofamily2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/monofamily2.html",
       "oF" : 0
     },
     "\/source\/portfolio\/newgorizont.kit" : {
@@ -1283,6 +1366,14 @@
       "oAP" : "\/build\/portfolio\/skycenter2.html",
       "oF" : 0
     },
+    "\/source\/portfolio\/skycenter3.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/skycenter3.html",
+      "oF" : 0
+    },
     "\/source\/portfolio\/skyderby.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1299,6 +1390,14 @@
       "oAP" : "\/build\/portfolio\/starhit.html",
       "oF" : 0
     },
+    "\/source\/portfolio\/telega2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/telega2.html",
+      "oF" : 0
+    },
     "\/source\/portfolio\/tour.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1313,6 +1412,62 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/portfolio\/yunost75.html",
+      "oF" : 0
+    },
+    "\/source\/resume\/_career.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/resume\/_career.html",
+      "oF" : 0
+    },
+    "\/source\/resume\/_hellow.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/resume\/_hellow.html",
+      "oF" : 0
+    },
+    "\/source\/resume\/_skills.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/resume\/_skills.html",
+      "oF" : 0
+    },
+    "\/source\/resume\/_stack.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/resume\/_stack.html",
+      "oF" : 0
+    },
+    "\/source\/resume\/_tabs.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/resume\/_tabs.html",
+      "oF" : 0
+    },
+    "\/source\/resume\/_tools.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/resume\/_tools.html",
+      "oF" : 0
+    },
+    "\/source\/resume\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/resume\/index.html",
       "oF" : 0
     },
     "\/source\/styles\/_animations\/_preloader.scss" : {
@@ -2015,6 +2170,111 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_pages\/_portfolio\/_modal.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_resume.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_resume.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_resume\/_career.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_resume\/_career.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_resume\/_hellow.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_resume\/_hellow.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_resume\/_skills.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_resume\/_skills.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_resume\/_stack.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_resume\/_stack.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_resume\/_tabs.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_resume\/_tabs.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_resume\/_tools.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_resume\/_tools.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

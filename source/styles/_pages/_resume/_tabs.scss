@@ -1,0 +1,52 @@
+.resume-page__tabs {
+
+  .tabs {
+
+    &-wrapper {
+      @include flex($rw,$fs,$cr,$zui-40);
+    }
+
+    &-link {
+      text-decoration: none;
+      @include text($headline-x8,$contrast-light,$sidebar-dark);
+      
+      @include screen(0,1023) {
+        @include text($headline-x6,$contrast-light,$sidebar-dark);
+      }
+
+      &:hover {
+        @include theme(color,$text-light,$text-dark);
+      }
+    }
+
+    &-item {
+      
+      &::after {
+        content: '';
+        width: $zui-40;
+        height: $zui-4;
+        display: block;
+        margin: $zui-12 auto 0;
+        border-radius: $zui-80;
+        background: $primary;
+        opacity: 0;
+        @include transition;
+
+        @include mq(mobile) {
+          margin-top: $zui-8;
+        }
+      }
+      
+      &--active {
+
+        .tabs-link {
+          @include theme(color,$text-light,$text-dark);
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
