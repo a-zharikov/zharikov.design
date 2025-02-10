@@ -901,7 +901,6 @@ html[data-theme=dark] .page-feed__description {
 .footer {
   height: 200px;
   padding: 64px 0;
-  background: #000000;
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -910,6 +909,15 @@ html[data-theme=dark] .page-feed__description {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  background: #000000;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .footer {
+  background: #1a1c20;
 }
 .footer__social {
   display: flex;
@@ -974,6 +982,15 @@ html[data-theme=dark] .page-feed__description {
   position: absolute;
   bottom: -3px;
   left: 0;
+  opacity: 1;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .footer__rang {
+  opacity: 0.3;
 }
 @media only screen and (max-width: 899px) {
   .footer__rang {
@@ -1071,11 +1088,20 @@ html[data-theme=dark] .page-feed__description {
   font: 700 56px/56px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #282D35;
+  opacity: 0.4;
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
   -ms-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .footer__zui {
+  opacity: 0.4;
 }
 @media only screen and (min-width: 1240px) and (max-width: 1439px) {
   .footer__zui {
@@ -1097,6 +1123,15 @@ html[data-theme=dark] .page-feed__description {
 }
 .footer__zui:hover {
   color: #40b4ea;
+  opacity: 1;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .footer__zui:hover {
+  opacity: 1;
 }
 
 .modal {
