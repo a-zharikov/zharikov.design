@@ -2231,7 +2231,11 @@ html[data-theme=dark] .portfolio .__portfolio path {
   border-radius: 32px 0 0;
 }
 .portfolio-list__item:first-child .portfolio-list__link {
+  border: 0;
   border-radius: 0 0 0 32px;
+}
+.portfolio-list__item:first-child .portfolio-list__link::before {
+  border: 0;
 }
 .portfolio-list__project {
   position: relative;
@@ -2263,6 +2267,7 @@ html[data-theme=dark] .portfolio .__portfolio path {
 .portfolio-list__title {
   position: relative;
   z-index: 3;
+  text-wrap: balance;
   transform: scale(1);
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
@@ -2271,16 +2276,24 @@ html[data-theme=dark] .portfolio .__portfolio path {
   transition: all 150ms ease-in-out;
   font: 700 40px/44px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
-  color: #c1c1c1;
+  color: #000000;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .portfolio-list__title {
+  color: #ffffff;
 }
 @media only screen and (min-width: 900px) and (max-width: 1180px) {
   .portfolio-list__title {
-    font: 400 32px/40px "Visuelt Pro", sans-serif;
+    font: 700 32px/36px "Visuelt Pro", sans-serif;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 899px) {
   .portfolio-list__title {
-    font: 400 24px/32px "Visuelt Pro", sans-serif;
+    font: 700 24px/28px "Visuelt Pro", sans-serif;
   }
 }
 .portfolio-list__sub {
@@ -2573,12 +2586,12 @@ html[data-theme=dark] .portfolio-list__link:hover .portfolio-list__title {
 }
 @media only screen and (min-width: 900px) and (max-width: 1180px) {
   .portfolio-list__link:hover .portfolio-list__title {
-    font: 400 32px/40px "Visuelt Pro", sans-serif;
+    font: 700 32px/36px "Visuelt Pro", sans-serif;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 899px) {
   .portfolio-list__link:hover .portfolio-list__title {
-    font: 400 24px/32px "Visuelt Pro", sans-serif;
+    font: 700 24px/28px "Visuelt Pro", sans-serif;
   }
 }
 .portfolio-list__link:hover .portfolio-list__button::before {

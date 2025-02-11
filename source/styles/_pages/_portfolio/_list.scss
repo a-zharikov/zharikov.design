@@ -32,16 +32,19 @@
     }
 
     &:last-child {
-
       .portfolio-list__link {
         border-radius: $zui-32 $zui-0 $zui-0;
       }
     }
 
     &:first-child {
-
       .portfolio-list__link {
+        border: 0;
         border-radius: $zui-0 $zui-0 $zui-0 $zui-32;
+
+        &::before {
+          border: 0;
+        }
       }
     }
   }
@@ -67,16 +70,17 @@
   &__title {
     position: relative;
     z-index: 3;
+    text-wrap: balance;
     transform: scale(1);
     @include transition;
-    @include text($headline-x10,$contrast-light);
+    @include text($headline-x10,$text-light,$text-dark);
 
     @include screen(900,1180) {
-      font: $subline-x8;
+      font: $headline-x8;
     }
     
     @include screen(0,899) {
-      font: $subline-x6;
+      font: $headline-x6;
     }
   }
 
@@ -240,11 +244,11 @@
           @include text($title-x12,$text-light,$text-dark);
 
           @include screen(900,1180) {
-            font: $subline-x8;
+            font: $headline-x8;
           }
 
           @include screen(0,899) {
-            font: $subline-x6;
+            font: $headline-x6;
           }
         }
 
