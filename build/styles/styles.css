@@ -1466,6 +1466,110 @@ html[data-theme=dark] .page__tag-item {
   display: block;
 }
 
+.main-hero {
+  height: calc(100dvh - 94px);
+}
+.main-hero__button {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  position: relative;
+  font: 700 16px/16px "Circular Std", sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  color: #000000;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  background: transparent;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  padding: 16px 24px;
+  border-radius: 80px;
+  box-shadow: none;
+}
+html[data-theme=dark] .main-hero__button {
+  color: #ffffff;
+}
+html[data-theme=dark] .main-hero__button {
+  background: transparent;
+}
+@media only screen and (min-width: 900px) and (max-width: 1070px) {
+  .main-hero__button {
+    font: 700 12px/20px "Visuelt Pro", sans-serif;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 899px) {
+  .main-hero__button {
+    display: none;
+  }
+}
+.main-hero__button::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  display: block;
+  border-radius: 80px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #c1c1c1;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .main-hero__button::before {
+  background: #282D35;
+}
+.main-hero__button-text {
+  position: relative;
+  z-index: 2;
+}
+.main-hero__button svg {
+  position: relative;
+  z-index: 2;
+}
+.main-hero__button svg path {
+  fill: #000000;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .main-hero__button svg path {
+  fill: #ffffff;
+}
+.main-hero__button:hover::before {
+  width: 100%;
+  background: #ececec;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .main-hero__button:hover::before {
+  background: #383E49;
+}
+
 .resume-page {
   display: flex;
   flex-direction: column;
