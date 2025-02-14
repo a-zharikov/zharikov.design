@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const avatarElement = document.querySelector('.js-click-avatar');
   const imageElement = document.querySelector('.resume-hellow__image');
   const images = [
-    '/images/avatar/az_0.jpg',
     '/images/avatar/az_1.jpg',
     '/images/avatar/az_2.jpg',
     '/images/avatar/az_3.jpg',

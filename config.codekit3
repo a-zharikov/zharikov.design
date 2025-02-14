@@ -1230,6 +1230,14 @@
       "oAP" : "\/build\/portfolio\/index.html",
       "oF" : 0
     },
+    "\/source\/portfolio\/instajet.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/portfolio\/instajet.html",
+      "oF" : 0
+    },
     "\/source\/portfolio\/kia.kit" : {
       "cB" : 0,
       "ft" : 2048,

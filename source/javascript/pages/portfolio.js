@@ -336,8 +336,17 @@ const portfolioItems = [
     href: "#telega2-page",
     url: "telega2.html",
     image: "/images/portfolio/telega2/preview.jpg",
-    alt: "Mono Family",
+    alt: "Telega",
     name: "Telega <span class='portfolio-list__sub'>v2</span>",
+    stack: "fornt-end",
+    modal: "large"
+  },
+  {
+    href: "#instajet-page",
+    url: "instajet.html",
+    image: "/images/portfolio/instajet/preview.jpg",
+    alt: "Instajet",
+    name: "Instajet",
     stack: "fornt-end",
     modal: "large"
   },
