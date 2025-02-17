@@ -11,12 +11,16 @@ jobs:
       - name: 🚚 Checkout Repository
         uses: actions/checkout@v2
 
+      - name: 👮‍♂️ Copy Build Files to Temp Directory
+        run: |
+          mkdir -p temp-deploy
+          cp -r ./build/* ./temp-deploy/ # Копируем только содержимое build
+
       - name: 💻 Deploy to Hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build  # Путь к локальной папке
-          server-dir: /       # Корень сервера (если нужно разместить файлы в корне)
-          strip-root-folder: true # Убедитесь, что это свойство поддерживается
+          local-dir: ./temp-deploy  # Используем временную папку
+          server-dir: /             # Корень сервера
