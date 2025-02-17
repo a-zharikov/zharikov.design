@@ -2,36 +2,20 @@ name: 🚀 Deploy to Hosting
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 🚚 Checkout code
-      uses: actions/checkout@v2
+      - name: 🚚 Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: 💻 Use Node.js 16.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16.x
-
-    - name: 🐶 Install dependencies
-      run: npm install
-
-    - name: 🔨 Build project
-      run: npm run generate
-
-    - name: 🪂 Prepare files for deploy
-      run: |
-        mkdir deploy
-        cp -r dist/* deploy
-
-    - name: 📂 Deploy via FTP
-      uses: SamKirkland/FTP-Deploy-Action@4.1.0
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: deploy/
+      - name: 💻 Deploy to Hosting
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: zharikov.design//public_html/
