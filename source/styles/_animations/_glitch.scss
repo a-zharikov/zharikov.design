@@ -1,0 +1,17 @@
+@keyframes glitch-animation-1 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage(calc($i * (1 / $steps)))} {
+      clip: rect(random(150) + px, 350px, random(150) + px, 30px);
+    }
+  }
+}
+
+@keyframes glitch-animation-2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage(calc($i * (1 / $steps)))} {
+      clip: rect(random(150) + px, 350px, random(150) + px, 30px);
+    }
+  }
+}

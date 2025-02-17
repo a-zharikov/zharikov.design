@@ -1,0 +1,74 @@
+.page-error {
+  width: $zui-100p;
+  height: 100dvh;
+  @include flex($cl,$cr,$cr,$zui-8);
+
+  &__title {
+    position: relative;
+    padding: $zui-32;
+    @include text($title-x16,$text-light,$text-dark);
+    font-size: calc($zui-80 + $zui-80);
+
+    &::before, &::after {
+      content: attr(data-text);
+      width: $zui-100p;
+      height: $zui-100p;
+      padding: $zui-32;
+      overflow: hidden;
+      position: absolute;
+      top: $zui-0;
+      @include theme(color,$text-light,$text-dark);
+      @include theme(background,$bg-light,$bg-dark);
+    }
+
+    &::before {
+      left: 3px;
+      text-shadow: -2px 0 red;
+      animation-name: glitch-animation-1;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: reverse-alternate;
+    }
+
+    &::after {
+      left: -3px;
+      text-shadow: -2px 0 blue;
+      animation-name: glitch-animation-2;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: reverse-alternate;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: $zui-20;
+    @include flex($rw,$cr,$cr,$zui-0);
+
+    svg {
+      transform: rotate(180deg);
+    }
+
+    &-text {
+      width: 0;
+      overflow: hidden;
+      text-transform: uppercase;
+      text-align: right;
+      opacity: 0;
+      @include transition;
+      @include text($bold-x3,$text-light,$text-dark);
+    }
+
+    &:hover {
+
+      .page-error__link-text {
+        width: $zui-40;
+        opacity: 1;
+      }
+    }
+  }
+}

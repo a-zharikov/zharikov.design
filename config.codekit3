@@ -117,6 +117,22 @@
       "oAP" : "\/build\/_kit\/_layout\/_sidebar.html",
       "oF" : 0
     },
+    "\/source\/403.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/403.html",
+      "oF" : 0
+    },
+    "\/source\/404.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/404.html",
+      "oF" : 0
+    },
     "\/source\/backpack\/aspectratio.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1440,6 +1456,21 @@
       "oAP" : "\/build\/resume\/index.html",
       "oF" : 0
     },
+    "\/source\/styles\/_animations\/_glitch.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_animations\/_glitch.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/source\/styles\/_animations\/_preloader.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -2080,6 +2111,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_pages\/_backpack\/_triangle.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_error.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_error.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
