@@ -2,7 +2,7 @@ name: 🚀 Deploy to Hosting
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
