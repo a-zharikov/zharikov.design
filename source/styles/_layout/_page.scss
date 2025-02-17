@@ -66,11 +66,11 @@
       }
 
       @include mq(tablet) {
-        @include text($subline-x10,$text-light,$text-dark);
+        @include text($headline-x10,$text-light,$text-dark);
       }
 
       @include mq(mobile) {
-        @include text($subline-x8,$text-light,$text-dark);
+        @include text($headline-x8,$text-light,$text-dark);
       }
     }
 

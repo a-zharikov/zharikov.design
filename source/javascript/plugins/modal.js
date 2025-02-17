@@ -27,6 +27,28 @@ $(document).ready(function () {
               closeModal(modalId);
           });
 
+          // Закрытие по Esc
+          $(document).on('keydown.modal', function(e) {
+              if (e.keyCode === 27) { // 27 - код клавиши Esc
+                  closeModal(modalId);
+              }
+          });
+
+          // Закрытие по свайпу влево
+          var startX = 0;
+          var threshold = 100; // Минимальное расстояние для свайпа
+
+          modal.on('mousedown touchstart', function(e) {
+              startX = e.pageX || e.originalEvent.touches[0].pageX; // Начальная позиция
+          });
+
+          modal.on('mouseup touchend', function(e) {
+              var endX = e.pageX || e.originalEvent.changedTouches[0].pageX; // Конечная позиция
+              if (startX - endX > threshold) { // Если свайп влево
+                  closeModal(modalId);
+              }
+          });
+
           if (scriptFunc) {
               window[scriptFunc]();
           }
@@ -88,6 +110,7 @@ $(document).ready(function () {
       $('#' + modalId).remove();
       $('.modal-overlay').remove();
       history.replaceState(null, null, window.location.pathname);
+      $(document).off('keydown.modal'); // Убираем обработчик Esc
   }
 
   // Функция для замены <textarea> на <pre><code>

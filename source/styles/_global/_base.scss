@@ -12,6 +12,18 @@ body {
   @include transition;
 }
 
+noscript {
+  width: $zui-100p;
+  height: $zui-100p;
+  text-align: center;
+  backdrop-filter: blur($zui-4);
+  background: $sidebar-light-opacity;
+  z-index: 100;
+  @include text($normal-x5,$text-light);
+  @include flex($rw,$cr,$cr,$zui-12);
+  @include top_left(fixed,$zui-0,$zui-0);
+}
+
 .container {
   max-width: $grid;
   margin: $zui-0 auto;

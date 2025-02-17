@@ -109,27 +109,6 @@
     @include text($mini,$text-dark);
   }
 
-  &__version {
-    text-decoration: none;
-    opacity: .08;
-    @include text($mini,$text-light);
-    @include block($text-dark,$zui-2 $zui-4,$zui-40);
-    @include bottom_center($zui-8);
-    @include transition;
-
-    @include mq(tablet) {
-      @include bottom_center(absolute,$zui-28);
-    }
-
-    @include mq(mobile) {
-      @include bottom_center(absolute,$zui-24);
-    }
-
-    &:hover {
-      opacity: .8;
-    }
-  }
-
   &__zui {
     text-decoration: none;
     text-transform: uppercase;

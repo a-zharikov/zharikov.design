@@ -54,11 +54,12 @@
       }
     }
 
-    code {
+    .__code {
       border-radius: $zui-40;
       font: $normal-x4;
       font-family: monospace;
-      @include block(($contrast-light,$contrast-dark),$zui-4 $zui-8,$zui-8,none);
+      @include theme(color,$code-light,$code-dark);
+      @include block(($sidebar-light,$sidebar-dark),$zui-4 $zui-8,$zui-8,none);
     }
 
     iframe {
