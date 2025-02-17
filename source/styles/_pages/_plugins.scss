@@ -1,0 +1,55 @@
+.plugins {
+
+  &__list {
+    width: $zui-100p;
+    @include grid(repeat(2,1fr),auto,$zui-20);
+    
+    @include screen(0,1200) {
+      @include grid(repeat(2,1fr),auto,$zui-20);
+    }
+
+    @include mq(mobile) {
+      @include grid(#{$zui-100p},auto,$zui-8);
+    }
+  }
+
+  &__item {
+    width: $zui-100p;
+  }
+
+  &__link {
+    height: $zui-100p;
+    text-decoration: none;
+    position: relative;
+    @include flex($cl,$fs,$fs,$zui-12);
+    @include block(($sidebar-light,$sidebar-dark),$zui-8,$zui-24,none);
+    @include transition;
+
+    &:hover, &:focus {
+      @include theme(background,$text-dark,$contrast-dark);
+    }
+
+    .badge {
+      @include top_center(absolute,$zui-16);
+    }
+  }
+
+  &__cover {
+    max-width: $zui-100p;
+    border-radius: $zui-20;
+  }
+
+  &__title {
+    padding: $zui-8 $zui-20 $zui-20;
+    @include text($bold-x5,$text-light,$text-dark);
+  }
+
+  .__plugins {
+    opacity: 1;
+    
+    path {
+      opacity: .7;
+      @include theme(fill,$text-light,$text-dark);
+    }
+  }
+}

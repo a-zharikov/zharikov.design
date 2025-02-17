@@ -1,0 +1,65 @@
+.input {
+  border: $zui-2 solid var(--border);
+  border-radius: $zui-12;
+  padding: $zui-8 $zui-16;
+  @include text($normal-x4,$text-light,$text-dark);
+  @include theme(background,$bg-light,$bg-dark);
+  @include transition;
+
+  &:focus {
+    border-color: $primary;
+  }
+
+  &:not(&:placeholder-shown) {
+    box-shadow: none;
+    @include theme(border-color,$contrast-light,$contrast-dark);
+  }
+
+  &-placeholder {
+    @include flex($cl,$fs,$sh,$zui-4);
+    position: relative;
+
+    label {
+      @include text($normal-x4,$text-light,$text-dark);
+      @include left_center;
+      left: $zui-16;
+      @include transition;
+    }
+
+    input {
+      
+      &[type="text"], &[type="password"], &[type="email"], &[type="number"], &[type="search"], &[type="tel"], &[type="url"], &[type="date"], &[type="datetime-local"], &[type="time"], &[type="month"], &[type="week"] {
+        padding-top: $zui-12;
+        padding-bottom: $zui-4;
+        -moz-appearance: textfield;
+        -webkit-appearance: textfield;
+        appearance: textfield;
+        @include placeholder(var(--placeholder));
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          display: none;
+        }
+
+        &:focus, &:not(&:placeholder-shown) {
+          
+          & + label {
+            top: $zui-4;
+            transform: translate(0,0);
+            @include text($normal-x2,$contrast-light,$sidebar-light);
+          }
+        }
+
+        &:focus {
+          
+          & + label {
+            
+            & + .__hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

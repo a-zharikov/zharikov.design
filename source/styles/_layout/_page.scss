@@ -1,0 +1,93 @@
+.page {
+  width: $zui-100p;
+  max-width: $grid;
+  margin: $zui-40 auto;
+  @include grid(145px 1fr,auto,$zui-0);
+  
+  @include mq(desktop) {
+    max-width: calc(#{$zui-100p} - #{$zui-40});
+    @include grid(102px 1fr,auto,$zui-0);
+  }
+
+  @include mq(laptop) {
+    max-width: calc(#{$zui-100p} - #{$zui-40});
+    @include grid(102px 1fr,auto,$zui-0);
+  }
+
+  @include mq(tablet) {
+    margin: $zui-20 auto;
+    max-width: calc(#{$zui-100p} - #{$zui-40});
+    @include grid(102px 1fr,auto,$zui-0);
+  }
+
+  @include mq(mobile) {
+    max-width: calc(#{$zui-100p} - #{$zui-16});
+    position: relative;
+    margin: $zui-20 auto $zui-0;
+    @include flex($clr,$fs,$fs,$zui-0);
+  }
+
+  &-feed {
+    margin-right: 106px;
+
+    @include mq(desktop) {
+      margin-right: 104px;
+    }
+
+    @include mq(laptop) {
+      margin-right: $zui-40;
+    }
+
+    @include mq(tablet) {
+      margin-right: $zui-20;
+    }
+
+    @include mq(mobile) {
+      width: $zui-100p;
+      margin-right: 0;
+      margin-bottom: auto;
+    }
+
+    &__header {
+      margin-bottom: $zui-40;
+      @include flex($cl,$fs,$sh,$zui-8);
+
+      @include mq(mobile) {
+        margin-bottom: $zui-20;
+        gap: $zui-4;
+      }
+    }
+
+    &__title {
+      @include text($title-x14,$text-light,$text-dark);
+      
+      @include mq(laptop) {
+        @include text($title-x12,$text-light,$text-dark);
+      }
+
+      @include mq(tablet) {
+        @include text($headline-x10,$text-light,$text-dark);
+      }
+
+      @include mq(mobile) {
+        @include text($headline-x8,$text-light,$text-dark);
+      }
+    }
+
+    &__description {
+      @include text($normal-x4,$contrast-light,$contrast-light);
+    }
+  }
+
+  &-wrapper {
+    width: $zui-100p;
+  }
+
+  &-grid {
+    @include grid(1fr 220px,auto,$zui-40);
+    
+    @include mq(mobile) {
+      @include flex($clr,$fs,$fs,$zui-12);
+    }
+  }
+}

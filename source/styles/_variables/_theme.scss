@@ -1,0 +1,41 @@
+:root {
+  --placeholder: #{$bg-light};
+  --tertiary: #{$text-light};
+  --tertiary-bg: #{$sidebar-light};
+  --neutral-bg: #{$contrast-light};
+  --border: #{$contrast-light};
+  --nav-after: #{$bg-light-opacity};
+  --preview: url('../images/backpack/light.svg');
+  
+  img {
+    
+    &.__light {
+      display: block;
+    }
+    
+    &.__dark {
+      display: none;
+    }
+  }
+}
+
+[data-theme="dark"] {
+  --placeholder: #{$bg-dark};
+  --tertiary: #{$text-dark};
+  --tertiary-bg: #{$sidebar-dark};
+  --neutral-bg: #{$contrast-dark};
+  --border: #{$contrast-dark};
+  --nav-after: #{$bg-dark-opacity};
+  --preview: url('../images/backpack/dark.svg');
+
+  img {
+
+    &.__light {
+      display: none;
+    }
+
+    &.__dark {
+      display: block;
+    }
+  }
+}

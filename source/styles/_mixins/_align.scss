@@ -1,0 +1,64 @@
+@mixin center($property: absolute) {
+  position: $property;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin top_center($property: absolute, $top: $zui-0) {
+  position: $property;
+  top: $top;
+  left: 50%;
+  transform: translate(-50%, $zui-0);
+}
+
+@mixin top_left($property: absolute, $top: $zui-0, $left: $zui-0) {
+  position: $property;
+  top: $top;
+  left: $left;
+}
+
+@mixin top_right($property: absolute, $top: $zui-0, $right: $zui-0) {
+  position: $property;
+  top: $top;
+  right: $right;
+}
+
+@mixin bottom_center($property: absolute, $bottom: $zui-0) {
+  position: $property;
+  bottom: $bottom;
+  left: 50%;
+  transform: translate(-50%, $zui-0);
+}
+
+@mixin bottom_left($property: absolute, $bottom: $zui-0, $left: $zui-0) {
+  position: $property;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin bottom_right($property: absolute, $bottom: $zui-0, $right: $zui-0) {
+  position: $property;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin left_center($property: absolute, $left: $zui-0) {
+  position: $property;
+  top: 50%;
+  left: $left;
+  transform: translate($zui-0, -50%);
+}
+
+@mixin right_center($property: absolute, $right: $zui-0) {
+  position: $property;
+  top: 50%;
+  right: $right;
+  transform: translate($zui-0, -50%);
+}
+
+@mixin clear($property: absolute) {
+  position: $property;
+  inset: auto;
+  transform: translate($zui-0, $zui-0);
+}

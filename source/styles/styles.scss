@@ -1,0 +1,84 @@
+@import "_variables/color";
+@import "_variables/size";
+@import "_variables/shadow";
+@import "_variables/fonts";
+@import "_variables/_theme";
+@import "_variables/_typography";
+
+@import "_mixins/align";
+@import "_mixins/block";
+@import "_mixins/breakpoint";
+@import "_mixins/decoration";
+@import "_mixins/flex";
+@import "_mixins/form";
+@import "_mixins/grid";
+@import "_mixins/tt";
+@import "_mixins/typography";
+@import "_mixins/theme";
+@import "_mixins/scrollbar";
+/* @import '_mixins/icons'; */
+
+@import "_animations/rotation";
+@import "_animations/preloader";
+@import "_animations/swipe";
+
+@import "_global/reset";
+@import "_global/base";
+@import "_global/theme";
+
+@import "_layout/header";
+@import "_layout/sidebar";
+@import "_layout/nav";
+@import "_layout/page";
+@import "_layout/footer";
+
+@import "_components/modal";
+@import "_components/tag";
+@import "_components/textarea-code";
+
+@import "_pages/main";
+@import "_pages/_main/hero";
+@import "_pages/_main/about";
+@import "_pages/_main/portfolio";
+@import "_pages/_main/brands";
+@import "_pages/_main/modal";
+
+@import "_pages/resume";
+@import "_pages/_resume/hellow";
+@import "_pages/_resume/tabs";
+@import "_pages/_resume/career";
+@import "_pages/_resume/skills";
+@import "_pages/_resume/stack";
+@import "_pages/_resume/tools";
+
+@import "_pages/portfolio";
+@import "_pages/_portfolio/list";
+@import "_pages/_portfolio/modal";
+
+@import "_pages/plugins";
+
+@import "_pages/notepad";
+
+@import "_pages/backpack";
+@import "_pages/_backpack/aspectratio";
+@import "_pages/_backpack/triangle";
+@import "_pages/_backpack/remem";
+
+@import "_elements/badge";
+@import "_elements/button";
+@import "_elements/input";
+
+@import "_plugins/prism";
+@import "_plugins/lightgallery";
+
+/* @import "_elements/typography";
+@import "_elements/textarea";
+@import "_elements/checkbox";
+@import "_elements/radio";
+@import "_elements/toggle";
+@import "_elements/chips";
+@import "_elements/snackbar";
+@import "_elements/label";
+@import "_elements/form";
+@import "_elements/badge";
+@import "_elements/tooltip"; */

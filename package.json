@@ -1,23 +1,14 @@
 {
-  "name": "zharikov.design",
+  "name": "codekit-project",
   "version": "1.0.0",
+  "description": "CodeKit created this starter package.json file. You should customize it appropriately. (If you intend to publish this project on npm, add an entry in the 'repository' field and remove the 'private' attribute, below.)",
+  "scripts": {},
+  "author": "",
+  "license": "UNLICENSED",
+  "repository": {},
   "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
   "dependencies": {
-    "@nuxt/content": "^1.0.0",
-    "core-js": "^3.25.3",
-    "nuxt": "^2.15.8",
-    "vue": "^2.7.10",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
-  },
-  "devDependencies": {
-    "sass": "^1.70.0",
-    "sass-loader": "^10.5.2"
+    "jquery": "^3.7.1",
+    "zharikov-ui": "^2.1.0"
   }
 }

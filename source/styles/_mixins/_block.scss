@@ -1,0 +1,14 @@
+@mixin block($background: null, $padding: null, $border-radius: null, $shadow: null) {
+  // Проверяем количество переданных цветов фона
+  @if length($background) == 1 {
+    background: nth($background, 1); // Один цвет для фона
+  } @else if length($background) == 2 {
+    @include theme(background, nth($background, 1), nth($background, 2)); // Два цвета для светлой и темной темы
+  } @else {
+    background: $text-dark; // Значение по умолчанию, если не передан аргумент
+  }
+
+  padding: if($padding != null, $padding, $zui-0);
+  border-radius: if($border-radius != null, $border-radius, $zui-0);
+  box-shadow: if($shadow != null, $shadow, $shadow_1);
+}

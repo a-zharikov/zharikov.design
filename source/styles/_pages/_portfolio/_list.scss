@@ -1,0 +1,274 @@
+.portfolio-list {
+  position: relative;
+  z-index: 2;
+  counter-reset: ol-counter;
+  @include flex($clr,$fs,$sh,$zui-0);
+
+  @include screen(0,899) {
+    gap: $zui-12;
+  }
+  
+  &__item {
+    z-index: 1;
+    position: relative;
+    
+    &::before {
+      width: $zui-20;
+      content: counter(ol-counter)'.';
+      counter-increment: ol-counter;
+      display: block;
+      z-index: 3;
+      text-align: right;
+      @include text($light-x4,$contrast-light);
+      @include top_left(absolute,$zui-52,$zui-28);
+      
+      @include screen(0,899) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      z-index: 2;
+    }
+
+    &:last-child {
+      .portfolio-list__link {
+        border-radius: $zui-32 $zui-0 $zui-0;
+      }
+    }
+
+    &:first-child {
+      .portfolio-list__link {
+        border: 0;
+        border-radius: $zui-0 $zui-0 $zui-0 $zui-32;
+
+        &::before {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  &__project {
+    position: relative;
+    z-index: 2;
+    margin: -$zui-56 $zui-0 $zui-0 $zui-12;
+    @include flex($cl,$fs,$sh,$zui-4);
+    @include transition;
+
+    @include screen(899,1180) {
+      padding-right: 120px;
+    }
+
+    @include screen(0,899) {
+      width: $zui-100p;
+      margin: $zui-0;
+      padding: $zui-20;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 3;
+    text-wrap: balance;
+    transform: scale(1);
+    @include transition;
+    @include text($headline-x10,$text-light,$text-dark);
+
+    @include screen(900,1180) {
+      font: $headline-x8;
+    }
+    
+    @include screen(0,899) {
+      font: $headline-x6;
+    }
+  }
+
+  &__sub {
+    margin-left: $zui-8;
+    @include theme(opacity,.6,.4);
+    @include text($normal-x5,$contrast-light);
+    
+    @include screen(0,899) {
+      font: $normal-x4;
+    }
+  }
+
+  &__job {
+    @include text($normal-x5,$contrast-light);
+
+    @include screen(0,899) {
+      font: $normal-x4;
+    }
+  }
+
+  &__preview {
+    height: $zui-100p;
+    position: relative;
+    flex: 0 0 auto;
+    z-index: 1;
+    @include flex($rw,$cr,$cr,$zui-0);
+
+    @include screen(0,899) {
+      position: static;
+    }
+  }
+
+  &__button {
+    flex: 1 0 auto;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    overflow: hidden;
+    position: relative;
+    @include text($small,$text-light,$text-dark);
+    @include flex($rw,$fs,$cr,$zui-40);
+    @include block(($tr,$tr),$zui-16 $zui-24,$zui-80,none);
+
+    @include screen(900,1070) {
+      font: $bold-x3;
+    }
+
+    @include screen(0,899) {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+      width: $zui-48;
+      height: $zui-48;
+      display: block;
+      border-radius: $zui-80;
+      z-index: 1;
+      @include top_left;
+      @include theme(background,$contrast-light,$contrast-dark);
+      @include transition;
+    }
+
+    &-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    svg {
+      position: relative;
+      z-index: 2;
+
+      path {
+        @include theme(fill,$text-light,$text-dark)
+      }
+    }
+  }
+
+  &__cover {
+    width: 412px;
+    height: 278px;
+    pointer-events: none;
+    opacity: 0;
+    object-fit: cover;
+    transform: translateX($zui-24);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+    @include top_right(absolute,-42px,-$zui-32);
+    @include transition;
+    
+    @include screen(0,899) {
+      width: $zui-100p;
+      max-width: $zui-100p;
+      height: auto;
+      max-height: 240px;
+      opacity: 1;
+      position: relative;
+      clip-path: none;
+      top: $zui-0;
+      right: $zui-0;
+      border-radius: $zui-20;
+      transform: translateX($zui-0);
+    }
+
+    @include screen(0,899) {
+      max-height: 140px;
+    }
+  }
+
+  &__link {
+    height: 194px;
+    position: relative;
+    text-decoration: none;
+    border-bottom: $zui-1 solid;
+    @include flex($rw,$sb,$cr,$zui-0);
+    @include theme(border-color,$contrast-light,$contrast-dark);
+    @include block(($sidebar-light,$sidebar-dark),$zui-0 $zui-0 $zui-0 $zui-44,$zui-0,none);
+
+    @include screen(0,899) {
+      height: $zui-100p;
+      padding: $zui-8;
+      border-radius: $zui-24 !important;
+      border: 0;
+      @include flex($clr,$fs,$sh,$zui-0);
+    }
+
+    &::before {
+      content: '';
+      width: 100dvw;
+      height: $zui-100p;
+      display: block;
+      border-bottom: $zui-1 solid;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      @include theme(border-color,$contrast-light,$contrast-dark);
+      @include block(($sidebar-light,$sidebar-dark),$zui-0,$zui-0,none);
+
+      @include mq(mobile) {
+        display: none;
+      }
+    }
+
+    &::before {
+      right: -100vw;
+    }
+
+    &:hover {
+      @include theme(background,$text-dark,$contrast-dark);
+
+      .portfolio-list {
+
+        &__project {
+          margin-left: $zui-24;
+          
+          @include screen(0,899) {
+            margin-left: $zui-0;
+          }
+        }
+
+        &__title {
+          @include text($title-x12,$text-light,$text-dark);
+
+          @include screen(900,1180) {
+            font: $headline-x8;
+          }
+
+          @include screen(0,899) {
+            font: $headline-x6;
+          }
+        }
+
+        &__button {
+
+          &::before {
+            width: $zui-100p;
+            @include theme(background,$sidebar-light,$sidebar-dark);
+          }
+        }
+
+        &__cover {
+          opacity: 1;
+          transform: translateX($zui-0);
+        }
+      }
+
+      &::after, &::before {
+        @include theme(background,$text-dark,$contrast-dark);
+      }
+    }
+  }
+}

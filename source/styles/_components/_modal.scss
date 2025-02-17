@@ -1,0 +1,166 @@
+.modal {
+  width: 1000px;
+  max-height: calc(#{$zui-100p} - #{$zui-40});
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  @include center(fixed);
+  @include block(($bg-light,$bg-dark),$zui-40,$zui-40,none);
+
+  @include screen(0,1023) {
+    width: calc(#{$zui-100p} - #{$zui-28});
+  }
+  
+  @include mq(mobile) {
+    height: calc(#{$zui-100p} - #{$zui-20});
+    padding: $zui-20;
+    border-radius: $zui-20;
+    overflow-y: auto;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: $zui-40;
+    @include text($headline-x8);
+    
+    @include mq(mobile) {
+      text-align: left;
+      margin: $zui-0 $zui-44 $zui-20 $zui-0;
+      @include text($headline-x6);
+    }
+  }
+
+  &__content {
+
+    h2 {
+      margin-bottom: $zui-20;
+      @include text($headline-x6);
+      
+      @include mq(mobile) {
+        @include text($headline-x4);
+      }
+    }
+
+    p {
+      margin-bottom: $zui-12;
+      @include text($normal-x5,$text-light,$text-dark);
+
+      &:has(code) {
+        line-height: $zui-28;
+      }
+
+      & + h2 {
+        margin-top: $zui-24;
+      }
+    }
+
+    .__code {
+      border-radius: $zui-40;
+      font: $normal-x4;
+      font-family: monospace;
+      @include theme(color,$code-light,$code-dark);
+      @include block(($sidebar-light,$sidebar-dark),$zui-4 $zui-8,$zui-8,none);
+    }
+
+    iframe {
+      border-radius: $zui-12;
+      margin-bottom: $zui-32;
+
+      &:last-child {
+        margin-bottom: $zui-0;
+      }
+    }
+
+    &-image {
+      display: block;
+      margin: 0 auto $zui-20;
+      height: 200px;
+    }
+  }
+
+  &__close {
+    border-radius: $zui-24 !important;
+    z-index: 3;
+    @include top_right(absolute !important,$zui-16,$zui-16);
+    
+    @include mq(mobile) {
+      @include top_right(absolute !important,$zui-4,$zui-4);
+    }
+  }
+
+  &__page {
+    opacity: 0;
+    @include transition;
+  }
+
+  &__preloader {
+    width: $zui-100p;
+    height: $zui-100p;
+    @include center;
+    @include flex($rw,$cr,$cr,$zui-0);
+
+    svg {
+      width: $zui-40;
+      height: $zui-40;
+    }
+
+    &.__hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  &__error {
+    text-align: center;
+    @include center;
+    @include text($light-x5,$danger);
+  }
+
+  &-overlay {
+    width: $zui-100p;
+    height: $zui-100p;
+    z-index: 9998;
+    backdrop-filter: blur($zui-2);
+    @include block(($sidebar-dark-opacity,$sidebar-dark-opacity),$zui-0,$zui-0,none);
+    @include center(fixed);
+  }
+
+  &.__active {
+    display: block;
+  }
+
+  &.large {
+    max-width: 800px;
+    padding: 0;
+  }
+
+  &.small {
+    width: 600px;
+
+    @include screen(0,1023) {
+      width: calc(#{$zui-100p} - #{$zui-28});
+    }
+    
+    @include mq(mobile) {
+      height: auto;
+      padding: $zui-20;
+      border-radius: $zui-20;
+      overflow-y: auto;
+    }
+
+    .modal__title {
+      padding: $zui-0 $zui-20;
+      @include text($headline-x6);
+    }
+  }
+
+  &.video {
+    width: 400px;
+    height: auto;
+    padding: 0;
+
+    @include mq(mobile) {
+      width: 320px;
+    }
+  }
+}

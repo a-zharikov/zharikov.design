@@ -1,0 +1,95 @@
+.main {
+
+  &__title {
+    @include text($title-x14,$text-light,$text-dark);
+    
+    @include mq(tablet) {
+      @include text($headline-x10,$text-light,$text-dark);
+    }
+
+    @include mq(mobile) {
+      @include text($headline-x8,$text-light,$text-dark);
+    }
+  }
+
+  &__headline {
+    @include text($headline-x10,$text-light,$text-dark);
+    
+    @include mq(tablet) {
+      @include text($headline-x8,$text-light,$text-dark);
+    }
+
+    @include mq(mobile) {
+      display: none;
+    }
+  }
+
+  &__text {
+    text-wrap: balance;
+    @include text($subline-x6,$text-light,$text-dark);
+
+    @include screen(0,1023) {
+      @include text($subline-x4,$text-light,$text-dark);
+    }
+  }
+
+  &__button {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    @include text($small,$text-light,$text-dark);
+    @include flex($rw,$fs,$cr,$zui-40,$di);
+    @include block(($tr,$tr),$zui-16 $zui-24,$zui-80,none);
+
+    @include screen(900,1070) {
+      font: $bold-x3;
+    }
+
+    &::before {
+      content: '';
+      width: $zui-48;
+      height: $zui-48;
+      display: block;
+      border-radius: $zui-80;
+      z-index: 1;
+      @include top_left;
+      @include theme(background,$contrast-light,$contrast-dark);
+      @include transition;
+    }
+
+    &-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    svg {
+      position: relative;
+      z-index: 2;
+
+      path {
+        @include theme(fill,$text-light,$text-dark)
+      }
+    }
+
+    &:hover {
+      &::before {
+        width: $zui-100p;
+        @include theme(background,$sidebar-light,$sidebar-dark);
+      }
+    }
+
+    &--inversion {
+      &::before {
+        @include theme(background,$contrast-light,$bg-dark);
+      }
+
+      &:hover {
+        &::before {
+          @include theme(background,$sidebar-light,$bg-dark);
+        }
+      }
+    }
+  }
+}

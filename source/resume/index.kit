@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- $page-title = Резюме -->
+  <!-- $page-description = Резюме фронтенд разработчика и UI/UX - дизайнера -->
+  <!-- $page-keywords = резюме, hh.ru, superjob.ru, html, css, javascript -->
+  <!-- @import ../_kit/_layout/_head-page.kit -->
+  <script src="../javascript/pages/resume.min.js"></script>
+  
+  <body class="resume">
+    <!-- @import ../_kit/_layout/_header.kit -->
+    <main class="page">
+      <!-- @import ../_kit/_layout/_sidebar.kit -->
+      <section class="page-wrapper">
+        <!-- @import _hellow.kit -->
+        <div class="resume-page">
+          <!-- @import _tabs.kit -->
+          <div class="resume-page__container">
+            <div data-tabs="career" class="resume-page__item resume-page__item--active">
+              <!-- @import _career.kit -->
+            </div>
+            <div data-tabs="skills" class="resume-page__item">
+              <!-- @import _skills.kit -->
+            </div>
+            <div data-tabs="stack" class="resume-page__item">
+              <!-- @import _stack.kit -->
+              <!-- @import _tools.kit -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @import ../_kit/_layout/_footer.kit -->
+  </body>
+</html>

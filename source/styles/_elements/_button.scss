@@ -1,0 +1,106 @@
+$sizes: (
+  large: (
+    font: $bold-x5, padding: $zui-12 $zui-16, gap: $zui-8
+  ),
+  medium: (
+    font: $bold-x4, padding: $zui-12 $zui-16, gap: $zui-4
+  ),
+  small: (
+    font: $bold-x3, padding: $zui-4 $zui-12, gap: $zui-4
+  ),
+  fab: (
+    font: $bold-x5, padding: $zui-16, gap: $zui-8
+  ),
+);
+
+$colors: (
+  primary: (
+    background: $primary, color: $text-dark
+  ),
+  success: (
+    background: $success, color: $text-dark
+  ),
+  waring: (
+    background: $waring, color: $text-light
+  ),
+  danger: (
+    background: $danger, color: $text-dark
+  ),
+  tertiary: (
+    background: $tr, color: var(--tertiary), fill: var(--tertiary)
+  ),
+  neutral: (
+    background: var(--tertiary-bg), color: var(--tertiary)
+  )
+);
+
+$hover: (
+  primary: (
+    background: $primary-hover, color: $text-dark,
+  ),
+  success: (
+    background: $success-hover, color: $text-dark,
+  ),
+  warning: (
+    background: $waring-hover, color: $text-light,
+  ),
+  danger: (
+    background: $danger-hover, color: $text-dark,
+  ),
+  tertiary: (
+    background: var(--tertiary-bg), color: $text-dark, fill: var(--tertiary)
+  ),
+  neutral: (
+    background: var(--neutral-bg), color: $text-dark
+  )
+);
+
+.button {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  border: $zui-0;
+  border-radius: $zui-16;
+  @include flex($rw,$cr,$cr,$zui-0,$di);
+  @include transition;
+
+  @each $size-name, $size-map in $sizes {
+    &.#{$size-name} {
+      font: map-get($size-map, font);
+      padding: map-get($size-map, padding);
+      gap: map-get($size-map, gap);
+
+      // Цвета
+      @each $color-name, $color-map in $colors {
+        &.#{$color-name} {
+          background: map-get($color-map, background);
+          color: map-get($color-map, color);
+
+          path {
+            fill: map-get($color-map, color);
+          }
+        }
+      }
+
+      // Ховер
+      @each $color-name, $color-map in $hover {
+        &.#{$color-name} {
+          &:hover, &:focus {
+            color: map-get($color-map, color);
+            background: map-get($color-map, background);
+
+            path {
+              fill: map-get($color-map, fill);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:disabled {
+    color: var(--sem-color-text-on-surface-variant) !important;
+    background: var(--sem-color-background-surface-neutral) !important;
+  }
+}

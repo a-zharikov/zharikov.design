@@ -1,0 +1,16 @@
+.history {
+  video {
+    width: 400px;
+    display: block;
+
+    @include mq(mobile) {
+      width: 320px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    padding: $zui-12;
+    @include text($bold-x3,$danger);
+  }
+}

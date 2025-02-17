@@ -1,0 +1,11 @@
+.sidebar {
+  position: relative;
+  z-index: 3;
+
+  @include mq(mobile) {
+    width: $zui-100p;
+    margin: $zui-8 $zui-0;
+    z-index: 10;
+    @include bottom_left(sticky,1dvh,$zui-8);
+  }
+}

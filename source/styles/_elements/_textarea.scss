@@ -1,0 +1,27 @@
+.textarea {
+  width: $zui-100p;
+  background: $white;
+  border: 2px solid $border;
+  border-radius: $zui-12;
+  box-sizing: border-box;
+  padding: $zui-8 $zui-16;
+  resize: vertical;
+  position: relative;
+  z-index: 1;
+  @include text($normal-x4);
+  @include transition;
+
+  &--sizing {
+    @include field-sizing;
+  }
+
+  &:focus {
+    border-color: $primary;
+    box-shadow: $zui-0 $zui-0 $zui-0 $zui-4 rgba(198, 208, 238, 0.50), $zui-0 $zui-2 $zui-4 $zui-0 rgba(34, 34, 34, 0.12), $zui-0 $zui-0 $zui-1 $zui-0 rgba(0, 0, 0, 0.50);
+  }
+
+  &:not(&:placeholder-shown) {
+    border-color: $body;
+    box-shadow: none;
+  }
+}

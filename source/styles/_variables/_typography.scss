@@ -1,0 +1,36 @@
+// Font weight
+$light: 400;
+$regular: 500;
+$bold: 700;
+
+$title-x16: $bold #{$zui-64}/#{$zui-64} $ff;
+$title-x14: $bold #{$zui-56}/#{$zui-56} $ff;
+$title-x12: $bold #{$zui-48}/#{$zui-48} $ff;
+
+$headline-x10: $bold #{$zui-40}/#{$zui-44} $ff;
+$headline-x8: $bold #{$zui-32}/#{$zui-36} $ff;
+$headline-x6: $bold #{$zui-24}/#{$zui-28} $ff;
+$headline-x4: $bold #{$zui-20}/#{$zui-24} $ff;
+
+$subline-x10: $light #{$zui-40}/#{$zui-40} $ff;
+$subline-x8: $light #{$zui-32}/#{$zui-40} $ff;
+$subline-x6: $light #{$zui-24}/#{$zui-32} $ff;
+$subline-x4: $light #{$zui-20}/#{$zui-28} $ff;
+
+$light-x5: $light #{$zui-20}/#{$zui-28} $ff;
+$normal-x5: $regular #{$zui-20}/#{$zui-28} $ff;
+$bold-x5: $bold #{$zui-20}/#{$zui-28} $ff;
+$light-x4: $light #{$zui-16}/#{$zui-24} $ff;
+$normal-x4: $regular #{$zui-16}/#{$zui-24} $ff;
+$bold-x4: $bold #{$zui-16}/#{$zui-24} $ff;
+$light-x3: $light #{$zui-12}/#{$zui-20} $ff;
+$normal-x3: $regular #{$zui-12}/#{$zui-20} $ff;
+$bold-x3: $bold #{$zui-12}/#{$zui-20} $ff;
+$light-x2: $light #{$zui-8}/#{$zui-16} $ff;
+$normal-x2: $regular #{$zui-8}/#{$zui-16} $ff;
+$bold-x2: $bold #{$zui-8}/#{$zui-16} $ff;
+
+$large: $bold #{$zui-24}/#{$zui-24} $fb;
+$middle: $bold #{$zui-20}/#{$zui-20} $fb;
+$small: $bold #{$zui-16}/#{$zui-16} $fb;
+$mini: $bold #{$zui-12}/#{$zui-12} $fb;

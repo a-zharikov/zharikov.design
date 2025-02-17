@@ -1,0 +1,52 @@
+.resume-stack {
+  @include grid(repeat(3,1fr),auto,$zui-40 $zui-80);
+  
+  @include mq(tablet) {
+    @include grid(repeat(2,1fr),auto,$zui-40);
+  }
+
+  @include mq(mobile) {
+    @include grid(repeat(2,1fr),auto,$zui-32 $zui-20);
+  }
+
+  &__item {
+    @include flex($cl,$fs,$sh,$zui-8);
+  }
+
+  &__header {
+    @include flex($rw,$fs,$fe,$zui-8);
+  }
+
+  &__title {
+    @include text($headline-x4,$text-light,$text-dark);
+  }
+
+  &__subline {
+    @include text($normal-x4,$contrast-light);
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__progress {
+    @include grid(repeat(5, 1fr),$zui-4,$zui-8);
+
+    &-item {
+      border-radius: $zui-12;
+      @include theme(background,$contrast-light,$sidebar-dark);
+    }
+
+    @for $i from 1 through 5 {
+      &._#{$i} {
+        .resume-stack__progress-item {
+          @for $j from 1 through $i {
+            &:nth-of-type(#{$j}) {
+              background: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

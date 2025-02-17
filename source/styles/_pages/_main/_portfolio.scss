@@ -1,0 +1,30 @@
+.main-portfolio {
+  padding: $zui-80 $zui-0;
+
+  @include mq(tablet) {
+    padding: $zui-60 $zui-0;
+  }
+
+  @include mq(mobile) {
+    padding: $zui-52 $zui-0;
+  }
+
+  .main__title {
+    margin-bottom: $zui-60;
+    
+    @include mq(tablet) {
+      margin-bottom: $zui-40;
+    }
+    
+    @include mq(mobile) {
+      margin-bottom: $zui-20;
+    }
+  }
+
+  .portfolio-list__item {
+
+    &::before {
+      display: none;
+    }
+  }
+}

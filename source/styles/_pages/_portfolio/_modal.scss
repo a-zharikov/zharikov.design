@@ -1,0 +1,242 @@
+.project {
+  @include flex($cl,$fs,$sh,$zui-32);
+
+  &__cover {
+    position: relative;
+
+    &-image {
+      position: relative;
+      max-width: $zui-100p;
+      height: $zui-100p !important;
+      margin-bottom: $zui-0 !important;
+      border-radius: $zui-0 $zui-0 $zui-40 $zui-40;
+      z-index: 1;
+      @include theme(opacity,.4,.2);
+      
+      @include mq(mobile) {
+        border-radius: $zui-0 $zui-0 $zui-20 $zui-20;
+      }
+    }
+  }
+
+  &__header {
+    width: $zui-100p;
+    z-index: 2;
+    @include center;
+    @include flex($clr,$cr,$cr,$zui-8);
+
+    &-title {
+      order: 2;
+      text-align: center;
+      text-wrap: balance;
+      @include text($title-x12,$text-light,$text-dark);
+  
+      @include mq(mobile) {
+        @include text($headline-x10,$text-light,$text-dark);
+      }
+  
+      @include mq(mobile) {
+        padding: 0 $zui-40;
+      }
+    }
+  
+    &-descriptipn {
+      order: 3;
+      text-align: center;
+      text-wrap: balance;
+      @include text($normal-x5,$text-light,$text-dark);
+  
+      @include mq(mobile) {
+        @include text($normal-x4,$text-light,$text-dark);
+      }
+  
+      @include mq(mobile) {
+        padding: 0 $zui-40;
+      }
+    }
+
+    &-link {
+      order: 1;
+      text-decoration: none;
+      @include text($light-x4,$text-light,$text-dark);
+      @include block(($sidebar-light-opacity,$sidebar-dark-opacity),$zui-12 $zui-20,$zui-40,none);
+      
+      &:hover {
+        @include text($light-x4,$primary,$primary);
+      }
+    }
+
+    &-archive {
+      order: 1;
+      text-decoration: none;
+      @include text($light-x3,$text-light,$text-dark);
+      @include block(($sidebar-light-opacity,$sidebar-dark-opacity),$zui-8 $zui-16,$zui-40,none);
+    }
+  }
+
+  &__task {
+    padding: $zui-0 $zui-40;
+    @include flex($cl,$fs,$sh,$zui-16);
+    
+    @include mq(mobile) {
+      padding: $zui-0 $zui-20;
+
+    }
+  }
+
+  &__title {
+    margin-bottom: $zui-20;
+    @include text($headline-x8,$text-light,$text-dark);
+    
+    @include mq(mobile) {
+      margin: $zui-0 $zui-44 $zui-20 $zui-0;
+      @include text($headline-x6,$text-light,$text-dark);
+    }
+  }
+
+  &__text {
+    text-wrap: balance;
+    margin-bottom: $zui-0 !important;
+  }
+
+  &__list {
+    @include flex($cl,$fs,$sh,$zui-16);
+
+    &-item {
+      text-wrap: balance;
+      @include text($normal-x5,$text-light,$text-dark);
+      
+      @include mq(mobile) {
+        @include text($normal-x4,$text-light,$text-dark);
+      }
+    }
+
+    &--decimal {
+      padding-left: $zui-32;
+      list-style: decimal;
+
+      @include mq(mobile) {
+        padding-left: $zui-24;
+      }
+
+      li {
+        &::marker {
+          color: $primary;
+        }
+      }
+    }
+
+    &--disc {
+      padding-left: $zui-20;
+      list-style: disc;
+
+      @include mq(mobile) {
+        padding-left: calc(#{$zui-12} - #{$zui-2});
+      }
+
+      li {
+        &::marker {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  &__stack {
+    margin: 0 $zui-40;
+    @include block(($text-dark,$contrast-dark),$zui-20,$zui-20,none);
+    
+    @include mq(mobile) {
+      padding: $zui-20;
+      margin: 0 $zui-8;
+    }
+
+    &-item {
+      @include text($normal-x4,$text-light,$text-dark);
+      @include block(($bg-light,$bg-dark),$zui-8 $zui-24,$zui-80,none);
+    }
+
+    &-wrapper {
+      @include flex($rw,$cr,$cr,$zui-16);
+      flex-wrap: wrap;
+    }
+  }
+
+  &__screen {
+    padding: 0 $zui-20;
+
+    &:last-child {
+      margin-bottom: $zui-16;
+      
+      @include mq(mobile) {
+        margin-bottom: $zui-8;
+      }
+    }
+
+    &-item {
+      @include flex($cl,$cr,$cr,$zui-20);
+
+      &:has(.project__screen-image--mobile) {
+
+        .project__screen-wrapper {
+          gap: $zui-0;
+        }
+      }
+    }
+
+    &-wrapper {
+      @include flex($rw,$cr,$sh,$zui-12);
+      
+      @include mq(mobile) {
+        gap: $zui-8;
+      }
+    }
+
+    &-caption {
+      text-align: center;
+      opacity: .4;
+      @include text($normal-x5,$text-light,$text-dark);
+
+      @include mq(mobile) {
+        @include text($normal-x3,$text-light,$text-dark);
+      }
+    }
+
+    &-title {
+      margin-bottom: $zui-8;
+      @include text($headline-x6,$text-light,$text-dark);
+      
+      @include mq(mobile) {
+        margin-bottom: $zui-4;
+        @include text($headline-x4,$text-light,$text-dark);
+      }
+    }
+
+    &-image {
+      max-width: $zui-100p;
+      border-radius: $zui-12;
+      margin: 0 auto;
+      display: block;
+
+      @include mq(mobile) {
+        border-radius: $zui-8;
+      }
+      
+      &--desktop {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &--mobile {
+        max-width: 90%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: $zui-12;
+
+        @include mq(mobile) {
+          border-radius: $zui-8;
+        }
+      }
+    }
+  }
+}

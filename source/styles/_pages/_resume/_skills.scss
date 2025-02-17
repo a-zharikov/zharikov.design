@@ -1,0 +1,39 @@
+.resume-skills {
+
+  @include mq(mobile) {
+    margin-bottom: $zui-20;
+  }
+
+  &__item {
+    @include flex($cl,$fs,$sh,$zui-8);
+    
+    &:not(:last-child) {
+      margin-bottom: $zui-40;
+
+      @include mq(mobile) {
+        margin-bottom: $zui-20;
+      }
+    }
+  }
+
+  &__title {
+    @include text($headline-x8,$text-light,$text-dark);
+    
+    @include mq(tablet) {
+      @include text($headline-x6,$text-light,$text-dark);
+    }
+
+    @include mq(mobile) {
+      @include text($headline-x4,$text-light,$text-dark);
+    }
+  }
+
+  &__text {
+    text-wrap: balance;
+    @include text($normal-x5,$text-light,$text-dark);
+    
+    @include screen(0,1023) {
+      @include text($normal-x4,$text-light,$text-dark);
+    }
+  }
+}

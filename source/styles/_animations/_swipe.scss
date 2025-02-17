@@ -1,0 +1,19 @@
+@keyframes swipe {
+  0% {
+    transform: translateY($zui-0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY($zui-8);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    transform: translateY($zui-0);
+  }
+  100% {
+    opacity: 1;
+  }
+}

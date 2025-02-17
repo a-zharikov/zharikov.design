@@ -1,0 +1,69 @@
+.resume-hellow {
+  margin-bottom: $zui-80;
+  @include flex($rw,$fs,$cr,$zui-80);
+  
+  @include screen(900,1239) {
+    gap: $zui-40
+  }
+
+  @include mq(mobile) {
+    margin-bottom: $zui-40;
+    @include flex($cl,$cr,$sh,$zui-32);
+  }
+
+  &__image {
+    width: 220px;
+    height: 220px;
+    display: block;
+    border-radius: 500px;
+    cursor: grab;
+
+    @include screen(0,1023) {
+      width: 200px;
+      height: 200px;
+    } 
+
+    @include mq(mobile) {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    opacity: .1;
+    @include text($normal-x5,$text-light,$text-dark);
+    
+    @include screen(0,800) {
+      @include text($normal-x4,$text-light,$text-dark);
+    }
+  }
+  
+  &__name {
+    @include text($title-x14,$text-light,$text-dark);
+
+    @include screen(801,1239) {
+      @include text($title-x12,$text-light,$text-dark);
+    }
+
+    @include screen(0,800) {
+      @include text($headline-x8,$text-light,$text-dark);
+    }
+  }
+
+  &__description {
+    text-wrap: balance;
+    @include text($subline-x6,$contrast-light);
+
+    @include screen(0,800) {
+      @include text($normal-x4,$contrast-light);
+    }
+  }
+
+  &__content {
+    @include flex($cl,$fs,$sh,$zui-8);
+
+    @include mq(mobile) {
+      text-align: center;
+      @include flex($cl,$cr,$sh,$zui-4);
+    }
+  }
+}

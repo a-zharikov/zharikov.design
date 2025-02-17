@@ -1,0 +1,129 @@
+.remem {
+  @include flex($cl,$cr,$sh,$zui-20);
+
+  &__wrapper {
+    align-items: center;
+    @include grid(1fr auto 1fr,auto,$zui-12);
+    
+    @include mq(mobile) {
+      @include grid(#{$zui-100p},auto,$zui-8);
+    }
+  }
+
+  &__input {
+    border: $zui-2 solid;
+    border-radius: $zui-12;
+    @include theme(border-color,$contrast-light,$contrast-dark);
+    @include flex($rw,$fs,$cr,$zui-8);
+
+    input {
+      width: $zui-100p;
+      padding: $zui-8 $zui-16;
+      background: $tr;
+      border: $zui-0;
+      @include text($normal-x5,$text-light,$text-dark);
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        display: none;
+      }
+
+      &:disabled {
+        opacity: .05;
+      }
+    }
+
+    select {
+      padding: $zui-4 $zui-12;
+      background: $tr;
+      border: $zui-0;
+      border-left: $zui-2 solid;
+      margin-right: $zui-12;
+      @include text($normal-x5,$text-light,$text-dark);
+      @include theme(border-color,$contrast-light,$contrast-dark);
+    }
+  }
+
+  &__icon {
+    @include flex($rw,$cr,$cr,$zui-0);
+
+    path {
+      opacity: .4;
+      @include theme(fill,$text-light,$text-dark);
+    }
+  }
+
+  &__base {
+    @include flex($cl,$cr,$cr,$zui-8);
+
+    label {
+      @include text($normal-x4,$text-light,$text-dark);
+    }
+
+    &-input {
+      width: calc(#{$zui-100p} / 3);
+      border: $zui-2 solid $primary;
+      border-radius: $zui-12;
+      @include theme(border-color,$contrast-light,$contrast-dark);
+      @include flex($rw,$fs,$cr,$zui-8);
+
+      @include mq(mobile) {
+        width: $zui-100p;
+      }
+  
+      input {
+        width: $zui-100p;
+        padding: $zui-8 $zui-16;
+        background: $tr;
+        border: $zui-0;
+        @include text($normal-x5,$text-light,$text-dark);
+  
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          display: none;
+        }
+  
+        &:disabled {
+          opacity: .05;
+        }
+      }
+
+      span {
+        border-left: $zui-2 solid;
+        padding-left: $zui-12;
+        margin-right: $zui-12;
+        @include text($normal-x5,$text-light,$text-dark);
+        @include theme(border-color,$contrast-light,$contrast-dark);
+      }
+    }
+  }
+
+  &__copy {
+    @include flex($rw,$cr,$cr,$zui-12);
+
+    span {
+      border-radius: $zui-16;
+      padding: $zui-12 $zui-20;
+      @include theme(background,$contrast-light,$contrast-dark);
+      @include text($light-x5,$text-light,$text-dark);
+    }
+
+    button {
+
+      .remem__chech {
+        display: none;
+      }
+
+      &.__active {
+
+        .remem__copy {
+          display: none;
+        }
+
+        .remem__chech {
+          display: block;
+        }
+      }
+    }
+  }
+}

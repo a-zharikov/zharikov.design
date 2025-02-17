@@ -1,0 +1,46 @@
+$sizes: (
+  large: (height: $zui-32, padding: $zui-0 $zui-12, font-size: $zui-16),
+  medium: (height: $zui-24, padding: $zui-0 $zui-8, font-size: $zui-12),
+  small: (height: $zui-16, padding: $zui-0 $zui-8, font-size: $zui-8)
+);
+
+$colors: (
+  primary: (background-color: $primary, color: $text-dark),
+  success: (background-color: $success, color: $text-dark),
+  secondary: (background-color: $waring, color: $text-dark),
+  danger: (background-color: $danger, color: $text-dark),
+  css: (background-color: $css, color: $text-dark),
+  scss: (background-color: $scss, color: $text-dark),
+  html: (background-color: $html, color: $text-dark),
+  javascript: (background-color: $javascript, color: $text-light),
+  jquery: (background-color: $jquery, color: $text-light),
+);
+
+.badge {
+  height: $zui-24;
+  font-size: $zui-16;
+  font-weight: $bold;
+  border-radius: $zui-20;
+  @include flex($rw,$cr,$cr,$zui-4,$di);
+
+  @each $size-name, $size-map in $sizes {
+    &.#{$size-name} {
+      font-size: map-get($size-map, font-size);
+      line-height: map-get($size-map, font-size);
+      height: map-get($size-map, height);
+      padding: map-get($size-map, padding);
+    }
+
+    @each $color-name, $color-map in $colors {
+      &.#{$color-name} {
+        background-color: map-get($color-map, background-color);
+        color: map-get($color-map, color);
+      }
+    }
+  }
+
+  &.tools {
+    @include theme(color,$contrast-light, $sidebar-dark);
+    @include theme(background,$bg-light, $bg-dark);
+  }
+}

@@ -1,0 +1,113 @@
+.main-brands {
+  
+  &__list {
+    margin-top: $zui-40;
+    @include flex($rw,$sb,$cr,$zui-20);
+    flex-wrap: wrap;
+    
+    @include mq(mobile) {
+      width: $zui-100p;
+      margin-top: $zui-20;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      flex-wrap: nowrap;
+      @include flex($rw,$fs,$cr,$zui-8);
+      @include nosb;
+    }
+  }
+
+  &__item {
+    width: 120px;
+    height: 120px;
+    border-radius: $zui-100p;
+    @include flex($cl,$cr,$cr,$zui-0);
+    @include theme(background,$sidebar-light,$sidebar-dark);
+
+    @include mq(laptop) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @include mq(tablet) {
+      width: $zui-76;
+      height: $zui-76;
+    }
+
+    @include mq(mobile) {
+      width: $zui-80;
+      height: $zui-80;
+      flex: 0 0 auto;
+    }
+  }
+
+  &__logo {
+    max-width: $zui-56;
+
+    &--ar {
+
+      ._a {
+        @include theme(fill,#E0002A,#ffffff);
+      }
+
+      stop {
+        @include theme(stop-color,#ffffff,#ffffff);
+      }
+    }
+    
+    &--cordiant {
+      max-width: $zui-40;
+      
+      path {
+        @include theme(fill,#005387,#ffffff);
+      }
+    }
+
+    &--vw {
+      max-width: $zui-40;
+      
+      path {
+        @include theme(fill,#011E50,#ffffff);
+      }
+    }
+
+    &--kia {
+      max-width: $zui-56;
+      
+      path {
+        @include theme(fill,#000000,#ffffff);
+      }
+    }
+
+    &--lada {
+      max-width: $zui-56;
+      
+      path {
+        @include theme(fill,#465865,#ffffff);
+      }
+    }
+
+    &--nitto {
+      max-width: $zui-64;
+      
+      path {
+        @include theme(fill,#000000,#ffffff);
+      }
+    }
+
+    &--elle {
+      max-width: $zui-64;
+      
+      path {
+        @include theme(fill,#000000,#ffffff);
+      }
+    }
+
+    &--rzd {
+      max-width: $zui-56;
+      
+      path {
+        @include theme(fill,#E53124,#ffffff);
+      }
+    }
+  }
+}

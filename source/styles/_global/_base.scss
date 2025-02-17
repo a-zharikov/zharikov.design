@@ -1,0 +1,35 @@
+html {
+  height: $zui-100p;
+  overflow-x: hidden;
+}
+
+body {
+  height: $zui-100p;
+  overflow-x: hidden;
+  @include text($normal-x5,$text-light,$text-dark);
+  @include theme(background, $bg-light, $bg-dark);
+  @include grid($zui-100p,auto 1fr auto,$zui-0);
+  @include transition;
+}
+
+noscript {
+  width: $zui-100p;
+  height: $zui-100p;
+  text-align: center;
+  backdrop-filter: blur($zui-4);
+  background: $sidebar-light-opacity;
+  z-index: 100;
+  @include text($normal-x5,$text-light);
+  @include flex($rw,$cr,$cr,$zui-12);
+  @include top_left(fixed,$zui-0,$zui-0);
+}
+
+.container {
+  max-width: $grid;
+  margin: $zui-0 auto;
+  padding: $zui-0 $zui-20;
+
+  @include mq(mobile) {
+    padding: $zui-0 $zui-12;
+  }
+}

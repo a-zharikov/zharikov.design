@@ -1,0 +1,31 @@
+.resume {
+
+  &-page {
+    @include flex($cl,$fs,$sh,$zui-40);
+  
+    @include screen(0,1023) {
+      gap: $zui-28;
+    }
+
+    &__item {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
+  }
+
+  .page-wrapper {
+    width: $zui-100p;
+  }
+
+  .__resume {
+    opacity: 1;
+    
+    path {
+      opacity: .7;
+      @include theme(fill,$text-light,$text-dark);
+    }
+  }
+}
