@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+          <script>
+            (function() {
+              const savedTheme = localStorage.getItem("theme");
+              const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+              const defaultTheme = savedTheme || (prefersDark ? "dark" : "light");
+              document.documentElement.setAttribute("data-theme", defaultTheme);
+            })();
+          </script>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="description" content="Александр Жариков - сайт портфолио">
+          <meta name="keywords" content="сайт, портфолио, хомяк, site, portfolio, homepage">
+          <title>403 // Zharikov.design</title>
+          
+          <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+          <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+          <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+          <meta name="apple-mobile-web-app-title" content="Zharikov" />
+          <link rel="manifest" href="/images/favicon/site.webmanifest" />
+          <meta name="msapplication-TileColor" content="#373737">
+          <meta name="theme-color" content="#373737">
+        
+          <meta property="og:site_name" content="Alexander [skreets] Zharikov">
+          <meta property="og:title" content="403 // Zharikov.design">
+          <meta property="og:url" content="https://zharikov.design">
+          <meta property="og:type" content="website">
+          <meta property="og:description" content="Александр Жариков - сайт портфолио">
+          <meta property="og:image" content="images/cover.jpg">
+          <meta property="og:image:url" content="images/cover.jpg">
+          <meta property="og:image:secure_url" content="images/cover.jpg">
+          <meta property="og:image:width" content="840">
+          <meta property="og:image:height" content="480">
+        
+          <script src="javascript/scripts.min.js" type="text/javascript"></script>
+          <link rel="stylesheet" href="/styles/styles.css" media="all">
+        </head>
+        
+  <body>
+    <main class="page-error">
+      <h1 class="page-error__title" data-text="403">403</h1>
+      <p class="page-error__text">Доступа нет...</p>
+      <a class="page-error__link" href="/">
+        <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z" fill="white"/>
+        </svg>
+        <span class="page-error__link-text">home</span>
+      </a>
+    </main>
+  </body>
+</html>
