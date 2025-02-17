@@ -1,0 +1,119 @@
+.main-about {
+  position: relative;
+  @include theme(background,$text-dark,$contrast-dark);
+
+  &::before, &::after {
+    content: '';
+    width: 100vw;
+    height: $zui-100p;
+    top: 0;
+    position: absolute;
+    @include theme(background,$text-dark,$contrast-dark);
+  }
+  
+  &::before {
+    left: -100vw;
+  }
+  
+  &::after {
+    right: -100vw;
+  }
+
+  .__bar {
+    @include top_right(absolute,$zui-0,-128px);
+
+    path {
+      @include theme(fill,$bg-light, $bg-dark);
+    }
+
+    @include mq(mobile) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 154px $zui-0 $zui-80;
+    @include grid(1fr 200px,auto,200px);
+
+    @include mq(laptop) {
+      gap: $zui-80;
+    }
+
+    @include mq(tablet) {
+      gap: $zui-40;
+      padding-bottom: $zui-60;
+    }
+
+    @include mq(mobile) {
+      padding: $zui-52 $zui-0;
+      @include grid($zui-100p,auto,$zui-40);
+    }
+  }
+
+  &__item {
+    @include flex($cl,$fs,$fs,$zui-40);
+
+    @include mq(mobile) {
+      @include flex($cl,$fs,$cr,$zui-40);
+    }
+  }
+
+  &__content {
+    @include flex($cl,$fs,$sh,$zui-20);
+
+    @include mq(mobile) {
+      gap: $zui-16;
+    }
+  }
+
+  &__hobby {
+    @include flex($cl,$fs,$cr,$zui-32);
+  }
+
+  &__history {
+    @include flex($cl,$fs,$fs,$zui-16);
+    
+    @include mq(mobile) {
+      @include flex($rw,$cr,$cr,$zui-20);
+    }
+
+    .history {
+
+      &__item {
+        padding: $zui-8;
+        border: $zui-2 solid $primary;
+        border-radius: $zui-100p;
+
+        &:nth-of-type(2) {
+          margin-left: -$zui-80;
+          
+          @include mq(tablet) {
+            margin-left: -$zui-40;
+          }
+
+          @include mq(mobile) {
+            margin-left: $zui-0;
+          }
+        }
+      }
+
+      &__cover {
+        width: 152px;
+        height: 152px;
+        display: block;
+        border-radius: $zui-100p;
+
+        @include mq(tablet) {
+          width: 120px;
+          height: 120px;
+        }
+
+        @include mq(mobile) {
+          width: $zui-80;
+          height: $zui-80;
+        }
+      }
+    }
+  }
+}

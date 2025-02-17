@@ -20,6 +20,7 @@
 
 @import "_animations/rotation";
 @import "_animations/preloader";
+@import "_animations/swipe";
 
 @import "_global/reset";
 @import "_global/base";
@@ -37,6 +38,10 @@
 
 @import "_pages/main";
 @import "_pages/_main/hero";
+@import "_pages/_main/about";
+@import "_pages/_main/portfolio";
+@import "_pages/_main/brands";
+@import "_pages/_main/modal";
 
 @import "_pages/resume";
 @import "_pages/_resume/hellow";

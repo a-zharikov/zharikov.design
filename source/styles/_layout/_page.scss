@@ -79,6 +79,10 @@
     }
   }
 
+  &-wrapper {
+    width: $zui-100p;
+  }
+
   &-grid {
     @include grid(1fr 220px,auto,$zui-40);
     

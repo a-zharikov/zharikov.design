@@ -1,57 +1,171 @@
 .main-hero {
-  height: calc(100dvh - 94px);
-
-  @include mq(modal) {
-    height: calc(100dvh - 66px);
+  height: calc(100dvh - $zui-80);
+  @include flex($rw,$sb,$cr,$zui-0);
+  position: relative;
+  
+  @include mq(mobile) {
+    height: calc(100dvh - $zui-60);
+    @include flex($clr,$cr,$cr,$zui-32);
   }
 
-  &__button {
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    overflow: hidden;
+  &__wrapper {
+    @include flex($cl,$fs,$fs,$zui-40);
+    
+    @include mq(mobile) {
+      @include flex($cl,$cr,$cr,$zui-32);
+    }
+  }
+
+  &__contant {
+    @include flex($cl,$fs,$sh,$zui-20);
+
+    @include mq(mobile) {
+      @include flex($cl,$cr,$cr,$zui-12);
+    }
+  }
+
+  &__title {
+    @include text($title-x14,$text-light,$text-dark);
+    
+    @include mq(tablet) {
+      @include text($headline-x10,$text-light,$text-dark);
+    }
+    
+    @include mq(mobile) {
+      @include text($headline-x8,$text-light,$text-dark);
+    }
+  
+  }
+
+  &__text {
+    text-wrap: balance;
+    @include text($subline-x8,$text-light,$text-dark);
+
+    @include mq(laptop) {
+      @include text($subline-x6,$text-light,$text-dark);
+    }
+
+    @include screen(0,1023) {
+      @include text($subline-x4,$text-light,$text-dark);
+    }
+
+    @include mq(mobile) {
+      width: $zui-100p;
+      text-align: center;;
+      text-wrap: normal;
+    }
+  }
+
+  &__code {
+    @include theme(color,$contrast-light,$sidebar-dark);
+  }
+
+  &__list {
+    @include flex($rw,$fs,$cr,$zui-4);
+  }
+
+  &__item {
     position: relative;
-    @include text($small,$text-light,$text-dark);
-    @include flex($rw,$fs,$cr,$zui-40,$di);
-    @include block(($tr,$tr),$zui-16 $zui-24,$zui-80,none);
-
-    @include screen(900,1070) {
-      font: $bold-x3;
-    }
-
-    @include screen(0,899) {
-      display: none;
-    }
+    opacity: .4;
+    @include transition;
 
     &::before {
       content: '';
-      width: $zui-48;
-      height: $zui-48;
-      display: block;
+      width: $zui-0;
+      height: $zui-2;
       border-radius: $zui-80;
-      z-index: 1;
-      @include top_left;
-      @include theme(background,$contrast-light,$contrast-dark);
+      display: block;
+      @include bottom_center;
       @include transition;
+      @include theme(background,$primary,$primary);
     }
 
-    &-text {
-      position: relative;
-      z-index: 2;
-    }
+    &:not(:last-child) {
+      &::after {
+        content: '/';
+        @include text($normal-x3,$text-light,$text-dark);
+      }
 
-    svg {
-      position: relative;
-      z-index: 2;
-
-      path {
-        @include theme(fill,$text-light,$text-dark)
+      &::before {
+        margin-left: -$zui-4;
       }
     }
 
     &:hover {
+      opacity: 1;
+
       &::before {
-        width: $zui-100p;
-        @include theme(background,$sidebar-light,$sidebar-dark);
+        width: $zui-24;
+      }
+
+      &::after {
+        opacity: .4;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    @include text($normal-x4,$text-light,$text-dark);
+  }
+
+  &__avatar {
+    position: relative;
+
+    svg {
+      @include top_right(absolute,-$zui-32,-$zui-32);
+
+      @include mq(mobile) {
+        top: -$zui-24;
+        right: -$zui-24
+      }
+
+      circle {
+        @include theme(fill,$contrast-light,$contrast-dark);
+      }
+    }
+  }
+
+  &__image {
+    width: 384px;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    border-radius: $zui-100p;
+
+    @include mq(laptop) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @include mq(tablet) {
+      width: 260px;
+      height: 260px;
+    }
+
+    @include mq(mobile) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &__mouse {
+    @include bottom_center(absolute,$zui-40);
+    @include mq(mobile) {
+      display: none
+    }
+
+    svg {
+      rect {
+        
+        &.__mouse {
+          @include theme(stroke,$contrast-light,$sidebar-dark);
+        }
+        
+        &.__button {
+          @include theme(fill,$contrast-light,$sidebar-dark);
+          animation: swipe 2s infinite;
+        }
       }
     }
   }

@@ -152,4 +152,14 @@
       @include text($headline-x6);
     }
   }
+
+  &.video {
+    width: 400px;
+    height: auto;
+    padding: 0;
+
+    @include mq(mobile) {
+      width: 320px;
+    }
+  }
 }

@@ -441,6 +441,36 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/_svg\/bar.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_svg\/bar.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_svg\/dotted.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_svg\/dotted.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/_svg\/mouse.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/_svg\/mouse.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/images\/_svg\/portfolio-mobile.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -457,16 +487,6 @@
       "oA" : 1,
       "oAP" : "\/build\/images\/_svg\/portfolio.svg",
       "oF" : 1,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/source\/images\/_svg\/sharp.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/build\/images\/_svg\/sharp.svg",
-      "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -540,6 +560,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/build\/javascript\/backpack\/triangle.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/source\/javascript\/pages\/main.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/javascript\/pages\/main.min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -665,6 +696,94 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/source\/main\/_about.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_about.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_bar.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_bar.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_brands.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_brands.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_brands\/_ar.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_brands\/_ar.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_brands\/_cordiant.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_brands\/_cordiant.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_brands\/_elle.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_brands\/_elle.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_brands\/_kia.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_brands\/_kia.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_brands\/_lada.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_brands\/_lada.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_brands\/_nitto.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_brands\/_nitto.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_brands\/_rzd.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_brands\/_rzd.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_brands\/_vw.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_brands\/_vw.html",
+      "oF" : 0
+    },
     "\/source\/main\/_hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -673,12 +792,52 @@
       "oAP" : "\/build\/main\/_hero.html",
       "oF" : 0
     },
+    "\/source\/main\/_mouse.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_mouse.html",
+      "oF" : 0
+    },
+    "\/source\/main\/_portfolio.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/main\/_portfolio.html",
+      "oF" : 0
+    },
     "\/source\/main\/_sharp.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/build\/main\/_sharp.html",
+      "oF" : 0
+    },
+    "\/source\/main\/atv.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/main\/atv.html",
+      "oF" : 0
+    },
+    "\/source\/main\/fpv.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/main\/fpv.html",
+      "oF" : 0
+    },
+    "\/source\/main\/skydive.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/main\/skydive.html",
       "oF" : 0
     },
     "\/source\/notepad\/adaptive-image.kit" : {
@@ -1303,6 +1462,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/source\/styles\/_animations\/_swipe.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_animations\/_swipe.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/source\/styles\/_components\/_modal.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1918,6 +2092,36 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/source\/styles\/_pages\/_main\/_about.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_main\/_about.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_main\/_brands.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_main\/_brands.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/source\/styles\/_pages\/_main\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1928,6 +2132,36 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_pages\/_main\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_main\/_modal.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_main\/_modal.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/source\/styles\/_pages\/_main\/_portfolio.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/styles\/_pages\/_main\/_portfolio.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
