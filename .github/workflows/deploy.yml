@@ -7,6 +7,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: 🚚 Checkout Repository
         uses: actions/checkout@v2
@@ -17,6 +18,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build  # Только папка build
-          server-dir: /       # Корень сервера
-          strip-root-folder: true # Удаляем верхнюю папку
+          server-dir: /
