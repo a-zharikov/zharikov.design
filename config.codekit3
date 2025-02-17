@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
+    "\/.ftpignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/.ftpignore",
+      "oF" : 0
+    },
     "\/.github\/workflows\/deploy.yml" : {
       "cB" : 0,
       "ft" : 8192,
