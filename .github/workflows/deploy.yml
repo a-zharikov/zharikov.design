@@ -1,4 +1,5 @@
 name: 🚀 Deploy to Hosting
+
 on:
   push:
     branches:
@@ -18,4 +19,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /
+          local-dir: ./build/  # Указываем папку, содержимое которой нужно загрузить
+          server-dir: /  # Указываем целевую папку на сервере
