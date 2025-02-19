@@ -77,14 +77,6 @@
       "oAP" : "\/build\/_kit\/_layout\/_footer.html",
       "oF" : 0
     },
-    "\/source\/_kit\/_layout\/_head-page.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/build\/_kit\/_layout\/_head-page.html",
-      "oF" : 0
-    },
     "\/source\/_kit\/_layout\/_head.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -155,14 +147,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/backpack\/remem.html",
-      "oF" : 0
-    },
-    "\/source\/backpack\/text-control.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/build\/backpack\/text-control.html",
       "oF" : 0
     },
     "\/source\/backpack\/triangle.kit" : {
@@ -349,16 +333,6 @@
       "oA" : 1,
       "oAP" : "\/build\/images\/_icons\/content_copy.svg",
       "oF" : 1,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/source\/images\/_icons\/custom_typography.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/build\/images\/_icons\/custom_typography.svg",
-      "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
@@ -591,17 +565,6 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/build\/javascript\/backpack\/remem.min.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
-    },
-    "\/source\/javascript\/backpack\/text-control.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/build\/javascript\/backpack\/text-control.min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -2110,21 +2073,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/_pages\/_backpack\/_remem.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/source\/styles\/_pages\/_backpack\/_text-control.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/build\/styles\/_pages\/_backpack\/_text-control.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

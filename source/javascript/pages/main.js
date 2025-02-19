@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', generateHistoryItems);
 const portfolioItems = [
   {
     href: "#monofamily2-page",
-    url: "monofamily2.html",
+    url: "/portfolio/monofamily2.html",
     image: "/images/portfolio/monofamily2/preview.jpg",
     alt: "Mono Family",
     name: "Mono Family <span class='portfolio-list__sub'>v2</span>",
