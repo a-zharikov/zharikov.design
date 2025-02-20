@@ -33,6 +33,7 @@
   --neutral-bg: #c1c1c1;
   --border: #c1c1c1;
   --nav-after: #f7f7f7;
+  --tooltip-bg: $contrast-light;
   --preview: url("../images/backpack/light.svg");
 }
 :root img.__light {
@@ -47,8 +48,9 @@
   --tertiary: #ffffff;
   --tertiary-bg: #383E49;
   --neutral-bg: #282D35;
-  --border: #282D35;
+  --border: #383E49;
   --nav-after: #24272d;
+  --tooltip-bg: $sidebar-dark;
   --preview: url("../images/backpack/dark.svg");
 }
 [data-theme=dark] img.__light {
@@ -189,132 +191,132 @@
 }
 @keyframes glitch-animation-1 {
   0% {
-    clip: rect(87px, 350px, 138px, 30px);
+    clip: rect(35px, 350px, 77px, 30px);
   }
   5% {
-    clip: rect(46px, 350px, 138px, 30px);
+    clip: rect(72px, 350px, 61px, 30px);
   }
   10% {
-    clip: rect(50px, 350px, 33px, 30px);
+    clip: rect(65px, 350px, 100px, 30px);
   }
   15% {
-    clip: rect(143px, 350px, 45px, 30px);
+    clip: rect(61px, 350px, 33px, 30px);
   }
   20% {
-    clip: rect(119px, 350px, 43px, 30px);
+    clip: rect(81px, 350px, 63px, 30px);
   }
   25% {
-    clip: rect(131px, 350px, 44px, 30px);
+    clip: rect(149px, 350px, 48px, 30px);
   }
   30% {
-    clip: rect(98px, 350px, 69px, 30px);
+    clip: rect(121px, 350px, 5px, 30px);
   }
   35% {
-    clip: rect(27px, 350px, 86px, 30px);
+    clip: rect(148px, 350px, 93px, 30px);
   }
   40% {
-    clip: rect(67px, 350px, 70px, 30px);
+    clip: rect(44px, 350px, 148px, 30px);
   }
   45% {
-    clip: rect(72px, 350px, 116px, 30px);
+    clip: rect(48px, 350px, 82px, 30px);
   }
   50% {
-    clip: rect(130px, 350px, 57px, 30px);
+    clip: rect(86px, 350px, 58px, 30px);
   }
   55% {
-    clip: rect(34px, 350px, 22px, 30px);
+    clip: rect(88px, 350px, 37px, 30px);
   }
   60% {
-    clip: rect(145px, 350px, 112px, 30px);
+    clip: rect(93px, 350px, 76px, 30px);
   }
   65% {
-    clip: rect(22px, 350px, 108px, 30px);
+    clip: rect(2px, 350px, 18px, 30px);
   }
   70% {
-    clip: rect(58px, 350px, 75px, 30px);
+    clip: rect(150px, 350px, 21px, 30px);
   }
   75% {
-    clip: rect(50px, 350px, 67px, 30px);
+    clip: rect(83px, 350px, 33px, 30px);
   }
   80% {
-    clip: rect(81px, 350px, 79px, 30px);
+    clip: rect(72px, 350px, 121px, 30px);
   }
   85% {
-    clip: rect(137px, 350px, 7px, 30px);
+    clip: rect(28px, 350px, 129px, 30px);
   }
   90% {
-    clip: rect(127px, 350px, 145px, 30px);
+    clip: rect(126px, 350px, 41px, 30px);
   }
   95% {
-    clip: rect(103px, 350px, 131px, 30px);
+    clip: rect(10px, 350px, 141px, 30px);
   }
   100% {
-    clip: rect(79px, 350px, 98px, 30px);
+    clip: rect(124px, 350px, 30px, 30px);
   }
 }
 @keyframes glitch-animation-2 {
   0% {
-    clip: rect(57px, 350px, 109px, 30px);
+    clip: rect(88px, 350px, 15px, 30px);
   }
   5% {
-    clip: rect(83px, 350px, 1px, 30px);
+    clip: rect(127px, 350px, 24px, 30px);
   }
   10% {
-    clip: rect(127px, 350px, 90px, 30px);
+    clip: rect(110px, 350px, 138px, 30px);
   }
   15% {
-    clip: rect(78px, 350px, 83px, 30px);
+    clip: rect(70px, 350px, 55px, 30px);
   }
   20% {
-    clip: rect(37px, 350px, 42px, 30px);
+    clip: rect(78px, 350px, 72px, 30px);
   }
   25% {
-    clip: rect(122px, 350px, 64px, 30px);
+    clip: rect(132px, 350px, 4px, 30px);
   }
   30% {
-    clip: rect(121px, 350px, 51px, 30px);
+    clip: rect(31px, 350px, 102px, 30px);
   }
   35% {
-    clip: rect(128px, 350px, 10px, 30px);
+    clip: rect(135px, 350px, 81px, 30px);
   }
   40% {
-    clip: rect(142px, 350px, 140px, 30px);
+    clip: rect(51px, 350px, 35px, 30px);
   }
   45% {
-    clip: rect(78px, 350px, 111px, 30px);
+    clip: rect(113px, 350px, 15px, 30px);
   }
   50% {
-    clip: rect(3px, 350px, 26px, 30px);
+    clip: rect(84px, 350px, 7px, 30px);
   }
   55% {
-    clip: rect(149px, 350px, 87px, 30px);
+    clip: rect(71px, 350px, 81px, 30px);
   }
   60% {
-    clip: rect(72px, 350px, 18px, 30px);
+    clip: rect(81px, 350px, 59px, 30px);
   }
   65% {
-    clip: rect(53px, 350px, 42px, 30px);
+    clip: rect(91px, 350px, 92px, 30px);
   }
   70% {
-    clip: rect(134px, 350px, 108px, 30px);
+    clip: rect(90px, 350px, 12px, 30px);
   }
   75% {
-    clip: rect(31px, 350px, 56px, 30px);
+    clip: rect(81px, 350px, 36px, 30px);
   }
   80% {
-    clip: rect(54px, 350px, 97px, 30px);
+    clip: rect(85px, 350px, 1px, 30px);
   }
   85% {
-    clip: rect(97px, 350px, 106px, 30px);
+    clip: rect(75px, 350px, 40px, 30px);
   }
   90% {
-    clip: rect(65px, 350px, 15px, 30px);
+    clip: rect(30px, 350px, 12px, 30px);
   }
   95% {
-    clip: rect(139px, 350px, 27px, 30px);
+    clip: rect(82px, 350px, 98px, 30px);
   }
   100% {
-    clip: rect(18px, 350px, 17px, 30px);
+    clip: rect(132px, 350px, 11px, 30px);
   }
 }
 * {
@@ -593,7 +595,7 @@ html[data-theme=dark] .header__icon path {
   position: relative;
   overflow: hidden;
   padding-left: 28px;
-  font: 700 12px/20px "Visuelt Pro", sans-serif;
+  font: 700 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #383E49;
   -webkit-transition: all 150ms ease-in-out;
@@ -625,7 +627,7 @@ html[data-theme=dark] .header__theme {
   background: #24272D;
 }
 .header__theme:hover {
-  font: 700 12px/20px "Visuelt Pro", sans-serif;
+  font: 700 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #ececec;
   -webkit-transition: all 150ms ease-in-out;
@@ -747,7 +749,7 @@ html[data-theme=dark] .menu {
   }
 }
 .menu__text {
-  font: 500 12px/20px "Visuelt Pro", sans-serif;
+  font: 500 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #000000;
   -webkit-transition: all 150ms ease-in-out;
@@ -1544,7 +1546,7 @@ html[data-theme=dark] .modal-overlay {
   opacity: 0.4;
   display: block;
   padding: 8px 16px;
-  font: 500 12px/20px "Visuelt Pro", sans-serif;
+  font: 500 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #000000;
   -webkit-transition: all 150ms ease-in-out;
@@ -1759,7 +1761,7 @@ html[data-theme=dark] .main__button {
 }
 @media only screen and (min-width: 900px) and (max-width: 1070px) {
   .main__button {
-    font: 700 12px/20px "Visuelt Pro", sans-serif;
+    font: 700 12px/16px "Visuelt Pro", sans-serif;
   }
 }
 .main__button::before {
@@ -2040,7 +2042,7 @@ html[data-theme=dark] .main-hero__item::before {
 }
 .main-hero__item:not(:last-child)::after {
   content: "/";
-  font: 500 12px/20px "Visuelt Pro", sans-serif;
+  font: 500 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #000000;
   -webkit-transition: all 150ms ease-in-out;
@@ -2565,7 +2567,7 @@ html[data-theme=dark] .main-brands__logo--rzd path {
 .history__text {
   text-align: center;
   padding: 12px;
-  font: 700 12px/20px "Visuelt Pro", sans-serif;
+  font: 700 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #e85656;
 }
@@ -3483,7 +3485,7 @@ html[data-theme=dark] .portfolio-list__button {
 }
 @media only screen and (min-width: 900px) and (max-width: 1070px) {
   .portfolio-list__button {
-    font: 700 12px/20px "Visuelt Pro", sans-serif;
+    font: 700 12px/16px "Visuelt Pro", sans-serif;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 899px) {
@@ -3886,7 +3888,7 @@ html[data-theme=dark] .project__header-link:hover {
 .project__header-archive {
   order: 1;
   text-decoration: none;
-  font: 400 12px/20px "Visuelt Pro", sans-serif;
+  font: 400 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #000000;
   -webkit-transition: all 150ms ease-in-out;
@@ -4121,7 +4123,7 @@ html[data-theme=dark] .project__screen-caption {
 }
 @media only screen and (max-width: 899px) {
   .project__screen-caption {
-    font: 500 12px/20px "Visuelt Pro", sans-serif;
+    font: 500 12px/16px "Visuelt Pro", sans-serif;
     font-variant-numeric: lining-nums proportional-nums;
     color: #000000;
     -webkit-transition: all 150ms ease-in-out;
@@ -4565,7 +4567,7 @@ html[data-theme=dark] .aspectratio__directions-item {
 .aspectratio__directions-selected {
   text-align: center;
   word-spacing: 100vw;
-  font: 500 12px/20px "Visuelt Pro", sans-serif;
+  font: 500 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   display: flex;
   flex-direction: row;
@@ -4731,7 +4733,7 @@ html[data-theme=dark] .triangle__directions-item {
 .triangle__directions-selected {
   text-align: center;
   word-spacing: 100vw;
-  font: 500 12px/20px "Visuelt Pro", sans-serif;
+  font: 500 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   display: flex;
   flex-direction: row;
@@ -4826,7 +4828,7 @@ html[data-theme=dark] .triangle__directions-item {
   gap: 8px;
 }
 html[data-theme=dark] .remem__input {
-  border-color: #282D35;
+  border-color: #383E49;
 }
 .remem__input input {
   width: 100%;
@@ -4876,7 +4878,7 @@ html[data-theme=dark] .remem__input select {
   color: #ffffff;
 }
 html[data-theme=dark] .remem__input select {
-  border-color: #282D35;
+  border-color: #383E49;
 }
 .remem__icon {
   display: flex;
@@ -4934,7 +4936,7 @@ html[data-theme=dark] .remem__base label {
   gap: 8px;
 }
 html[data-theme=dark] .remem__base-input {
-  border-color: #282D35;
+  border-color: #383E49;
 }
 @media only screen and (max-width: 899px) {
   .remem__base-input {
@@ -4987,7 +4989,7 @@ html[data-theme=dark] .remem__base-input span {
   color: #ffffff;
 }
 html[data-theme=dark] .remem__base-input span {
-  border-color: #282D35;
+  border-color: #383E49;
 }
 .remem__copy {
   display: flex;
@@ -5027,6 +5029,152 @@ html[data-theme=dark] .remem__copy span {
   display: none;
 }
 .remem__copy button.__active .remem__chech {
+  display: block;
+}
+
+.text-control {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+}
+.text-control__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px 60px;
+}
+@media only screen and (min-width: 900px) and (max-width: 1023px) {
+  .text-control__item {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .text-control__item {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+}
+.text-control__row {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 8px;
+}
+.text-control__row .select__defalut {
+  pointer-events: none;
+  opacity: 0.4;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.text-control__row:has(input:checked) .select__defalut {
+  pointer-events: all;
+  opacity: 1;
+}
+.text-control__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.text-control__title {
+  font: 700 20px/24px "Visuelt Pro", sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  color: #000000;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .text-control__title {
+  color: #ffffff;
+}
+.text-control__text {
+  text-wrap: pretty;
+  font: 500 12px/16px "Visuelt Pro", sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  color: #000000;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  opacity: 0.4;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .text-control__text {
+  color: #ffffff;
+}
+html[data-theme=dark] .text-control__text {
+  opacity: 0.4;
+}
+.text-control__demo {
+  overflow: hidden;
+  min-height: 168px;
+  background: #ececec;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: none;
+}
+html[data-theme=dark] .text-control__demo {
+  background: #282D35;
+}
+@media only screen and (max-width: 899px) {
+  .text-control__demo {
+    min-height: auto;
+  }
+}
+.text-control__demo-text {
+  font: 500 16px/24px "Visuelt Pro", sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  color: #000000;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .text-control__demo-text {
+  color: #ffffff;
+}
+.text-control__code {
+  position: relative;
+}
+.text-control__code-copy {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+.text-control__code .button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.text-control pre[class*=language-] {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+.text-control pre[class*=language-] code {
   display: block;
 }
 
@@ -5125,7 +5273,7 @@ html[data-theme=dark] .page-error__title::before, html[data-theme=dark] .page-er
   -o-transition: all 150ms ease-in-out;
   -ms-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
-  font: 700 12px/20px "Visuelt Pro", sans-serif;
+  font: 700 12px/16px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #000000;
   -webkit-transition: all 150ms ease-in-out;
@@ -5467,7 +5615,7 @@ html[data-theme=dark] .badge.tools {
   background: var(--neutral-bg);
 }
 .button.small {
-  font: 700 12px/20px "Visuelt Pro", sans-serif;
+  font: 700 12px/16px "Visuelt Pro", sans-serif;
   padding: 4px 12px;
   gap: 4px;
 }
@@ -5662,7 +5810,7 @@ html[data-theme=dark] .input {
   transition: all 150ms ease-in-out;
 }
 html[data-theme=dark] .input:not(.input:placeholder-shown) {
-  border-color: #282D35;
+  border-color: #383E49;
 }
 .input-placeholder {
   display: flex;
@@ -5734,7 +5882,7 @@ html[data-theme=dark] .input-placeholder label {
 .input-placeholder input[type=text]:focus + label, .input-placeholder input[type=text]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=password]:focus + label, .input-placeholder input[type=password]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=email]:focus + label, .input-placeholder input[type=email]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=number]:focus + label, .input-placeholder input[type=number]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=search]:focus + label, .input-placeholder input[type=search]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=tel]:focus + label, .input-placeholder input[type=tel]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=url]:focus + label, .input-placeholder input[type=url]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=date]:focus + label, .input-placeholder input[type=date]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=datetime-local]:focus + label, .input-placeholder input[type=datetime-local]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=time]:focus + label, .input-placeholder input[type=time]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=month]:focus + label, .input-placeholder input[type=month]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label, .input-placeholder input[type=week]:focus + label, .input-placeholder input[type=week]:not(.input-placeholder input[type=text]:placeholder-shown, .input-placeholder input[type=password]:placeholder-shown, .input-placeholder input[type=email]:placeholder-shown, .input-placeholder input[type=number]:placeholder-shown, .input-placeholder input[type=search]:placeholder-shown, .input-placeholder input[type=tel]:placeholder-shown, .input-placeholder input[type=url]:placeholder-shown, .input-placeholder input[type=date]:placeholder-shown, .input-placeholder input[type=datetime-local]:placeholder-shown, .input-placeholder input[type=time]:placeholder-shown, .input-placeholder input[type=month]:placeholder-shown, .input-placeholder input[type=week]:placeholder-shown) + label {
   top: 4px;
   transform: translate(0, 0);
-  font: 500 8px/16px "Visuelt Pro", sans-serif;
+  font: 500 8px/12px "Visuelt Pro", sans-serif;
   font-variant-numeric: lining-nums proportional-nums;
   color: #c1c1c1;
   -webkit-transition: all 150ms ease-in-out;
@@ -5748,6 +5896,96 @@ html[data-theme=dark] .input-placeholder input[type=text]:focus + label, html[da
 }
 .input-placeholder input[type=text]:focus + label + .__hover, .input-placeholder input[type=password]:focus + label + .__hover, .input-placeholder input[type=email]:focus + label + .__hover, .input-placeholder input[type=number]:focus + label + .__hover, .input-placeholder input[type=search]:focus + label + .__hover, .input-placeholder input[type=tel]:focus + label + .__hover, .input-placeholder input[type=url]:focus + label + .__hover, .input-placeholder input[type=date]:focus + label + .__hover, .input-placeholder input[type=datetime-local]:focus + label + .__hover, .input-placeholder input[type=time]:focus + label + .__hover, .input-placeholder input[type=month]:focus + label + .__hover, .input-placeholder input[type=week]:focus + label + .__hover {
   opacity: 1;
+}
+
+.toggle__control {
+  cursor: pointer;
+  font: 400 20px/28px "Visuelt Pro", sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.toggle__control input[type=checkbox] {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  outline: none;
+  border-radius: 20px;
+  appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: #c1c1c1;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .toggle__control input[type=checkbox] {
+  background: #383E49;
+}
+.toggle__control input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  top: 4px;
+  left: 4px;
+  background: #fff;
+  transition: 0.2s;
+}
+.toggle__control input[type=checkbox]:checked {
+  background: #40b4ea;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .toggle__control input[type=checkbox]:checked {
+  background: #40b4ea;
+}
+.toggle__control input[type=checkbox]:checked:before {
+  left: calc(100% - 20px);
+}
+.toggle__control input:disabled {
+  opacity: 0.2;
+}
+
+.select__defalut {
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 16px;
+  position: relative;
+  font: 500 16px/24px "Visuelt Pro", sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  color: #000000;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  background: #f7f7f7;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+html[data-theme=dark] .select__defalut {
+  color: #ffffff;
+}
+html[data-theme=dark] .select__defalut {
+  background: #24272D;
 }
 
 /* PrismJS 1.29.0
@@ -7170,10 +7408,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @import "_elements/textarea";
 @import "_elements/checkbox";
 @import "_elements/radio";
-@import "_elements/toggle";
 @import "_elements/chips";
 @import "_elements/snackbar";
 @import "_elements/label";
 @import "_elements/form";
 @import "_elements/badge";
-@import "_elements/tooltip"; */
+@import "_elements/tooltip";
+ */

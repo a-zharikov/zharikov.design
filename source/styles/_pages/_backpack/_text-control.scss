@@ -1,0 +1,83 @@
+.text-control {
+  @include flex($clr,$fs,$sh,$zui-20);
+
+  &__item {
+    @include grid(repeat(2,1fr),auto,$zui-20 $zui-60);
+
+    @include mq(tablet) {
+      gap: $zui-20;
+    }
+
+    @include mq(mobile) {
+      @include grid($zui-100p,auto,$zui-20);
+    }
+  }
+
+  &__row {
+    cursor: pointer;
+    @include flex($cl,$fs,$sh,$zui-8);
+
+    .select__defalut {
+      pointer-events: none;
+      opacity: .4;
+      @include transition;
+    }
+
+    &:has(input:checked) {
+      .select__defalut {
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__header {
+    @include flex($rw,$sb,$cr,$zui-8);
+  }
+
+  &__title {
+    @include text($headline-x4,$text-light,$text-dark);
+  }
+
+  &__text {
+    text-wrap: pretty;
+    @include text($normal-x3,$text-light,$text-dark);
+    @include theme(opacity,.4,.4);
+  }
+
+  &__demo {
+    overflow: hidden;
+    min-height: 168px;
+    @include block(($sidebar-light,$contrast-dark),$zui-12 $zui-20,$zui-20,none);
+
+    @include mq(mobile) {
+      min-height: auto;
+    }
+    
+    &-text {
+      @include text($normal-x4,$text-light,$text-dark);
+    }
+  }
+
+  &__code {
+    position: relative;
+
+    &-copy {
+      @include top_right(absolute,$zui-2,$zui-8);
+    }
+
+    .button {
+      @include top_right(absolute,$zui-8,$zui-8);
+    }
+  }
+
+  pre[class*=language-] {
+    padding-top: $zui-0;
+    padding-bottom: $zui-0;
+    height: $zui-100p;
+
+    code {
+      display: block;
+    }
+  }
+}

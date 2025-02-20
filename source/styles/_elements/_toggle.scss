@@ -2,7 +2,6 @@
   
   &__control {
     cursor: pointer;
-    margin-bottom: $zui-20;
     @include text($subline-x4);
     @include flex($rw,$fs,$cr,$zui-8);
 
@@ -11,12 +10,12 @@
         position: relative;
         width: $zui-44;
         height: $zui-24;
-        background: $caption;
         outline: none;
         border-radius: $zui-20;
         appearance: none;
         box-sizing: border-box;
         cursor: pointer;
+        @include theme(background,$contrast-light,$sidebar-dark);
     
         &:before {
           content: '';
@@ -31,7 +30,7 @@
         }
     
         &:checked {
-          background: $primary;
+          @include theme(background,$primary,$primary);
     
           &:before {
             left: calc($zui-100p - $zui-20);

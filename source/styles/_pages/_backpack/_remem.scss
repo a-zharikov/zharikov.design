@@ -13,7 +13,7 @@
   &__input {
     border: $zui-2 solid;
     border-radius: $zui-12;
-    @include theme(border-color,$contrast-light,$contrast-dark);
+    @include theme(border-color,$contrast-light,$sidebar-dark);
     @include flex($rw,$fs,$cr,$zui-8);
 
     input {
@@ -40,7 +40,7 @@
       border-left: $zui-2 solid;
       margin-right: $zui-12;
       @include text($normal-x5,$text-light,$text-dark);
-      @include theme(border-color,$contrast-light,$contrast-dark);
+      @include theme(border-color,$contrast-light,$sidebar-dark);
     }
   }
 
@@ -64,7 +64,7 @@
       width: calc(#{$zui-100p} / 3);
       border: $zui-2 solid $primary;
       border-radius: $zui-12;
-      @include theme(border-color,$contrast-light,$contrast-dark);
+      @include theme(border-color,$contrast-light,$sidebar-dark);
       @include flex($rw,$fs,$cr,$zui-8);
 
       @include mq(mobile) {
@@ -93,7 +93,7 @@
         padding-left: $zui-12;
         margin-right: $zui-12;
         @include text($normal-x5,$text-light,$text-dark);
-        @include theme(border-color,$contrast-light,$contrast-dark);
+        @include theme(border-color,$contrast-light,$sidebar-dark);
       }
     }
   }

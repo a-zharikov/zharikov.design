@@ -11,7 +11,7 @@
     transform: translateX(-50%);
     z-index: 10;
     @include transition(300);
-    @include block($body,$zui-8 $zui-12,$zui-8,$shadow_3);
+    @include block((red,$sidebar-dark),$zui-8 $zui-12,$zui-8,$shadow_1);
 
     &::before {
       content: "";
@@ -31,11 +31,11 @@
 
   &__title {
     margin-bottom: $zui-4;
-    @include text($bold-x4,$white);
+    @include text($bold-x4,$text-light,$text-dark);
   }
 
   &__text {
-    @include text($normal-x3,$white);
+    @include text($normal-x3,$text-light,$text-dark);
   }
 
   &:hover {
@@ -66,7 +66,7 @@
         left: calc(#{$zui-100p} / 2);
         transform: translateX(-50%);
         border-width: $zui-8 $zui-8 $zui-0 $zui-8;
-        border-color: $body transparent transparent transparent;
+        border-color: red transparent transparent transparent;
       }
 
       &::after {
@@ -88,7 +88,7 @@
         left: calc(#{$zui-100p} / 2);
         transform: translateX(-50%);
         border-width: 0 $zui-8 $zui-8 $zui-8;
-        border-color: transparent transparent $body transparent;
+        border-color: transparent transparent red transparent;
       }
 
       &::after {
@@ -111,7 +111,7 @@
         left: $zui-100p;
         transform: translateY(-50%);
         border-width: $zui-8 $zui-0 $zui-8 $zui-8;
-        border-color: transparent transparent transparent $body;
+        border-color: transparent transparent transparent var(--tooltip-bg);
       }
       
       &::after {
@@ -136,7 +136,7 @@
         right: $zui-100p;
         transform: translateY(-50%);
         border-width: $zui-8 $zui-8 $zui-8 $zui-0;
-        border-color: transparent $body transparent transparent;
+        border-color: transparent red transparent transparent;
       }
       
       &::after {

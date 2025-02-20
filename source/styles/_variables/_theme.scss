@@ -5,6 +5,7 @@
   --neutral-bg: #{$contrast-light};
   --border: #{$contrast-light};
   --nav-after: #{$bg-light-opacity};
+  --tooltip-bg: $contrast-light;
   --preview: url('../images/backpack/light.svg');
   
   img {
@@ -24,8 +25,9 @@
   --tertiary: #{$text-dark};
   --tertiary-bg: #{$sidebar-dark};
   --neutral-bg: #{$contrast-dark};
-  --border: #{$contrast-dark};
+  --border: #{$sidebar-dark};
   --nav-after: #{$bg-dark-opacity};
+  --tooltip-bg: $sidebar-dark;
   --preview: url('../images/backpack/dark.svg');
 
   img {
