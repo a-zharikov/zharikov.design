@@ -12,7 +12,7 @@
 
   &:not(&:placeholder-shown) {
     box-shadow: none;
-    @include theme(border-color,$contrast-light,$contrast-dark);
+    @include theme(border-color,$contrast-light,$sidebar-dark);
   }
 
   &-placeholder {

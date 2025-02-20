@@ -2,6 +2,125 @@
 <section class="modal__page">
   <h2 class="modal__title">Управление текстом</h2>
   <div class="text-control">
-    text-control
+    <div class="text-control__item">
+      <div class="text-control__row">
+        <div class="text-control__header">
+          <h2 class="text-control__title">text-align-last</h2>
+          <div class="toggle">
+            <div class="toggle__control">
+              <input id="checkboxTextAlignLast" type="checkbox" name="text-align-last">
+            </div>
+          </div>
+        </div>
+        <p class="text-control__text">Управляет выравниванием последней строки в блоке</p>
+        <select id="selectTextAlignLast" class="select__defalut" name="text-align-last">
+          <option value="auto">auto</option>
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="left">left</option>
+          <option value="right">right</option>
+          <option value="">center</option>
+          <option value="center">justify</option>
+        </select>
+      </div>
+      <div class="text-control__row">
+        <div class="text-control__header">
+          <h2 class="text-control__title">text-wrap</h2>
+          <div class="toggle">
+            <div class="toggle__control">
+              <input id="checkboxTextWrap" type="checkbox" name="text-wrap">
+            </div>
+          </div>
+        </div>
+        <p class="text-control__text">Контролирует текст расположится внутри элемента</p>
+        <select id="selectTextWrap" class="select__defalut" name="text-wrap">
+          <option value="nowrap">nowrap</option>
+          <option value="balance">balance</option>
+          <option value="stable">stable</option>
+          <option value="pretty">pretty</option>
+        </select>
+      </div>
+      <div class="text-control__row">
+        <div class="text-control__header">
+          <h2 class="text-control__title">white-space</h2>
+          <div class="toggle">
+            <div class="toggle__control">
+              <input id="checkboxWhiteSpace" type="checkbox" name="white-space">
+            </div>
+          </div>
+        </div>
+        <p class="text-control__text">Указывает браузеру, как обрабатывать пробелы в тексте</p>
+        <select id="selectWhiteSpace" class="select__defalut" name="white-space">
+          <option value="normal">normal</option>
+          <option value="nowrap">nowrap</option>
+          <option value="pre">pre</option>
+          <option value="pre-wrap">pre-wrap</option>
+          <option value="pre-line">pre-line</option>
+          <option value="break-spaces">break-spaces</option>
+        </select>
+      </div>
+      <div class="text-control__row">
+        <div class="text-control__header">
+          <h2 class="text-control__title">overflow-wrap</h2>
+          <div class="toggle">
+            <div class="toggle__control">
+              <input id="checkboxOverflowWrap" type="checkbox" name="overflow-wrap">
+            </div>
+          </div>
+        </div>
+        <p class="text-control__text">Управляет переносом слов, которые не помещаются по длине в родительский элемент</p>
+        <select id="selectOverflowWrap" class="select__defalut" name="overflow-wrap">
+          <option value="normal">normal</option>
+          <option value="break-word">break-word</option>
+          <option value="anywhere">anywhere</option>
+        </select>
+      </div>
+      <div class="text-control__row">
+        <div class="text-control__header">
+          <h2 class="text-control__title">word-break</h2>
+          <div class="toggle">
+            <div class="toggle__control">
+              <input id="checkboxWordBreak" type="checkbox" name="word-break">
+            </div>
+          </div>
+        </div>
+        <p class="text-control__text">Определяет, как будет переноситься на новую строку текст при достижении края родительского контейнера</p>
+        <select id="selectWordBreak" class="select__defalut" name="word-break">
+          <option value="normal">normal</option>
+          <option value="break-all">break-all</option>
+          <option value="keep-all">keep-all</option>
+          <option value="break-word">break-word</option>
+        </select>
+      </div>
+      <div class="text-control__row">
+        <div class="text-control__header">
+          <h2 class="text-control__title">word-wrap</h2>
+          <div class="toggle">
+            <div class="toggle__control">
+              <input id="checkboxWordWrap" type="checkbox" name="word-wrap">
+            </div>
+          </div>
+        </div>
+        <p class="text-control__text">Управляет переносом длинных слов, если они не помещаются в родительский блок</p>
+        <select id="selectWordWrap" class="select__defalut" name="word-wrap">
+          <option value="normal">normal</option>
+          <option value="break-word">break-word</option>
+        </select>
+      </div>
+    </div>
+    <div class="text-control__item">
+      <div class="text-control__demo">
+        <p class="text-control__demo-text">В уютном доме появился маленький щенок. Он был такой милый и любопытный, что сразу стал всеобщим любимцем. Щенок с радостью бегал за мячиком и звонко лаял, когда хотел привлечь внимание. Он быстро научился отзываться на своё имя и всегда ждал, когда хозяева вернутся домой.</p>
+      </div>
+      <div class="text-control__code textarea-code">
+        <pre class="language-css" tabindex="0">
+          <code class="language-css"></code>
+        </pre>
+        <button class="button medium neutral js-textarea-copy">
+          <svg class="code__copy" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-520q0-17 11.5-28.5T160-720q17 0 28.5 11.5T200-680v520h400q17 0 28.5 11.5T640-120q0 17-11.5 28.5T600-80H200Zm160-240v-480 480Z"/></svg>
+          <svg class="code__chech" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
