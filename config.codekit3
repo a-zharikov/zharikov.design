@@ -893,6 +893,14 @@
       "oAP" : "\/build\/notepad\/adaptive-image.html",
       "oF" : 0
     },
+    "\/source\/notepad\/align.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/align.html",
+      "oF" : 0
+    },
     "\/source\/notepad\/autocomplete.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -907,6 +915,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/notepad\/behavior.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/block.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/block.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/breakpoint.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/breakpoint.html",
       "oF" : 0
     },
     "\/source\/notepad\/content-query.kit" : {
@@ -947,6 +971,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/notepad\/empty.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/flex.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/flex.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/grid.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/grid.html",
       "oF" : 0
     },
     "\/source\/notepad\/hover.kit" : {
@@ -1003,6 +1043,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/notepad\/textarea-size.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/theme.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/theme.html",
       "oF" : 0
     },
     "\/source\/plugins\/ancore.kit" : {

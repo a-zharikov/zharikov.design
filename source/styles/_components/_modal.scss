@@ -54,14 +54,6 @@
       }
     }
 
-    .__code {
-      border-radius: $zui-40;
-      font: $normal-x4;
-      font-family: monospace;
-      @include theme(color,$code-light,$code-dark);
-      @include block(($sidebar-light,$sidebar-dark),$zui-4 $zui-8,$zui-8,none);
-    }
-
     iframe {
       border-radius: $zui-12;
       margin-bottom: $zui-32;
@@ -75,6 +67,18 @@
       display: block;
       margin: 0 auto $zui-20;
       height: 200px;
+    }
+
+    .textarea-code + h2 {
+      margin-top: $zui-28;
+    }
+
+    .__code {
+      border-radius: $zui-40;
+      font: $normal-x4;
+      font-family: monospace;
+      @include theme(color,$code-light,$code-dark);
+      @include block(($sidebar-light,$sidebar-dark),$zui-4 $zui-8,$zui-8,none);
     }
   }
 

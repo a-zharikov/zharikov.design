@@ -7,10 +7,24 @@ const backpackItems = [
     modal: "small"
   },
   {
+    href: "#theme-page",
+    url: "theme.html",
+    title: "Mixin Theme",
+    tag: "scss",
+    modal: "small"
+  },
+  {
     href: "#text-balance-page",
     url: "text-balance.html",
     title: "Text balance",
     tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#flex-page",
+    url: "flex.html",
+    title: "Mixin Flexbox",
+    tag: "scss",
     modal: "small"
   },
   {
@@ -28,6 +42,13 @@ const backpackItems = [
     modal: "small"
   },
   {
+    href: "#grid-page",
+    url: "grid.html",
+    title: "Mixin Grid",
+    tag: "scss",
+    modal: "small"
+  },
+  {
     href: "#behavior-page",
     url: "behavior.html",
     title: "Предотвращение цепной прокрутки",
@@ -42,6 +63,13 @@ const backpackItems = [
     modal: "small"
   },
   {
+    href: "#align-page",
+    url: "align.html",
+    title: "Mixin Align",
+    tag: "scss",
+    modal: "small"
+  },
+  {
     href: "#textarea-size-page",
     url: "textarea-size.html",
     title: "Автоматическое изменение высоты textarea",
@@ -53,6 +81,13 @@ const backpackItems = [
     url: "empty.html",
     title: "Определяем пустой элемент",
     tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#block-page",
+    url: "block.html",
+    title: "Mixin Block",
+    tag: "scss",
     modal: "small"
   },
   {
@@ -88,6 +123,13 @@ const backpackItems = [
     url: "autocomplete.html",
     title: "Убрать желтый фон у полей с autocomplete",
     tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#breakpoint-page",
+    url: "breakpoint.html",
+    title: "Mixin Breakpoint",
+    tag: "scss",
     modal: "small"
   },
   {

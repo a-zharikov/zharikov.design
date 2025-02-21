@@ -1,0 +1,90 @@
+<section class="modal__page">
+  <h2 class="modal__title">Mixin Align</h2>
+  <div class="plugins-page">
+    <div class="modal__content">
+      <p>Миксин для абсолютного и фиксированного позиционирования элементов</p>
+      <h2>Использование</h2>
+      <p>
+        <code class="__code">@include top_center;</code> - выровнит по верхнему левому краю
+      </p>
+      <p>
+        <code class="__code">@include top_center(absolute,20px,40px);</code> - выровнит по верхнему левому краю c отступоми
+      </p>
+      <p>
+        <code class="__code">@include top_center(fixed,20px,40px);</code> - выровнять по верхнему левому краю c отступом и фиксацией 
+      </p>
+      <div class="aspectratio__code textarea-code">
+        <textarea class="language-css">
+@mixin center($property: absolute) {
+  position: $property;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin top_center($property: absolute, $top: 0) {
+  position: $property;
+  top: $top;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@mixin top_left($property: absolute, $top: 0, $left: 0) {
+  position: $property;
+  top: $top;
+  left: $left;
+}
+
+@mixin top_right($property: absolute, $top: 0, $right: 0) {
+  position: $property;
+  top: $top;
+  right: $right;
+}
+
+@mixin bottom_center($property: absolute, $bottom: 0) {
+  position: $property;
+  bottom: $bottom;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@mixin bottom_left($property: absolute, $bottom: 0, $left: 0) {
+  position: $property;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin bottom_right($property: absolute, $bottom: 0, $right: 0) {
+  position: $property;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin left_center($property: absolute, $left: 0) {
+  position: $property;
+  top: 50%;
+  left: $left;
+  transform: translate(0, -50%);
+}
+
+@mixin right_center($property: absolute, $right: 0) {
+  position: $property;
+  top: 50%;
+  right: $right;
+  transform: translate(0, -50%);
+}
+
+@mixin clear($property: absolute) {
+  position: $property;
+  inset: auto;
+  transform: translate(0, 0);
+}
+        </textarea>
+        <button class="button medium neutral js-textarea-copy">
+          <svg class="code__copy" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-520q0-17 11.5-28.5T160-720q17 0 28.5 11.5T200-680v520h400q17 0 28.5 11.5T640-120q0 17-11.5 28.5T600-80H200Zm160-240v-480 480Z"/></svg>
+          <svg class="code__chech" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z"/></svg>
+        </button>
+      </div>
+      </div>
+  </div>
+</section>
