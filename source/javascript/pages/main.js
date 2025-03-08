@@ -90,20 +90,20 @@ const portfolioItems = [
     modal: "large"
   },
   {
-    href: "#rt24-page",
-    url: "/portfolio/rt24.html",
-    image: "/images/portfolio/rt24/preview.jpg",
-    alt: "Рейтинг-тест Авторевю 2024",
-    name: "Рейтинг-тест Авторевю 2024",
-    stack: "fornt-design",
-    modal: "large"
-  },
-  {
     href: "#blogger-telega-page",
     url: "/portfolio/blogger-telega.html",
     image: "/images/portfolio/blogger-telega/preview.jpg",
     alt: "Кабинет админа",
     name: "Blogger.telega",
+    stack: "fornt-end",
+    modal: "large"
+  },
+  {
+    href: "#tma-page",
+    url: "/portfolio/tma.html",
+    image: "/images/portfolio/tma/preview.jpg",
+    alt: "Telega Mini App",
+    name: "Telega Mini App",
     stack: "fornt-end",
     modal: "large"
   },

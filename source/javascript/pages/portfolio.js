@@ -386,6 +386,15 @@ const portfolioItems = [
     stack: "fornt-end",
     modal: "large"
   },
+  {
+    href: "#tma-page",
+    url: "/portfolio/tma.html",
+    image: "/images/portfolio/tma/preview.jpg",
+    alt: "Telega Mini App",
+    name: "Telega Mini App",
+    stack: "fornt-end",
+    modal: "large"
+  },
 ];
 
 function generatePortfolioItems() {
