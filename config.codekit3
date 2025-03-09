@@ -933,6 +933,14 @@
       "oAP" : "\/build\/notepad\/breakpoint.html",
       "oF" : 0
     },
+    "\/source\/notepad\/conic.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/conic.html",
+      "oF" : 0
+    },
     "\/source\/notepad\/content-query.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1021,6 +1029,14 @@
       "oAP" : "\/build\/notepad\/smooth.html",
       "oF" : 0
     },
+    "\/source\/notepad\/spellcheck.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/spellcheck.html",
+      "oF" : 0
+    },
     "\/source\/notepad\/table-layout.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1035,6 +1051,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/notepad\/text-balance.html",
+      "oF" : 0
+    },
+    "\/source\/notepad\/text-box.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/notepad\/text-box.html",
       "oF" : 0
     },
     "\/source\/notepad\/textarea-size.kit" : {

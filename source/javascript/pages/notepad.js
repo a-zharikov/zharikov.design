@@ -1,5 +1,26 @@
 const backpackItems = [
   {
+    href: "#text-box-page",
+    url: "text-box.html",
+    title: "Идеальное выравнивание текста в верхнем и нижнем регистрах",
+    tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#conic-page",
+    url: "conic.html",
+    title: "Расширяем фон элемента за пределы его контейнера",
+    tag: "css",
+    modal: "small"
+  },
+  {
+    href: "#spellcheck-page",
+    url: "spellcheck.html",
+    title: "Проверка ошибок в textarea",
+    tag: "html",
+    modal: "small"
+  },
+  {
     href: "#adaptive-image-page",
     url: "adaptive-image.html",
     title: "Адаптивное изображение",
