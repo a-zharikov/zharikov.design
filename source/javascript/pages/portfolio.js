@@ -314,24 +314,24 @@ const portfolioItems = [
     stack: "fornt-design",
     modal: "large"
   },
-  {
-    href: "#autoreview3-page",
-    url: "autoreview3.html",
-    image: "/images/portfolio/autoreview3/preview.png",
-    alt: "Проект Авторевю",
-    name: "Авторевю <span class='portfolio-list__sub'>v3</span>",
-    stack: "fornt-design",
-    modal: "large"
-  },
-  {
-    href: "#arcap3-page",
-    url: "arcap3.html",
-    image: "/images/portfolio/arcap3/preview.png",
-    alt: "Проект Авторевю",
-    name: "ARCAP <span class='portfolio-list__sub'>v3</span>",
-    stack: "fornt-design",
-    modal: "large"
-  },
+  // {
+  //   href: "#autoreview3-page",
+  //   url: "autoreview3.html",
+  //   image: "/images/portfolio/autoreview3/preview.png",
+  //   alt: "Проект Авторевю",
+  //   name: "Авторевю <span class='portfolio-list__sub'>v3</span>",
+  //   stack: "fornt-design",
+  //   modal: "large"
+  // },
+  // {
+  //   href: "#arcap3-page",
+  //   url: "arcap3.html",
+  //   image: "/images/portfolio/arcap3/preview.png",
+  //   alt: "Проект Авторевю",
+  //   name: "ARCAP <span class='portfolio-list__sub'>v3</span>",
+  //   stack: "fornt-design",
+  //   modal: "large"
+  // },
   {
     href: "#telega2-page",
     url: "telega2.html",
