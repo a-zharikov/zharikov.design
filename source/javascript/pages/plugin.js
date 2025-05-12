@@ -1,5 +1,14 @@
 const pluginItems = [
   {
+    href: "#button",
+    url: "button.html",
+    modal: "",
+    lightImg: "/images/plugins/button.svg",
+    darkImg: "/images/plugins/button_dark.svg",
+    title: "Умные кнопки",
+    tag: "scss"
+  },
+  {
     href: "#select-page",
     url: "select.html",
     modal: "",
