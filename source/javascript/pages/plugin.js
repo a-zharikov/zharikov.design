@@ -27,6 +27,15 @@ const pluginItems = [
     tag: "javascript"
   },
   {
+    href: "#badge",
+    url: "badge.html",
+    modal: "",
+    lightImg: "/images/plugins/badge.svg",
+    darkImg: "/images/plugins/badge_dark.svg",
+    title: "Умные бейджи",
+    tag: "scss"
+  },
+  {
     href: "#length-page",
     url: "length.html",
     modal: "",
