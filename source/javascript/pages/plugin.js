@@ -36,6 +36,15 @@ const pluginItems = [
     tag: "scss"
   },
   {
+    href: "#control",
+    url: "control.html",
+    modal: "",
+    lightImg: "/images/plugins/control.svg",
+    darkImg: "/images/plugins/control_dark.svg",
+    title: "Контролы",
+    tag: "css"
+  },
+  {
     href: "#length-page",
     url: "length.html",
     modal: "",
