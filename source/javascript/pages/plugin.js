@@ -2,7 +2,7 @@ const pluginItems = [
   {
     href: "#button",
     url: "button.html",
-    modal: "",
+    modal: "defalut",
     lightImg: "/images/plugins/button.svg",
     darkImg: "/images/plugins/button_dark.svg",
     title: "Умные кнопки",
@@ -11,7 +11,7 @@ const pluginItems = [
   {
     href: "#select-page",
     url: "select.html",
-    modal: "",
+    modal: "defalut",
     lightImg: "/images/plugins/select.svg",
     darkImg: "/images/plugins/select_dark.svg",
     title: "Умный select",
@@ -20,7 +20,7 @@ const pluginItems = [
   {
     href: "#ancore-page",
     url: "ancore.html",
-    modal: "",
+    modal: "defalut",
     lightImg: "/images/plugins/ancore.svg",
     darkImg: "/images/plugins/ancore_dark.svg",
     title: "Якорное меню из заголовков",
@@ -29,7 +29,7 @@ const pluginItems = [
   {
     href: "#badge",
     url: "badge.html",
-    modal: "",
+    modal: "defalut",
     lightImg: "/images/plugins/badge.svg",
     darkImg: "/images/plugins/badge_dark.svg",
     title: "Умные бейджи",
@@ -38,7 +38,7 @@ const pluginItems = [
   {
     href: "#control",
     url: "control.html",
-    modal: "",
+    modal: "defalut",
     lightImg: "/images/plugins/control.svg",
     darkImg: "/images/plugins/control_dark.svg",
     title: "Контролы",
@@ -47,7 +47,7 @@ const pluginItems = [
   {
     href: "#length-page",
     url: "length.html",
-    modal: "",
+    modal: "defalut",
     lightImg: "/images/plugins/length.svg",
     darkImg: "/images/plugins/length_dark.svg",
     title: "Подсчет слов в элементе",
@@ -56,7 +56,7 @@ const pluginItems = [
   {
     href: "#scroll-page",
     url: "scroll.html",
-    modal: "",
+    modal: "defalut",
     lightImg: "/images/plugins/scroll.svg",
     darkImg: "/images/plugins/scroll_dark.svg",
     title: "Добавляем класс элементу по скроллу страницы",
@@ -65,7 +65,7 @@ const pluginItems = [
   {
     href: "#table-page",
     url: "table.html",
-    modal: "",
+    modal: "defalut",
     lightImg: "/images/plugins/table.svg",
     darkImg: "/images/plugins/table_dark.svg",
     title: "Поиск по таблице и спискам",
@@ -74,7 +74,7 @@ const pluginItems = [
   {
     href: "#tabs-page",
     url: "tabs.html",
-    modal: "",
+    modal: "defalut",
     lightImg: "/images/plugins/tabs.svg",
     darkImg: "/images/plugins/tabs_dark.svg",
     title: "Простые и легкие табы",
@@ -87,8 +87,9 @@ function generatePluginItems() {
   pluginItems.forEach(item => {
     const listItem = document.createElement('li');
     listItem.className = 'plugins__item';
+    listItem.dataset.tags = item.tag.toLowerCase();
     listItem.innerHTML = `
-      <a class="plugins__link js-open-modal" aria-haspopup="true" href="${item.href}" data-url="${item.url}" data-modal="${item.modal}">
+      <a class="plugins__link js-open-modal" aria-haspopup="true" href="${item.href}" data-url="${item.url}" data-tag="${item.tag}" data-modal="${item.modal}">
         <span class="badge medium ${item.tag}">${item.tag}</span>
         <img class="plugins__cover __light" src="${item.lightImg}" alt="${item.title}">
         <img class="plugins__cover __dark" src="${item.darkImg}" alt="${item.title}">
@@ -162,5 +163,3 @@ document.addEventListener('DOMContentLoaded', function () {
   // Изначально показываем все элементы и активируем тег "Все"
   filterItemsByTag('Все');
 });
-
-document.addEventListener('DOMContentLoaded', generatePluginItems);

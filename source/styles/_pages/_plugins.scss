@@ -15,6 +15,14 @@
 
   &__item {
     width: $zui-100p;
+
+    &.__show {
+      display: block;
+    }
+
+    &.__hide {
+      display: none;
+    }
   }
 
   &__link {
